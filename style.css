@@ -19,16 +19,16 @@
 }
 @font-face {
     font-family: 'Proxima Nova Cn Rg';
-    src: url('font/Proxima Nova/ProximaNovaCond-Bold.woff2') format('woff2'),
-        url('font/Proxima Nova/ProximaNovaCond-Bold.woff') format('woff');
+    src: url('font/Proxima_Nova/ProximaNovaCond-Bold.woff2') format('woff2'),
+        url('font/Proxima_Nova/ProximaNovaCond-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Proxima Nova Rg';
-    src: url('font/Proxima Nova/ProximaNova-Regular.woff2') format('woff2'),
-        url('font/Proxima Nova/ProximaNova-Regular.woff') format('woff');
+    src: url('font/Proxima_Nova/ProximaNova-Regular.woff2') format('woff2'),
+        url('font/Proxima_Nova/ProximaNova-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
