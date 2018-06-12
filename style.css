@@ -21,22 +21,18 @@
     font-family: 'Proxima Nova Cn Rg';
     src: url('font/Proxima_Nova/ProximaNovaCond-Bold.eot');
     src: url('font/Proxima_Nova/ProximaNovaCond-Bold.eot?#iefix') format('embedded-opentype'),
-        url('font/Proxima_Nova/ProximaNovaCond-Bold.woff2') format('woff2'),
-        url('font/Proxima_Nova/ProximaNovaCond-Bold.woff') format('woff'),
+         url('font/Proxima_Nova/ProximaNovaCond-Bold.woff') format('woff'),
         url('font/Proxima_Nova/ProximaNovaCond-Bold.ttf') format('truetype'),
-        url('font/Proxima_Nova/ProximaNovaCond-Bold.svg#ProximaNovaCond-Bold') format('svg');
-    font-weight: bold;
+         font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Proxima Nova Rg';
     src: url('font/Proxima_Nova/ProximaNova-Regular.eot');
-    src: url('font/Proxima_Nova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
-        url('font/Proxima_Nova/ProximaNova-Regular.woff2') format('woff2'),
+    src: url('font/Proxima_Nova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),  
         url('font/Proxima_Nova/ProximaNova-Regular.woff') format('woff'),
-        url('font/Proxima_Nova/ProximaNova-Regular.ttf') format('truetype'),
-        url('font/Proxima_Nova/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+        url('font/Proxima_Nova/ProximaNova-Regular.ttf') format('truetype'),      
     font-weight: normal;
     font-style: normal;
 }
