@@ -1,0 +1,22 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@font-face {
+  font-family: "SpiralInitials";
+  src: url("CelticFont/spiral_initials/spiri.eot");
+  src: url("CelticFont/spiral_initials/spiri.eot?#iefix") format("embedded-opentype"),
+    url("CelticFont/spiral_initials/spiri.woff") format("woff"),
+    url("CelticFont/spiral_initials/spiri.TTF") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "NouveauUncialCaps";
+  src: url("CelticFont/nouveau_uncial_caps/Nouveau_Uncial_Caps.eot");
+  src: url("CelticFont/nouveau_uncial_caps/Nouveau_Uncial_Caps.eot?#iefix") format("embedded-opentype"),
+    url("CelticFont/nouveau_uncial_caps/nouveau_uncial_caps-webfont.woff") format("woff"),
+    url("CelticFont/nouveau_uncial_caps/Nouveau_Uncial_Caps.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
