@@ -14,6 +14,7 @@ body
 	background-image: url("../img/header_bg.jpg")
 	background-position: top
 	background-repeat: no-repeat	
+	background-size: cover
 
 .header
 	color: #ffffff
@@ -236,24 +237,34 @@ body
 
 .product-card	
 	background-color: $accent-color
-	padding: 30px 60px
-	
-	
+	padding: 30px 60px	
 	&__stats
 		width: 100%
 		color: #202020
 		font-size: 16px
 		font-weight: 400
+
 	
 .stats__value,
 .stats__field
 	width: 50%
 	padding-bottom: 12px
+	position: relative
 .stats__value
 	padding-left: 0
+
 .stats__field
 	padding-right: 0
-	text-align: right
+	text-align: right	
+	&::before
+		content: ''
+		position: absolute
+		width: 85%
+		height: 100%
+		border-bottom: 1px dotted #202020
+		border-bottom-width: 1px
+		top: -14px
+		left: -53px
 .menu-btn
 	position: absolute
 	bottom: 20px
@@ -452,7 +463,7 @@ body
 	&-contacts
 		display: flex
 		flex-direction: column
-		margin-left: 90px
+		text-align: end
 		&__tel
 			color: #ffffff
 			font-size: 24px
@@ -489,8 +500,239 @@ body
 		left: 125px
 		top: 0px
 
-	
 
+.overlay
+	position: fixed
+	display: none
+	top: 0
+	width: 100%
+	height: 100%
+	z-index: 3
+	background-color: rgba(0,0,0,0.4)
+.popup
+	position: fixed	
+	display: none
+	z-index: 4
+	bottom: 0
+	width: 100%
+	background-color: #f7f7f7
+	min-height: 287px
+	color: #202020
+	padding-top: 20px
+	padding-bottom: 30px
+	&__title
+		font-size: 24px
+		font-weight: 700
+		line-height: 28px
+		padding: 0
+		margin: 0
+		margin-bottom: 22px
+		text-align: center
+	&-form
+		&__label
+			color: #202020
+			font-size: 16px
+			font-weight: 700
+			display: block
+			margin-bottom: 34px
+			padding-left: 41px
+			position: relative
+			&::before
+				content: '1'
+				text-align: center
+				line-height: 28px	
+				position: absolute
+				width: 27px
+				height: 28px	
+				background-color: #eaeaea	
+				left: 8px
+				top: -4px
+				border-radius: 50%
+.text__label::before
+	content: '2'
+.tel__label::before
+	content: '3'
+.popup-form__select
+	width: 272px
+	height: 47px
+	border-radius: 4px
+	border: 2px solid #eaeaea
+	background-color: #f6f6f6
+	padding: 10px 0px 10px 20px	
+	font-size: 14px
+	font-weight: 400
+	padding-right: 25px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	font-size: 14px
+	font-weight: 400
+	
+.select-wraper
+	position: relative
+	display: inline-block	
+	&::after
+		content: ""
+		padding: 0 8px		
+		position: absolute
+		right: 17px
+		top: 20px
+		z-index: 1		
+		width: 12px
+		height: 7px
+		pointer-events: none
+		box-sizing: border-box
+		background-image: url("../img/form-arrow.png")
+		background-position: center center
+		background-repeat: no-repeat
+
+.text__input
+	width: 270px
+	min-height: 46px
+	border-radius: 4px
+	border: 2px solid #eaeaea
+	background-color: #f6f6f6
+	color: #999999
+	font-size: 14px
+	font-weight: 400
+	padding-top: 5px
+	padding-left: 20px
+.tel__input
+	width: 272px
+	min-height: 47px
+	border-radius: 4px
+	border: 2px solid #eaeaea
+	background-color: #f6f6f6
+	color: #999999		
+	font-size: 14px
+	font-weight: 400
+	padding-left: 19px
+
+.popup-form__calculator
+	display: flex
+	justify-content: space-between
+.calc__type,
+.calc__text,
+.calc__tel
+	padding: 20px 10px 15px
+	min-height: 132px
+	box-shadow: 0 1px 4px rgba(153, 153, 153, 0.5)
+	background-color: #ffffff
+	background-image: url("../img/line.png")
+	background-position: center 45%
+	background-repeat: no-repeat
+.calc__text
+	width: 568px
+.calc__type,	
+.calc__tel
+	width: 292px	
+.calculator__button
+	display: block
+	margin-top: 20px
+	margin-left: auto
+	margin-right: auto
+	width: 292px
+	min-height: 46px
+	padding: 16px 110px
+	font-size: 16px
+	font-weight: 500
+	border-radius: 4px
+	&:hover
+		background-color: darken( $accent-color, 10%)
+		cursor: pointer
+
+
+@media (max-width:1200px)
+	.popup
+		width: 322px
+		max-width: 100%
+		padding: 15px
+		min-height: 610px
+		top: 15%
+		bottom: auto
+		left: 50%
+		transform: translateX(-50%)
+		&__title
+			text-align: left
+			margin-bottom: 18px
+	.popup-form__calculator
+			flex-direction: column
+			min-height: 481px
+	.calc__text
+		width: 292px
+		background-position: center 30%
+	.text__input
+		margin-bottom: 8px
+	.calculator__button
+		margin-top: 8px
+
+
+
+
+@media (max-width:992px)
+	.garanties__title
+		padding-left: 0px
+		margin-top: 40px
+	.order
+		background-image: none
+		background: linear-gradient(to right, #fff 50%, $accent-color 50%)
+
+@media (max-width:768px)
+	.form
+		margin: auto
+		margin-bottom: 10px
+	.main-text
+		text-align: center
+	.main-text__title
+		font-size: 54px
+		line-height: 54px
+	.main-text__subtitle
+		font-size: 25px
+		line-height: 25px
+	.main-features
+		justify-content: space-around
+		&__time
+			margin-right: 0
+@media (max-width:576px)
+	.header
+		text-align: center
+		margin-bottom: 60px
+	.header-contacts__cta
+		margin: 10px 0
+	.product-text
+		margin-top: 40px
+		padding-right: 0
+		&__title
+			font-size: 35px
+			margin-bottom: 15px
+		&__subtitle
+			font-size: 22px
+	.advantages
+		padding-top: 40px
+	.delivery__text
+		padding-right: 0
+	.order
+		background: linear-gradient(to bottom, #fff 65%, $accent-color 40%)
+	.order-features
+		margin-right: auto
+		margin-bottom: 30px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 
 
 
