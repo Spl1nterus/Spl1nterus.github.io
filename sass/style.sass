@@ -398,6 +398,36 @@ body
 	margin-top: 44px
 	margin-left: 0
 	margin-bottom: 57px
+
+.order-form__checkbox
+	display: none
+.order-form__checkbox-lable
+	color: #999999
+	font-size: 13px
+	font-weight: 400
+	line-height: 20.03px
+	&::before
+		content: ''
+		display: inline-block
+		width: 22px
+		height: 23px
+		vertical-align: middle
+		margin-right: 9px
+		border-radius: 4px
+		border: 1px solid #ededed
+
+.order-form__checkbox-lable	a	
+	color: #999999
+
+.order-form__checkbox:checked + .order-form__checkbox-lable::before
+	content: ''
+	background-size: 14px 11px
+	background-image: url("../img/checkbox.png")
+	background-position: center
+	background-repeat: no-repeat	
+
+
+
 .order-features		
 	margin-top: 37px
 	margin-left: auto

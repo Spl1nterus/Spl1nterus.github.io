@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>АТК-Патриот</title>
@@ -45,14 +45,14 @@
 				<div class="col-xl-5 col-lg-5 col-12">
 					<form action="#" class="form">
 						<div class="form__input--wraper">
-							<input class="form__input form__input--main" type="text" placeholder="Вид топлива" required autofocus value="Бензин">
+							<input class="form__input form__input--main" type="text" placeholder="Вид топлива" required>
 						</div>
-						<input class="form__input" type="text" placeholder="Куда доставить" required autofocus>
-						<input class="form__input" type="text" placeholder="Объем, л" required autofocus value="">
-						<input class="form__input" type="tel" placeholder="Телефон" required autofocus value="">
-						<input class="form__checkbox" type="checkbox" id="Confirm" name="food" checked="">
-						<label class="form__checkbox-lable" for="Confirm">Согласен на  <a href="#">обработку персональных данных</a></label>
-						<input type="submit" class="form__button" value="Рассчитать стоимость">
+						<input class="form__input" type="text" placeholder="Куда доставить" required>
+						<input class="form__input" type="text" placeholder="Объем, л" required>
+						<input class="form__input" type="tel" placeholder="Телефон" required>
+						<input class="form__checkbox" type="checkbox" id="Main-form__Confirm" name="food" checked="">
+						<label class="form__checkbox-lable" for="Main-form__Confirm">Согласен на  <a href="#">обработку персональных данных</a></label>
+						<input type="submit" class="form__button js__button" value="Рассчитать стоимость">
 					</form>
 				</div>
 				<!-- /.col-xl-5 offset-xl-1 -->
@@ -73,7 +73,7 @@
 					<div class="calc__type">
 						<label for="id_select" class="popup-form__label type__label">Вид топлива</label>
 						<div class="select-wraper">
-							<select  class="popup-form__select" id="id_select" autofocus = "true">
+							<select  class="popup-form__select" id="id_select">
 							<option value="Выберите вид топлива"> Выберите вид топлива </option>							
 							</select>
 						</div>
@@ -83,13 +83,13 @@
 					<!-- /.calc__type -->
 					<div class="calc__text">
 						<label id='lblRange' class="popup-form__label text__label">Куда и сколько доставить?</label>
-						<input type='text' class="text__input" id='place' aria-labelledby='lblRange'/ placeholder="Населённый пункт, адрес" required>
-						<input type='text' class="text__input" id='capacity' aria-labelledby='lblRange'/placeholder="1000 – 38 000 л" required>
+						<input type='text' class="text__input" id='place' aria-labelledby='lblRange' placeholder="Населённый пункт, адрес" required>
+						<input type='text' class="text__input" id='capacity' aria-labelledby='lblRange' placeholder="1000 – 38 000 л" required>
 					</div>
 						<!-- /.calc__text -->
 						<div class="calc__tel">
 							<label for="phone" class="popup-form__label tel__label">Телефон для связи</label>
-            				<input type="tel" class="tel__input" name="phone" placeholder="+7 (___) ___-__-__" required>
+            				<input type="tel" id="phone" class="tel__input" name="phone" placeholder="+7 (___) ___-__-__" required>
 						</div>
 							<!-- /.calc__tel -->
 				     </div>
@@ -205,9 +205,9 @@
 								<div class="product-form">
 									<p class="product-presentation__characteristics">SCANIA 38 000 л<span class="product-presentation__size">Полуприцеп 9 секций</span>45 руб./км</p>
 									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required autofocus value="">
-										<input class="form__checkbox" type="checkbox" id="Confirm" name="food" checked="">
-										<label class="form__checkbox-lable" for="Confirm">Согласен на  <a href="#">обработку данных</a></label>
+										<input class="form__input" type="tel" placeholder="Телефон" required>
+										<input class="form__checkbox" type="checkbox" id="SCANIA-9-sec" name="SCANIA-9-sec" checked="">
+										<label class="form__checkbox-lable" for="SCANIA-9-sec">Согласен на  <a href="#">обработку данных</a></label>
 										<input type="submit" class="form__button product-form__button" value="Отправить">
 									</form>
 									<div class="product-popup--close">&times;</div>
@@ -261,9 +261,9 @@
 								<div class="product-form">
 									<p class="product-presentation__characteristics">SCANIA 38 000 л<span class="product-presentation__size">Полуприцеп 4 секции</span> 45 руб./км</p>
 									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required autofocus value="">
-										<input class="form__checkbox" type="checkbox" id="Confirm" name="food" checked="">
-										<label class="form__checkbox-lable" for="Confirm">Согласен на  <a href="#">обработку данных</a></label>
+										<input class="form__input" type="tel" placeholder="Телефон" required>
+										<input class="form__checkbox" type="checkbox" id="SCANIA-4-sec" name="SCANIA-4-sec" checked="">
+										<label class="form__checkbox-lable" for="SCANIA-4-sec">Согласен на  <a href="#">обработку данных</a></label>
 										<input type="submit" class="form__button product-form__button" value="Отправить">
 									</form>
 									<div class="product-popup--close">&times;</div>
@@ -325,9 +325,9 @@
 								<div class="product-form">
 									<p class="product-presentation__characteristics">MAN 34 000 л<span class="product-presentation__size">Полуприцеп 5 секций</span>42 руб./км</p>
 									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required autofocus value="">
-										<input class="form__checkbox" type="checkbox" id="Confirm" name="food" checked="">
-										<label class="form__checkbox-lable" for="Confirm">Согласен на  <a href="#">обработку данных</a></label>
+										<input class="form__input" type="tel" placeholder="Телефон" required>
+										<input class="form__checkbox" type="checkbox" id="MAN-4-sec" name="MAN-4-sec" checked="">
+										<label class="form__checkbox-lable" for="MAN-4-sec">Согласен на  <a href="#">обработку данных</a></label>
 										<input type="submit" class="form__button product-form__button" value="Отправить">
 									</form>
 									<div class="product-popup--close">&times;</div>
@@ -381,9 +381,9 @@
 								<div class="product-form">
 									<p class="product-presentation__characteristics">SCANIA 40 320 л<span class="product-presentation__size">Полуприцеп 4 секции</span> 40 руб./км</p>
 									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required autofocus value="">
-										<input class="form__checkbox" type="checkbox" id="Confirm" name="food" checked="">
-										<label class="form__checkbox-lable" for="Confirm">Согласен на  <a href="#">обработку данных</a></label>
+										<input class="form__input" type="tel" placeholder="Телефон" required>
+										<input class="form__checkbox" type="checkbox" id="SCANIA-4-sec-2" name="SCANIA-4-sec-2" checked="">
+										<label class="form__checkbox-lable" for="SCANIA-4-sec-2">Согласен на  <a href="#">обработку данных</a></label>
 										<input type="submit" class="form__button product-form__button" value="Отправить">
 									</form>
 									<div class="product-popup--close">&times;</div>
@@ -445,9 +445,9 @@
 								<div class="product-form">
 									<p class="product-presentation__characteristics">SCANIA 40 225 л<span class="product-presentation__size">Полуприцеп 5 секций</span> 40 руб./км</p>
 									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required autofocus value="">
-										<input class="form__checkbox" type="checkbox" id="Confirm" name="food" checked="">
-										<label class="form__checkbox-lable" for="Confirm">Согласен на  <a href="#">обработку данных</a></label>
+										<input class="form__input" type="tel" placeholder="Телефон" required>
+										<input class="form__checkbox" type="checkbox" id="SCANIA-5-sec" name="SCANIA-5-sec" checked="">
+										<label class="form__checkbox-lable" for="SCANIA-5-sec">Согласен на  <a href="#">обработку данных</a></label>
 										<input type="submit" class="form__button product-form__button" value="Отправить">
 									</form>
 									<div class="product-popup--close">&times;</div>
@@ -493,9 +493,9 @@
 								<div class="product-form">
 									<p class="product-presentation__characteristics">DAF 30 054 л<span class="product-presentation__size">Полуприцеп 3 секций</span>40 руб./км</p>
 									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required autofocus value="">
-										<input class="form__checkbox" type="checkbox" id="Confirm" name="food" checked="">
-										<label class="form__checkbox-lable" for="Confirm">Согласен на  <a href="#">обработку данных</a></label>
+										<input class="form__input" type="tel" placeholder="Телефон" required>
+										<input class="form__checkbox" type="checkbox" id="DAF-3-sec" name="DAF-3-sec" checked="">
+										<label class="form__checkbox-lable" for="DAF-3-sec">Согласен на  <a href="#">обработку данных</a></label>
 										<input type="submit" class="form__button product-form__button" value="Отправить">
 									</form>
 									<div class="product-popup--close">&times;</div>
@@ -533,9 +533,9 @@
 								<div class="product-form">
 									<p class="product-presentation__characteristics">MAЗ 16 710 л<span class="product-presentation__size">Автоцистерна 2 секции</span> 32 руб./км</p>
 									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required autofocus value="">
-										<input class="form__checkbox" type="checkbox" id="Confirm" name="food" checked="">
-										<label class="form__checkbox-lable" for="Confirm">Согласен на  <a href="#">обработку данных</a></label>
+										<input class="form__input" type="tel" placeholder="Телефон" required>
+										<input class="form__checkbox" type="checkbox" id="MAZ-2-sec" name="MAZ-2-sec" checked="">
+										<label class="form__checkbox-lable" for="MAZ-2-sec">Согласен на  <a href="#">обработку данных</a></label>
 										<input type="submit" class="form__button product-form__button" value="Отправить">
 									</form>
 									<div class="product-popup--close">&times;</div>
@@ -581,9 +581,9 @@
 								<div class="product-form">
 									<p class="product-presentation__characteristics">МАЗ 17 080 л<span class="product-presentation__size">	Автоцистерна 3 секции</span> 30 руб./км</p>
 									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required autofocus value="">
-										<input class="form__checkbox" type="checkbox" id="Confirm" name="food" checked="">
-										<label class="form__checkbox-lable" for="Confirm">Согласен на  <a href="#">обработку данных</a></label>
+										<input class="form__input" type="tel" placeholder="Телефон" required>
+										<input class="form__checkbox" type="checkbox" id="MAZ-3-sec" name="MAZ-3-sec" checked="">
+										<label class="form__checkbox-lable" for="MAZ-3-sec">Согласен на  <a href="#">обработку данных</a></label>
 										<input type="submit" class="form__button product-form__button" value="Отправить">
 									</form>
 									<div class="product-popup--close">&times;</div>
@@ -621,9 +621,9 @@
 								<div class="product-form">
 									<p class="product-presentation__characteristics">MAN 13 400 л<span class="product-presentation__size">	Автоцистерна 2 секции</span> 29 руб./км</p>
 									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required autofocus value="">
-										<input class="form__checkbox" type="checkbox" id="Confirm" name="food" checked="">
-										<label class="form__checkbox-lable" for="Confirm">Согласен на  <a href="#">обработку данных</a></label>
+										<input class="form__input" type="tel" placeholder="Телефон" required>
+										<input class="form__checkbox" type="checkbox" id="MAN-2-sec" name="MAN-2-sec" checked="">
+										<label class="form__checkbox-lable" for="MAN-2-sec">Согласен на  <a href="#">обработку данных</a></label>
 										<input type="submit" class="form__button product-form__button" value="Отправить">
 									</form>
 									<div class="product-popup--close">&times;</div>
@@ -661,9 +661,9 @@
 								<div class="product-form">
 									<p class="product-presentation__characteristics">МАЗ 9055 л<span class="product-presentation__size">	Автоцистерна 2 секции</span> 25 руб./км</p>
 									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required autofocus value="">
-										<input class="form__checkbox" type="checkbox" id="Confirm" name="food" checked="">
-										<label class="form__checkbox-lable" for="Confirm">Согласен на  <a href="#">обработку данных</a></label>
+										<input class="form__input" type="tel" placeholder="Телефон" required>
+										<input class="form__checkbox" type="checkbox" id="MAZ-2-sec2" name="MAZ-2-sec2" checked="">
+										<label class="form__checkbox-lable" for="MAZ-2-sec2">Согласен на  <a href="#">обработку данных</a></label>
 										<input type="submit" class="form__button product-form__button" value="Отправить">
 									</form>
 									<div class="product-popup--close">&times;</div>
@@ -693,9 +693,9 @@
 								<div class="product-form">
 									<p class="product-presentation__characteristics">Зил 6470 л<span class="product-presentation__size">	Автоцистерна 1 секция</span> 20 руб./км</p>
 									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required autofocus value="">
-										<input class="form__checkbox" type="checkbox" id="Confirm" name="food" checked="">
-										<label class="form__checkbox-lable" for="Confirm">Согласен на  <a href="#">обработку данных</a></label>
+										<input class="form__input" type="tel" placeholder="Телефон" required>
+										<input class="form__checkbox" type="checkbox" id="Zil-1-sec" name="Zil-1-sec" checked="">
+										<label class="form__checkbox-lable" for="Zil-1-sec">Согласен на  <a href="#">обработку данных</a></label>
 										<input type="submit" class="form__button product-form__button" value="Отправить">
 									</form>
 									<div class="product-popup--close">&times;</div>
@@ -747,14 +747,14 @@
 							<div class="col-xl-5 col-md-6 col-12">
 								<form action="#" class="form order-form">
 						<div class="form__input--wraper">
-							<input class="form__input form__input--main" type="text" placeholder="Вид топлива" required autofocus value="Бензин">
+							<input class="form__input form__input--main" type="text" placeholder="Вид топлива" required>
 						</div>
-						<input class="form__input" type="text" placeholder="Куда доставить" required autofocus>
-						<input class="form__input" type="text" placeholder="Объем, л" required autofocus value="">
-						<input class="form__input" type="tel" placeholder="Телефон" required autofocus value="">
-						<input class="form__checkbox" type="checkbox" id="Confirm" name="food" checked="">
-						<label class="form__checkbox-lable" for="Confirm">Согласен на  <a href="#">обработку персональных данных</a></label>
-						<input type="submit" class="form__button" value="Рассчитать стоимость">
+						<input class="form__input" type="text" placeholder="Куда доставить" required>
+						<input class="form__input" type="text" placeholder="Объем, л" required>
+						<input class="form__input" type="tel" placeholder="Телефон" required>
+						<input class="order-form__checkbox" type="checkbox" id="order-form__Confirm" name="food" checked="">
+						<label class="order-form__checkbox-lable" for="order-form__Confirm">Согласен на<a href="#">обработку персональных данных</a></label>
+						<input type="submit" class="form__button js__button" value="Рассчитать стоимость">
 					</form>
 							</div>
 							<!-- /.col-xl-5 -->
