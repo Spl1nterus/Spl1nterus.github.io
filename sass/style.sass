@@ -145,6 +145,10 @@ body
 	padding-left: auto
 	font-size: 18px
 	font-weight: 500
+	&:hover
+		background-color: darken( $accent-color, 10%)
+		cursor: pointer
+
 
 .product
 	background-color: #fff
@@ -503,32 +507,7 @@ body
 			color: #818181
 			font-size: 12px
 			font-weight: 400
-.copyright-wraper
-	background-color: #282828	
-.footer-copyright	
-	padding-top: 12px
-	padding-bottom: 13px
-	&__link
-		color: #818181
-		font-size: 13px
-		font-weight: 400
-		text-decoration: none
 
-.footer-copyright__text
-	position: relative
-	margin-right: 125px
-	&:hover
-		color: #fff
-	&::after
-		content: ''
-		position: absolute
-		width: 90px
-		height: 18px
-		background-image: url("../img/copyright.png")
-		background-position: center center
-		background-repeat: no-repeat
-		left: 125px
-		top: 0px
 
 
 .overlay
