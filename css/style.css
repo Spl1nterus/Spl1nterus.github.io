@@ -49,7 +49,7 @@ body { margin: 0; padding: 0; font-family: "Gotham Pro", sans-serif; }
 .product-text__title { font-size: 46px; font-weight: 700; line-height: 56px; margin-top: 0; margin-bottom: 30px; }
 .product-text__subtitle { margin-top: 0; margin-bottom: 55px; font-size: 24px; font-weight: 400; line-height: 38px; }
 
-.product-presentation { width: 372px; min-height: 409px; border: 10px solid #eaeaea; background-color: #ffffff; margin-bottom: 28px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; padding: 30px 30px 40px 30px; position: relative; -webkit-perspective: 1000px; perspective: 1000px; }
+.product-presentation { width: 372px; min-height: 409px; border: 10px solid #eaeaea; background-color: #ffffff; margin-bottom: 28px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; padding: 30px 30px 40px 30px; position: relative; -webkit-perspective: 1000px; perspective: 1000px; margin-left: auto; margin-right: auto; }
 .product-presentation::after { content: ""; position: absolute; width: 20px; height: 20px; background-color: transparent; background-image: url("../img/arrow.png"); background-position: top right; background-repeat: no-repeat; bottom: 0px; right: 0px; }
 .product-presentation::before { content: ""; position: absolute; bottom: -10px; right: -10px; border: 34px solid transparent; border-right: 34px solid #fbc91e; border-bottom: 34px solid #fbc91e; }
 .product-presentation__image { max-width: 100%; max-height: 100%; -o-object-fit: scale-down; object-fit: scale-down; -ms-flex-item-align: start; align-self: flex-start; }
@@ -165,20 +165,21 @@ body { margin: 0; padding: 0; font-family: "Gotham Pro", sans-serif; }
   .calc__text { width: 292px; background-position: center 30%; }
   .text__input { margin-bottom: 8px; }
   .calculator__button { margin-top: 8px; } }
+@media (max-width: 1800px) { .order { background: -webkit-gradient(linear, left top, right top, color-stop(50%, #fff), color-stop(50%, #fbc91e)); background: linear-gradient(to right, #fff 50%, #fbc91e 50%); ackground-image: none; } }
 @media (max-width: 992px) { .garanties__title { padding-left: 0px; margin-top: 40px; }
-  .order { background-image: none; background: -webkit-gradient(linear, left top, right top, color-stop(50%, #fff), color-stop(50%, #fbc91e)); background: linear-gradient(to right, #fff 50%, #fbc91e 50%); } }
-@media (max-width: 768px) { .form { margin: auto; margin-bottom: 10px; }
+  .form { margin: auto; margin-bottom: 10px; }
   .main-text { text-align: center; }
-  .main-text__title { font-size: 54px; line-height: 54px; }
-  .main-text__subtitle { font-size: 25px; line-height: 25px; }
   .main-features { -ms-flex-pack: distribute; justify-content: space-around; }
-  .main-features__time { margin-right: 0; } }
+  .main-features__time { margin-right: 0; }
+  .product-text { padding-right: 0; } }
+@media (max-width: 768px) { .main-text__title { font-size: 54px; line-height: 54px; }
+  .main-text__subtitle { font-size: 25px; line-height: 25px; }
+  .order-features { margin-right: auto; margin-bottom: 30px; } }
 @media (max-width: 576px) { .header { text-align: center; margin-bottom: 60px; }
   .header-contacts__cta { margin: 10px 0; }
-  .product-text { margin-top: 40px; padding-right: 0; }
+  .product-text { margin-top: 40px; }
   .product-text__title { font-size: 35px; margin-bottom: 15px; }
   .product-text__subtitle { font-size: 22px; }
   .advantages { padding-top: 40px; }
   .delivery__text { padding-right: 0; }
-  .order { background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #fff), color-stop(40%, #fbc91e)); background: linear-gradient(to bottom, #fff 65%, #fbc91e 40%); }
-  .order-features { margin-right: auto; margin-bottom: 30px; } }
+  .order { background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #fff), color-stop(40%, #fbc91e)); background: linear-gradient(to bottom, #fff 65%, #fbc91e 40%); } }

@@ -181,6 +181,8 @@ body
 	padding: 30px 30px 40px 30px	
 	position: relative
 	perspective: 1000px
+	margin-left: auto
+	margin-right: auto
 	&::after  
 		content: ''
 		position: absolute
@@ -677,31 +679,38 @@ body
 
 
 
+@media (max-width:1800px)
+	.order		
+		background: linear-gradient(to right, #fff 50%, $accent-color 50%)
+		ackground-image: none
 
 @media (max-width:992px)
 	.garanties__title
 		padding-left: 0px
-		margin-top: 40px
-	.order
-		background-image: none
-		background: linear-gradient(to right, #fff 50%, $accent-color 50%)
-
-@media (max-width:768px)
+		margin-top: 40px		
 	.form
 		margin: auto
 		margin-bottom: 10px
 	.main-text
 		text-align: center
+	.main-features
+		justify-content: space-around
+		&__time
+			margin-right: 0
+	.product-text
+		padding-right: 0
+
+@media (max-width:768px)	
 	.main-text__title
 		font-size: 54px
 		line-height: 54px
 	.main-text__subtitle
 		font-size: 25px
 		line-height: 25px
-	.main-features
-		justify-content: space-around
-		&__time
-			margin-right: 0
+	.order-features
+		margin-right: auto
+		margin-bottom: 30px
+
 @media (max-width:576px)
 	.header
 		text-align: center
@@ -709,8 +718,7 @@ body
 	.header-contacts__cta
 		margin: 10px 0
 	.product-text
-		margin-top: 40px
-		padding-right: 0
+		margin-top: 40px		
 		&__title
 			font-size: 35px
 			margin-bottom: 15px
@@ -722,9 +730,7 @@ body
 		padding-right: 0
 	.order
 		background: linear-gradient(to bottom, #fff 65%, $accent-color 40%)
-	.order-features
-		margin-right: auto
-		margin-bottom: 30px
+	
 
 
 
