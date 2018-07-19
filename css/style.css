@@ -120,7 +120,7 @@ body { margin: 0; padding: 0; font-family: "Gotham Pro", sans-serif; }
 .order-features__time { margin: 0; padding: 0; font-size: 18px; font-weight: 700; line-height: 55px; margin-top: 0; font-size: 18px; line-height: 55px; }
 .order-features__time--big { font-size: 77px; line-height: 77px; }
 
-.footer-wraper { background-color: #202020; padding-bottom: 25px; padding-top: 20px; }
+.footer-wraper { background-color: #202020; padding-bottom: 25px; padding-top: 20px; padding-right: 10px; padding-left: 10px; }
 
 .footer__title { padding: 0; margin: 0; color: #ffffff; font-size: 30px; font-weight: 700; margin-bottom: 7px; }
 .footer__subtitle { color: #818181; font-size: 12px; font-weight: 400; }
@@ -164,22 +164,25 @@ body { margin: 0; padding: 0; font-family: "Gotham Pro", sans-serif; }
   .popup-form__calculator { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; min-height: 481px; }
   .calc__text { width: 292px; background-position: center 30%; }
   .text__input { margin-bottom: 8px; }
-  .calculator__button { margin-top: 8px; } }
+  .calculator__button { margin-top: 8px; }
+  .garanties__title { padding-left: 0px; margin-top: 40px; } }
 @media (max-width: 1800px) { .order { background: -webkit-gradient(linear, left top, right top, color-stop(50%, #fff), color-stop(50%, #fbc91e)); background: linear-gradient(to right, #fff 50%, #fbc91e 50%); ackground-image: none; } }
-@media (max-width: 992px) { .garanties__title { padding-left: 0px; margin-top: 40px; }
-  .form { margin: auto; margin-bottom: 10px; }
+@media (max-width: 992px) { .form { margin: auto; margin-bottom: 10px; }
   .main-text { text-align: center; }
   .main-features { -ms-flex-pack: distribute; justify-content: space-around; }
   .main-features__time { margin-right: 0; }
   .product-text { padding-right: 0; } }
 @media (max-width: 768px) { .main-text__title { font-size: 54px; line-height: 54px; }
-  .main-text__subtitle { font-size: 25px; line-height: 25px; }
-  .order-features { margin-right: auto; margin-bottom: 30px; } }
-@media (max-width: 576px) { .header { text-align: center; margin-bottom: 60px; }
+  .header { text-align: center; margin-bottom: 60px; }
   .header-contacts__cta { margin: 10px 0; }
-  .product-text { margin-top: 40px; }
+  .main-text__subtitle { font-size: 25px; line-height: 25px; }
+  .order-features { margin-right: auto; margin-bottom: 30px; }
+  .order { background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #fff), color-stop(40%, #fbc91e)); background: linear-gradient(to bottom, #fff 65%, #fbc91e 40%); } }
+@media (max-width: 576px) { .product-text { margin-top: 40px; }
   .product-text__title { font-size: 35px; margin-bottom: 15px; }
   .product-text__subtitle { font-size: 22px; }
   .advantages { padding-top: 40px; }
   .delivery__text { padding-right: 0; }
-  .order { background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #fff), color-stop(40%, #fbc91e)); background: linear-gradient(to bottom, #fff 65%, #fbc91e 40%); } }
+  .footer__title { font-size: 20px; }
+  .footer-contacts__tel { font-size: 16px; }
+  .product-presentation { max-width: 100%; } }
