@@ -1,0 +1,79 @@
+.complectation__title
+	box-sizing: border-box
+	margin: 0
+	padding: 25px 15px	
+	color: #1c1c1c
+	font-family: "Officina Serif C"
+	font-size: 22px
+	font-weight: 700
+	min-height: 104px
+	background-color: #f2f2f2
+
+.complectation__list
+	padding: 0	
+	margin: 0
+	list-style: none
+	color: #343434
+	font-family: Roboto
+	font-size: 16px
+	font-weight: 300
+
+.complectation__item
+	padding: 15px 15px 12px
+.complectation__item:nth-child(2n)	
+	background-color: #f2f2f2
+
+.complectation__price	
+	height: 104px
+	max-width: 541px	
+	line-height: 104px
+	text-align: center
+	color: #ffffff
+	margin: 0 15px
+	font-family: "Officina Serif C"
+	font-size: 30px
+	font-weight: 700
+	background-image: url('../img/complectationImg1.jpg')
+	background-repeat: no-repeat
+
+.complectation__wraper:nth-child(2) .complectation__price	
+		background-image: url('../img/complectationImg2.jpg')
+
+
+@media (min-width:$tablet-width)
+	.complectation
+		margin-top: 0
+		margin-left: 83px
+		padding: 0px 10px	28px	
+		display: flex
+		justify-content: center		
+
+	.complectation__wraper
+		max-width: 457px
+		margin-right: 7px
+	.complectation__wraper:nth-child(2n)		
+		margin-right: 0px	
+
+	.complectation__price
+		margin: 0		
+
+@media (min-width:$notebook-width)		
+	.complectation		
+		margin-left: 220px
+		padding-left: 20px
+
+	.complectation__wraper		
+		margin-right: 22px
+
+
+
+@media (min-width:$pc-width)		
+	.complectation		
+		margin-left: 664px
+		justify-content: flex-start
+		flex-wrap: wrap		
+
+	.complectation__wraper
+		min-width: 541px
+		margin-right: 28px
+

@@ -1,27 +1,30 @@
-$(document).ready(function(){	
-$('.product__btn').on('click', function(e) {
-  e.preventDefault;
-  $('.product-card').addClass('product-card--hide');
-	 $('.product-form').addClass('product-form--show');
-});
-$('.product-popup--close').on('click', function(e) { 
-	e.preventDefault;
-  $('.product-card').removeClass('product-card--hide');
-	 $('.product-form').removeClass('product-form--show');
-});
-$('.js__button').on('click', function(e) {
-  e.preventDefault;
-  $('.overlay').show();
-  $('.popup').show();
- });
- $(document).mouseup(function (e) {
-    var container = $(".popup");
-    if (container.has(e.target).length === 0){
-        container.hide();
-        $('.overlay').hide();
-    }
+$('.page-header__btn').on('click', function(e) {
+  e.preventDefault();
+  $(this).toggleClass('page-header__btn--active');
+  $('.main-nav__list').toggleClass('main-nav__list--active');
+  $('.page-header').toggleClass('page-header--active');
 });
 
 
+if ( matchMedia('screen and (min-width: 1201px)').matches ) {
+var options = {
+  prevNextButtons: false,
+};
+  options.prevNextButtons = true;
+  options.asNavFor = ".carousel-main";
+  options.contain = true;
+  options.pageDots = false;
+  options.draggable = false;
+  $('.carousel-nav').flickity( options ); 
+}
 
-});
+
+
+
+
+
+
+
+
+
+

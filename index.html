@@ -2,813 +2,275 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>АТК-Патриот</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/normalize.css">	
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">	
+	<title>Document</title>
+	<link rel="stylesheet" href="Css/normalize.css">	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/stylesheet.css">
-	<link rel="stylesheet" href="css/style.css">		
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">	
+	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-	
-<div class="starter-wraper">
-	<header class="header">
-		<div class="container">
-			<div class="row no-gutters align-items-center">
-				<div class="col-xl-3 col-lg-3 col-md-4 col-12">
-					<h2 class="header__name">АТК-Патриот</h2>
+
+
+	<header class="page-header">		
+	<a href="" class="page-header__logo"><img src="img/logo.svg" alt="Логотип"></a>
+	<a href="" class="page-header__btn"><span></span></a>
+	<nav class="main-nav">
+		<ul class="main-nav__list">
+			<li class="main-nav__item"><a href="">О компании</a></li>
+			<li class="main-nav__item"><a href="">Проекты</a></li>
+			<li class="main-nav__item"><a href="">Наши работы</a></li>
+			<li class="main-nav__item"><a href="">Отзывы</a></li>
+			<li class="main-nav__item"><a href="">Новости</a></li>
+			<li class="main-nav__item"><a href="">Контакты</a></li>
+		</ul>
+	</nav>
+	<div class="page-header__contacts hidden-mobile">
+		<span class="page-header__tel">8 800 2000 679</span>
+		<span class="page-header__worktime">пн - пт с 9:00 до 18:00 </span>
+		<a href="" class="page-header__callback">Обратный звонок</a>
+	</div>
+</header>
+
+<main class="page-main">
+	<ul class="page-main__breadcrumbs hidden-mobile">
+		<li><a href="">Главная</a></li>
+		<li><a href="">Проекты</a></li>
+	</ul>
+	<!-- /.page-main__breadcrumbs hidden-mobile -->
+	<h1 class="page-main__title">Проект дома «На озере»</h1>
+
+	<div class="page-main__items-wraper">
+		<div class="product-photos">
+			<div class="page-main__slider">
+			<div class="carousel carousel-main" data-flickity ='{"prevNextButtons": false,  "pageDots": false }'>
+			  <div class="carousel-cell"><img class="carousel-cell-image" src="img/sliderBig1.jpg" alt=""></div>
+			  <div class="carousel-cell"><img class="carousel-cell-image" src="img/sliderBig2.jpg" alt=""></div>
+			  <div class="carousel-cell"><img class="carousel-cell-image" src="img/sliderBig3.jpg" alt=""></div>
+			  <div class="carousel-cell"><img class="carousel-cell-image" src="img/sliderBig4.jpg" alt=""></div>
+		 	</div>
+
+			<div  class="carousel carousel-nav" data-flickity='{ "prevNextButtons": false,"asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
+			  <div class="carousel-cell"><img class="carousel-cell-image" src="img/sliderSmall1.jpg" alt=""></div>
+			  <div class="carousel-cell"><img class="carousel-cell-image" src="img/sliderSmall2.jpg" alt=""></div>
+			  <div class="carousel-cell"><img class="carousel-cell-image" src="img/sliderSmall3.jpg" alt=""></div>
+			  <div class="carousel-cell"><img class="carousel-cell-image" src="img/sliderSmall4.jpg" alt=""></div>
+			</div>
+			</div>
+
+			<div class="product-floor">
+				<div class="product-floor__wraper">
+					<span class="product-floor__title">1 этаж</span>
+					<img src="img/floor1.png" alt="План 1 этажа" class="product-floor__picture">
 				</div>
-				<div class="col-xl-3 offset-xl-4 col-lg-4 offset-lg-2 col-md-4 col-12">
-							<span class="header-contacts__cta">Бесплатный звонок по России</span>
+				<div class="product-floor__wraper">
+					<span class="product-floor__title">2 этаж</span>
+					<img src="img/floor2.png" alt="План 2 этажа" class="product-floor__picture">
+				</div>		
+			</div>	
+		</div>
+		<!-- /.product-photos -->
+
+		<div class="product-information">
+			<div class="social">
+				<span class="social__share">Поделиться проектом</span>
+				<ul class="social__list">
+					<li><a class="social__button vk-button" href="#"></a></li>
+					<li><a class="social__button ok-button" href="#"></a></li> 
+					<li><a class="social__button fb-button" href="#"></a></li> 
+					<li><a class="social__count" href="#">41</a></li> 
+				</ul>
+			</div>
+
+			<div class="product-characteristics">
+				<ul class="characteristics-list">
+					<li class="characteristics-list__item">Размеры: <b>12,0 м х 9,5 м</b></li>
+					<li class="characteristics-list__item">Общая площадь: <b>153 м2</b></li>
+					<li class="characteristics-list__item">Этажность:<b>2 этажа</b></li>
+					<li class="characteristics-list__item">Диаметр бревна: <b>153 м2</b></li>
+				</ul>
+				<div class="product-characteristics__price">
+					<h3 class="price__title">Цена за домокомплект:</h3>
+					<span class="price__text">1 200 000 руб.</span>			
 				</div>
-				<div class="col-xl-2 col-lg-3 col-md-4 col-12">
-						 	<span class="header-contacts__tel">8 800 550-21-21</span>
-				</div>
+				<a href="" class="order__button">Заказать  смету</a>
+				<p class="product-characteristics__text">
+					Проект «На озере» - чудесное решение для южных широт нашей страны. Большие площади остекления откроют чудесные виды на живописные пляжи, а террасы создадут непередаваемую атмосферу  для ужинов и завтраков.
+				</p>
 			</div>
 		</div>
-	</header>
-	
-	<section class="main">
-			<div class="container">
-				<div class="row no-gutters align-items-top">
-					<div class="col-xl-7 col-lg-7 col-12">
-					<div class="main-text">
-						<h1 class="main-text__title">Доставка <br>топлива и ГСМ</h1>
-					<span class="main-text__subtitle">по Вологде, Вологодской области <br>и соседним регионам</span>
-					</div>
-					<div class="main-features">
-						<p class="main-features__price">цена от<br><span class="main-features__price--big">21</span><br>руб\км</p>
-						<p class="main-features__time">в течение<br><span class="main-features__time--big">10</span><br>дней</p>
-					</div>
-				</div>
-				<!-- /.col-xl-6 -->
-				<div class="col-xl-5 col-lg-5 col-12">
-					<form action="#" class="form">
-						<div class="form__input--wraper">
-							<input class="form__input form__input--main" type="text" placeholder="Вид топлива" required>
-						</div>
-						<input class="form__input" type="text" placeholder="Куда доставить" required>
-						<input class="form__input" type="text" placeholder="Объем, л" required>
-						<input class="form__input" type="tel" placeholder="Телефон" required>
-						<input class="form__checkbox" type="checkbox" id="Main-form__Confirm" name="food" checked="">
-						<label class="form__checkbox-lable" for="Main-form__Confirm">Согласен на  <a href="#">обработку персональных данных</a></label>
-						<input type="submit" class="form__button js__button" value="Рассчитать стоимость">
-					</form>
-				</div>
-				<!-- /.col-xl-5 offset-xl-1 -->
-				</div>
-				<!-- /.row -->
-			</div>
-			<!-- /.container -->
-		</section>
-		<!-- /.main -->	
+	<!-- /.product-information -->
 	</div>
+<!-- page-main__items-wraper -->
+</main>
+ 
+ <section class="complectation">
+	 	<div class="complectation__wraper">
+	 		<h2 class="complectation__title">Комплектация "Базовая" (домокомплект)</h2>
+	 		<!-- /.complectation__title -->
+	 		<ul class="complectation__list">
+		 		<li class="complectation__item">Рубленый стеновой комплект сруб в чашу</li>	 		
+		 		<li class="complectation__item">Баки половые брус  100 на 200</li>	 	
+		 		<li class="complectation__item">Пере... межэтажный брус 150 на 200</li>	 		
+		 		<li class="complectation__item">Межвенцовый утеплитель (...)</li>	 		
+		 		<li class="complectation__item">Стропила</li>	 		
+		 		<li class="complectation__item">Обрешетка</li>	 		
+		 		<li class="complectation__item">Нигеля березовые</li>	 		
+		 		<li class="complectation__item">Рубероид, ... ... кровля</li>	 		
+		 		<li class="complectation__item">Метизы</li> 		
+	 		</ul>
+	 		<!-- /.complectation__list -->
+	 		<div class="complectation__price">1 200 000 руб</div> 
+	 	</div> 		
+	 	<div class="complectation__wraper">
+	 		<h2 class="complectation__title">Комплектация "Оптимальная" (домокомплект + монтаж)</h2>
+	 		<!-- /.complectation__title -->
+	 		<ul class="complectation__list">
+		 		<li class="complectation__item">Укладка межвенцового утеплителя</li>	 		
+		 		<li class="complectation__item">Устройство стропильной системы</li>	 		
+		 		<li class="complectation__item">Пере... межэтажный брус 150 на 200</li>	 		
+		 		<li class="complectation__item">Межвенцовый утеплитель (...)</li>	 		
+		 		<li class="complectation__item">Стропила</li>	 		
+		 		<li class="complectation__item">Обрешетка</li>	 		
+		 		<li class="complectation__item">Нигеля березовые</li>	 		
+		 		<li class="complectation__item">Сборка  стенового комплекта</li>	 		
+		 		<li class="complectation__item">Монтаж балок пола</li>	 		
+		 		<li class="complectation__item">Монтаж межэтажный балок</li>	 		
+		 		<li class="complectation__item">Укладка гидро...</li>	 		
+	 		</ul>
+	 		<!-- /.complectation__list -->
+	 		<div class="complectation__price">2 300 000 руб.</div>	
+ 		</div> 	
+ </section>
 
-	<div class="overlay">
-		<div class="popup">
-		<div class="container">
-			<h3 class="popup__title">Заказать топливо</h3>		
-			<form action="#" class="popup-form">
-				<div class="popup-form__calculator">
-					<div class="calc__type">
-						<label for="id_select" class="popup-form__label type__label">Вид топлива</label>
-						<div class="select-wraper">
-							<select  class="popup-form__select" id="id_select">
-							<option value="Выберите вид топлива"> Выберите вид топлива </option>							
-							</select>
-						</div>
-						<!-- /.popup-form__select -->
-						
-					</div>
-					<!-- /.calc__type -->
-					<div class="calc__text">
-						<label id='lblRange' class="popup-form__label text__label">Куда и сколько доставить?</label>
-						<input type='text' class="text__input" id='place' aria-labelledby='lblRange' placeholder="Населённый пункт, адрес" required>
-						<input type='text' class="text__input" id='capacity' aria-labelledby='lblRange' placeholder="1000 – 38 000 л" required>
-					</div>
-						<!-- /.calc__text -->
-						<div class="calc__tel">
-							<label for="phone" class="popup-form__label tel__label">Телефон для связи</label>
-            				<input type="tel" id="phone" class="tel__input" name="phone" placeholder="+7 (___) ___-__-__" required>
-						</div>
-							<!-- /.calc__tel -->
-				     </div>
-            	<!-- /.popup-calculator -->
-            	<input type="submit" class="form__button calculator__button" value="Заказать">
-			</form>		
-		</div>
-		<!-- /.container -->
+
+ <section class="delivery"> 	
+ 		<div class="deliver__wraper">
+ 			<h2 class="delivery__title">Доставка</h2> 		
+ 			<p class="delivery__price-text">Стоимость  достави - <b>80 рублей</b> за один километр.</p> 		
+ 			<p class="delivery__number-text">Чтобы  доставить  домокоплект  по данному проекту  необходимо <b>4 единицы</b> техники.</p> 
+ 		</div> 		
+ </section>
+ 
+
+ <section class="product-description">
+ 	<h2 class="product-description__title">Описание проекта</h2>
+ 	<p class="product-description__text"> Большие площади остекления откроют чудесные виды на живописные пляжи, а террасы создадут непередаваемую атмосферу  для ужинов и завтраков.Проект «Волна» - чудесное решение для южных широт нашей страны.</p>
+ 	<p class="product-description__text product-description__text--reverse">Проект «Волна» - чудесное решение для южных широт нашей страны. Большие площади остекления откроют чудесные виды на живописные пляжи, а террасы создадут непередаваемую атмосферу  для ужинов и завтраков.</p> 	
+ 	<div class="product-description__img">
+ 	 	<img src="img/descImg1.png" alt="Фото проекта">
+ 	 </div>	
+ </section>
+
+ <section class="example">
+ 	<h2 class="example__title">По  даному проекту были построены дома</h2>
+	<div class="example__wraper">
+	 	<div class="example__video">
+	 	<img src="img/exampleVideo.png" alt="Образец 1">
+	 	</div>
+	 	<div class="example__images hidden-mobile">
+	 	 	<div class="example__img">
+	 			<img src="img/exampleImg1.jpg" alt="Образец 2" class="example__img">
+	 		</div>	 	
+	 		<span class="example__adress">Вологодская область, <br>д. Капустино</span>
+	 		<div class="example-feedback__img">
+	 			<img src="img/feedback1.jpg" alt="Отзыв" >
+	 		</div>
+	 	</div>
+	 		<div class="example__images">
+	 	 	<div class="example__img">
+	 			<img src="img/exampleImg2.jpg" alt="Образец 2" class="example__img">
+	 		</div>	 	
+	 		<span class="example__adress">Вологодская область, <br>д. Капустино</span>
+	 		<div class="example-feedback__img">
+	 			<img src="img/feedback2.jpg" alt="Отзыв" >
+	 		</div>
+	 	</div>
 	</div>
-	<!-- /.popup -->
-	</div>
-	<!-- /.overlay -->
+ </section>
+
+ <section class="gallery hidden-mobile">
+ 	<h2 class="visually-hidden">Галерея объектов</h2>
+ 	<img src="img/galleryImg1.jpg" alt="Фото Объекта1" class="gallery__img">
+ 	<img src="img/galleryImg2.jpg" alt="Фото Объекта2" class="gallery__img">
+ 	<img src="img/galleryImg3.jpg" alt="Фото Объекта3" class="gallery__img">
+ 	<img src="img/galleryImg4.jpg" alt="Фото Объекта4" class="gallery__img">
+ 	<img src="img/galleryImg5.jpg" alt="Фото Объекта5" class="gallery__img">
+ 	<img src="img/galleryImg6.jpg" alt="Фото Объекта6" class="gallery__img">
+ 	<img src="img/galleryImg7.jpg" alt="Фото Объекта7" class="gallery__img">
+ 	<img src="img/galleryImg8.jpg" alt="Фото Объекта8" class="gallery__img">
+ </section>
+
+ <footer class="footer hidden-mobile">
+ 	<div class="footer__information">
+ 		<div class="footer__navigation">
+ 			<nav class="production-nav">
+ 				<h3 class="production-nav__title">Производство</h3>
+ 				<ul class="production-nav__list">
+ 					<li class="production-nav__item"><a href="">Рубленное бревно</a></li>
+ 					<li class="production-nav__item"><a href="">Оцилиндрованное бревно</a></li>
+ 					<li class="production-nav__item"><a href="">Дома из бруса</a></li>
+ 					<li class="production-nav__item"><a href="">Дома из оцилиндрованного бревна</a></li>
+ 					<li class="production-nav__item"><a href="">Дома из клееного бруса</a></li>
+ 				</ul>
+ 			</nav>
+ 			<!-- /.production__nav -->
+ 			<nav class="projects-nav">
+ 				<h3 class="projects-nav__title">Проект</h3>
+ 				<ul class="projects-nav__list">
+ 					<li class="projects-nav__item"><a href="">Дома</a></li>
+ 					<li class="projects-nav__item"><a href="">Бани</a></li>
+ 					<li class="projects-nav__item"><a href="">Малые формы</a></li>
+ 				</ul>
+ 			</nav>
+ 			<!-- /.projects__nav -->
+ 		</div>
+ 		<!-- /.footer__navigation -->
+ 		<div class="footer-contacts">
+ 			<div class="footer-contacts__address">
+ 				<div class="production-addres">
+ 					<h3 class="production-addres__title">Производство:</h3>
+ 					<span class="production-addres__text">162220 Вологодская область,<a href="">Сямжа с. ул. Парковая д. 6</a></span>
+ 				</div>
+ 				<div class="office__addres"> 					
+ 					<h3 class="office__addres__title">Офис:</h3>
+ 					<span class="office__addres__text">160000 Вологодская область,<a href="">г. Вологда . ул. Мира 8</a></span>
+ 				</div>
+ 			</div>
+ 			<!-- /.footer-contacts__address -->
+ 			<div class="footer-contacts__links">
+ 				<a href="tel:+78002000679" class="footer-contacts__tel">8 800 2000-679</a>
+ 				<span class="footer-contacts__time">Ежедневно с 08:00 до 23:00</span>
+ 				<a href="mailto:srub@nord-srub.ru" class="footer-contacts__mail">srub@nord-srub.ru</a>
+
+ 				<div class="footer-social">
+ 				<a href="" class="footer-social__button Vkontakte-btn"><span class="visually-hidden">Vkontakte</span></a>
+ 				<a href="" class="footer-social__button Instagram-btn"><span class="visually-hidden">Instagram</span></a>
+ 				<a href="" class="footer-social__button Facebook-btn"><span class="visually-hidden">Facebook</span></a>
+ 				</div>
+ 			</div>
+ 			<!-- /.footer-contacts__links -->
+ 		</div>
+ 		<!-- /.footer-contacts -->
+ 	</div>
+ 	<!-- /.footer_information -->
+ 	<div class="footer__copyright">
+ 		<p class="customer__copyright">© СК "Вологодский плотник" © 2010 — 2017 <br>
+ 		Все права защищены.</p>
+ 		<a href="https://www.synapse-studio.ru" class="performer__copyright"> — <span class="prefomer__text">Создание сайта</span></a>
+ 	</div>
+ 	<!-- /.footer_copyright -->
+ </footer>
+ <!-- /.footer hidden-mobile -->
 
 
 
-
-		
-			<section class="product">
-				<div class="container">
-					<div class="row no-gutters align-items-top">
-						<div class="col-12">
-							<div class="product-text">
-								<h2 class="product-text__title">Наши бензовозы</h2>
-							<p class="product-text__subtitle">Для отслеживания движения груза на протяжении пути следования бензовозы оснащены спутниковой системой навигации и радиосвязью</p>
-							</div>
-						</div>
-					</div>
-
-						<!-- /.col-12 -->
-						<div class="row no-gutters align-items-top">
-						<div class="col-xl-4 col-md-6 col-sm-12">
-							<div class="product-presentation">
-								<span class="product-presentation__engine-capacity">38 000 л</span>
-								<img class="product-presentation__image" src="img/scania1.png" alt="SCANIA">
-								<p class="product-presentation__characteristics">SCANIA<span class="product-presentation__size">	Полуприцеп 9 секций</span> 45 руб./км</p>
-								<div class="product-card">
-									<table class="product-card__stats">
-										<tr class="stats__table-row">
-											<td class="stats__value">
-												1 секция
-											</td>
-											<td class="stats__field">
-												10 000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												2 секция
-											</td>
-											<td class="stats__field">
-												1000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												3 секция
-											</td>
-											<td class="stats__field">
-												1000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												4 секция
-											</td>
-											<td class="stats__field">
-												3000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												5 секция
-											</td>
-											<td class="stats__field">
-												2000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												6 секция
-											</td>
-											<td class="stats__field">
-												5000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												7 секция
-											</td>
-											<td class="stats__field">
-												8000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												8 секция
-											</td>
-											<td class="stats__field">
-												3000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												9 секция
-											</td>
-											<td class="stats__field">
-												5000 л
-											</td>
-										</tr>
-									</table>
-									<button class="menu-btn product__btn">Заказать доставку</button>
-								</div>
-								<div class="product-form">
-									<p class="product-presentation__characteristics">SCANIA 38 000 л<span class="product-presentation__size">Полуприцеп 9 секций</span>45 руб./км</p>
-									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required>
-										<input class="form__checkbox" type="checkbox" id="SCANIA-9-sec" name="SCANIA-9-sec" checked="">
-										<label class="form__checkbox-lable" for="SCANIA-9-sec">Согласен на  <a href="#">обработку данных</a></label>
-										<input type="submit" class="form__button product-form__button" value="Отправить">
-									</form>
-									<div class="product-popup--close">&times;</div>
-								</div>
-								</div>
-							<!-- /.product-presentation -->
-						</div>	
-						<!-- /.col-xl-4 -->
-						<div class="col-xl-4 col-md-6 col-sm-12">
-							<div class="product-presentation">
-								<span class="product-presentation__engine-capacity">38 000 л</span>
-								<img class="product-presentation__image" src="img/scania2.png" alt="SCANIA">
-								<p class="product-presentation__characteristics">SCANIA<span class="product-presentation__size">	Полуприцеп 4 секции</span> 45 руб./км</p>
-								<div class="product-card">
-									<table class="product-card__stats">
-										<tr class="stats__table-row">
-											<td class="stats__value">
-												1 секция
-											</td>
-											<td class="stats__field">
-												10 000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												2 секция
-											</td>
-											<td class="stats__field">
-												1000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												3 секция
-											</td>
-											<td class="stats__field">
-												1000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												4 секция
-											</td>
-											<td class="stats__field">
-												3000 л
-											</td>
-										</tr>										
-									</table>
-									<button class="menu-btn product__btn">Заказать доставку</button>
-								</div>
-								<div class="product-form">
-									<p class="product-presentation__characteristics">SCANIA 38 000 л<span class="product-presentation__size">Полуприцеп 4 секции</span> 45 руб./км</p>
-									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required>
-										<input class="form__checkbox" type="checkbox" id="SCANIA-4-sec" name="SCANIA-4-sec" checked="">
-										<label class="form__checkbox-lable" for="SCANIA-4-sec">Согласен на  <a href="#">обработку данных</a></label>
-										<input type="submit" class="form__button product-form__button" value="Отправить">
-									</form>
-									<div class="product-popup--close">&times;</div>
-								</div>
-							</div>
-							<!-- /.product-presentation -->
-						</div>
-						<!-- /.col-xl-4 -->
-						<div class="col-xl-4 col-md-6 col-sm-12">
-							<div class="product-presentation">
-								<span class="product-presentation__engine-capacity">34 000 л</span>
-								<img class="product-presentation__image" src="img/man1.png" alt="man">
-								<p class="product-presentation__characteristics">MAN<span class="product-presentation__size">	Полуприцеп 5 секций</span> 42 руб./км</p>
-								<div class="product-card">
-									<table class="product-card__stats">
-										<tr class="stats__table-row">
-											<td class="stats__value">
-												1 секция
-											</td>
-											<td class="stats__field">
-												10 000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												2 секция
-											</td>
-											<td class="stats__field">
-												1000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												3 секция
-											</td>
-											<td class="stats__field">
-												1000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												4 секция
-											</td>
-											<td class="stats__field">
-												3000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												5 секция
-											</td>
-											<td class="stats__field">
-												2000 л
-											</td>
-										</tr>										
-									</table>
-									<button class="menu-btn product__btn">Заказать доставку</button>
-								</div>
-								<div class="product-form">
-									<p class="product-presentation__characteristics">MAN 34 000 л<span class="product-presentation__size">Полуприцеп 5 секций</span>42 руб./км</p>
-									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required>
-										<input class="form__checkbox" type="checkbox" id="MAN-4-sec" name="MAN-4-sec" checked="">
-										<label class="form__checkbox-lable" for="MAN-4-sec">Согласен на  <a href="#">обработку данных</a></label>
-										<input type="submit" class="form__button product-form__button" value="Отправить">
-									</form>
-									<div class="product-popup--close">&times;</div>
-								</div>
-							</div>
-							<!-- /.product-presentation -->
-						</div>
-						<!-- /.col-xl-4 -->
-						<div class="col-xl-4 col-md-6 col-sm-12">
-							<div class="product-presentation">
-								<span class="product-presentation__engine-capacity">40 320 л</span>
-								<img class="product__image" src="img/scania3.png" alt="SCANIA">
-								<p class="product-presentation__characteristics">SCANIA<span class="product-presentation__size">	Полуприцеп 4 секции</span> 40 руб./км</p>
-								<div class="product-card">
-									<table class="product-card__stats">
-										<tr class="stats__table-row">
-											<td class="stats__value">
-												1 секция
-											</td>
-											<td class="stats__field">
-												10 000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												2 секция
-											</td>
-											<td class="stats__field">
-												1000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												3 секция
-											</td>
-											<td class="stats__field">
-												1000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												4 секция
-											</td>
-											<td class="stats__field">
-												3000 л
-											</td>
-										</tr>										
-									</table>
-									<button class="menu-btn product__btn">Заказать доставку</button>
-								</div>
-								<div class="product-form">
-									<p class="product-presentation__characteristics">SCANIA 40 320 л<span class="product-presentation__size">Полуприцеп 4 секции</span> 40 руб./км</p>
-									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required>
-										<input class="form__checkbox" type="checkbox" id="SCANIA-4-sec-2" name="SCANIA-4-sec-2" checked="">
-										<label class="form__checkbox-lable" for="SCANIA-4-sec-2">Согласен на  <a href="#">обработку данных</a></label>
-										<input type="submit" class="form__button product-form__button" value="Отправить">
-									</form>
-									<div class="product-popup--close">&times;</div>
-								</div>
-							</div>
-							<!-- /.product-presentation -->
-						</div>
-						<!-- /.col-xl-4 -->
-						<div class="col-xl-4 col-md-6 col-sm-12">
-							<div class="product-presentation">
-								<span class="product-presentation__engine-capacity">40 225 л</span>
-								<img class="product-presentation__image" src="img/scania4.png" alt="SCANIA">
-								<p class="product-presentation__characteristics">SCANIA<span class="product-presentation__size">	Полуприцеп 5 секций</span> 40 руб./км</p>
-								<div class="product-card">
-									<table class="product-card__stats">
-										<tr class="stats__table-row">
-											<td class="stats__value">
-												1 секция
-											</td>
-											<td class="stats__field">
-												10 000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												2 секция
-											</td>
-											<td class="stats__field">
-												1000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												3 секция
-											</td>
-											<td class="stats__field">
-												1000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												4 секция
-											</td>
-											<td class="stats__field">
-												3000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												5 секция
-											</td>
-											<td class="stats__field">
-												2000 л
-											</td>
-										</tr>										
-									</table>
-									<button class="menu-btn product__btn">Заказать доставку</button>
-								</div>
-								<div class="product-form">
-									<p class="product-presentation__characteristics">SCANIA 40 225 л<span class="product-presentation__size">Полуприцеп 5 секций</span> 40 руб./км</p>
-									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required>
-										<input class="form__checkbox" type="checkbox" id="SCANIA-5-sec" name="SCANIA-5-sec" checked="">
-										<label class="form__checkbox-lable" for="SCANIA-5-sec">Согласен на  <a href="#">обработку данных</a></label>
-										<input type="submit" class="form__button product-form__button" value="Отправить">
-									</form>
-									<div class="product-popup--close">&times;</div>
-								</div>
-							</div>
-							<!-- /.product-presentation -->
-						</div>
-						<!-- /.col-xl-4 -->
-						<div class="col-xl-4 col-md-6 col-sm-12">
-							<div class="product-presentation">
-								<span class="product-presentation__engine-capacity">30 054 л</span>
-								<img class="product-presentation__image" src="img/daf1.png" alt="DAF">
-								<p class="product-presentation__characteristics">DAF<span class="product-presentation__size">	Полуприцеп 3 секции</span> 40 руб./км</p>
-								<div class="product-card">
-									<table class="product-card__stats">
-										<tr class="stats__table-row">
-											<td class="stats__value">
-												1 секция
-											</td>
-											<td class="stats__field">
-												10 000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												2 секция
-											</td>
-											<td class="stats__field">
-												1000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												3 секция
-											</td>
-											<td class="stats__field">
-												1000 л
-											</td>
-										</tr>										
-									</table>
-									<button class="menu-btn product__btn">Заказать доставку</button>
-								</div>
-								<div class="product-form">
-									<p class="product-presentation__characteristics">DAF 30 054 л<span class="product-presentation__size">Полуприцеп 3 секций</span>40 руб./км</p>
-									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required>
-										<input class="form__checkbox" type="checkbox" id="DAF-3-sec" name="DAF-3-sec" checked="">
-										<label class="form__checkbox-lable" for="DAF-3-sec">Согласен на  <a href="#">обработку данных</a></label>
-										<input type="submit" class="form__button product-form__button" value="Отправить">
-									</form>
-									<div class="product-popup--close">&times;</div>
-								</div>
-							</div>
-							<!-- /.product-presentation -->
-						</div>
-						<!-- /.col-xl-4 -->
-						<div class="col-xl-4 col-md-6 col-sm-12">
-							<div class="product-presentation">
-								<span class="product-presentation__engine-capacity">16 710 л</span>
-								<img class="product-presentation__image" src="img/maz1.png" alt="maz">
-								<p class="product-presentation__characteristics">МАЗ<span class="product-presentation__size">	Автоцистерна 2 секции</span> 32 руб./км</p>
-								<div class="product-card">
-									<table class="product-card__stats">
-										<tr class="stats__table-row">
-											<td class="stats__value">
-												1 секция
-											</td>
-											<td class="stats__field">
-												10 000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												2 секция
-											</td>
-											<td class="stats__field">
-												1000 л
-											</td>
-										</tr>										
-									</table>
-									<button class="menu-btn product__btn">Заказать доставку</button>
-								</div>
-								<div class="product-form">
-									<p class="product-presentation__characteristics">MAЗ 16 710 л<span class="product-presentation__size">Автоцистерна 2 секции</span> 32 руб./км</p>
-									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required>
-										<input class="form__checkbox" type="checkbox" id="MAZ-2-sec" name="MAZ-2-sec" checked="">
-										<label class="form__checkbox-lable" for="MAZ-2-sec">Согласен на  <a href="#">обработку данных</a></label>
-										<input type="submit" class="form__button product-form__button" value="Отправить">
-									</form>
-									<div class="product-popup--close">&times;</div>
-								</div>
-							</div>
-							<!-- /.product-presentation -->
-						</div>
-						<!-- /.col-xl-4 -->
-						<div class="col-xl-4 col-md-6 col-sm-12">
-							<div class="product-presentation">
-								<span class="product-presentation__engine-capacity">17 080 л</span>
-								<img class="product-presentation__image" src="img/maz2.png" alt="maz">
-								<p class="product-presentation__characteristics">МАЗ<span class="product-presentation__size">	Автоцистерна 3 секции</span> 30 руб./км</p>
-								<div class="product-card">
-									<table class="product-card__stats">
-										<tr class="stats__table-row">
-											<td class="stats__value">
-												1 секция
-											</td>
-											<td class="stats__field">
-												10 000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												2 секция
-											</td>
-											<td class="stats__field">
-												1000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												3 секция
-											</td>
-											<td class="stats__field">
-												1000 л
-											</td>
-										</tr>										
-									</table>
-									<button class="menu-btn product__btn">Заказать доставку</button>
-								</div>
-								<div class="product-form">
-									<p class="product-presentation__characteristics">МАЗ 17 080 л<span class="product-presentation__size">	Автоцистерна 3 секции</span> 30 руб./км</p>
-									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required>
-										<input class="form__checkbox" type="checkbox" id="MAZ-3-sec" name="MAZ-3-sec" checked="">
-										<label class="form__checkbox-lable" for="MAZ-3-sec">Согласен на  <a href="#">обработку данных</a></label>
-										<input type="submit" class="form__button product-form__button" value="Отправить">
-									</form>
-									<div class="product-popup--close">&times;</div>
-								</div>
-							</div>
-							<!-- /.product-presentation -->
-						</div>
-						<!-- /.col-xl-4 -->
-						<div class="col-xl-4 col-md-6 col-sm-12">
-							<div class="product-presentation">
-								<span class="product-presentation__engine-capacity">13 400 л</span>
-								<img class="product-presentation__image" src="img/man2.png" alt="man">
-								<p class="product-presentation__characteristics">MAN<span class="product-presentation__size">	Автоцистерна 2 секции</span> 29 руб./км</p>
-								<div class="product-card">
-									<table class="product-card__stats">
-										<tr class="stats__table-row">
-											<td class="stats__value">
-												1 секция
-											</td>
-											<td class="stats__field">
-												10 000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												2 секция
-											</td>
-											<td class="stats__field">
-												1000 л
-											</td>
-										</tr>										
-									</table>
-									<button class="menu-btn product__btn">Заказать доставку</button>
-								</div>
-								<div class="product-form">
-									<p class="product-presentation__characteristics">MAN 13 400 л<span class="product-presentation__size">	Автоцистерна 2 секции</span> 29 руб./км</p>
-									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required>
-										<input class="form__checkbox" type="checkbox" id="MAN-2-sec" name="MAN-2-sec" checked="">
-										<label class="form__checkbox-lable" for="MAN-2-sec">Согласен на  <a href="#">обработку данных</a></label>
-										<input type="submit" class="form__button product-form__button" value="Отправить">
-									</form>
-									<div class="product-popup--close">&times;</div>
-								</div>
-							</div>
-							<!-- /.product-presentation -->
-						</div>
-						<!-- /.col-xl-4 -->
-						<div class="col-xl-4 col-md-6 col-sm-12">
-							<div class="product-presentation">
-								<span class="product-presentation__engine-capacity">9055 л</span>
-								<img class="product-presentation__image" src="img/maz3.png" alt="maz">
-								<p class="product-presentation__characteristics">МАЗ<span class="product-presentation__size">	Автоцистерна 2 секции</span> 25 руб./км</p>
-								<div class="product-card">
-									<table class="product-card__stats">
-										<tr class="stats__table-row">
-											<td class="stats__value">
-												1 секция
-											</td>
-											<td class="stats__field">
-												10 000 л
-											</td>
-										</tr>
-										<tr class="stats__table">
-											<td class="stats__value">
-												2 секция
-											</td>
-											<td class="stats__field">
-												1000 л
-											</td>
-										</tr>										
-									</table>
-									<button class="menu-btn product__btn">Заказать доставку</button>
-								</div>
-								<div class="product-form">
-									<p class="product-presentation__characteristics">МАЗ 9055 л<span class="product-presentation__size">	Автоцистерна 2 секции</span> 25 руб./км</p>
-									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required>
-										<input class="form__checkbox" type="checkbox" id="MAZ-2-sec2" name="MAZ-2-sec2" checked="">
-										<label class="form__checkbox-lable" for="MAZ-2-sec2">Согласен на  <a href="#">обработку данных</a></label>
-										<input type="submit" class="form__button product-form__button" value="Отправить">
-									</form>
-									<div class="product-popup--close">&times;</div>
-								</div>
-							</div>
-							<!-- /.product-presentation -->
-						</div>
-						<!-- /.col-xl-4 -->
-						<div class="col-xl-4 col-md-6 col-sm-12">
-							<div class="product-presentation">
-								<span class="product-presentation__engine-capacity">6470 л</span>
-								<img class="product-presentation__image" src="img/zil1.png" alt="zil">
-								<p class="product-presentation__characteristics">ЗИЛ<span class="product-presentation__size">	Автоцистерна 1 секция</span> 20 руб./км</p>
-								<div class="product-card">
-									<table class="product-card__stats">
-										<tr class="stats__table-row">
-											<td class="stats__value">
-												1 секция
-											</td>
-											<td class="stats__field">
-												10 000 л
-											</td>
-										</tr>										
-									</table>
-									<button class="menu-btn product__btn">Заказать доставку</button>
-								</div>
-								<div class="product-form">
-									<p class="product-presentation__characteristics">Зил 6470 л<span class="product-presentation__size">	Автоцистерна 1 секция</span> 20 руб./км</p>
-									<form action="#" class="form">						
-										<input class="form__input" type="tel" placeholder="Телефон" required>
-										<input class="form__checkbox" type="checkbox" id="Zil-1-sec" name="Zil-1-sec" checked="">
-										<label class="form__checkbox-lable" for="Zil-1-sec">Согласен на  <a href="#">обработку данных</a></label>
-										<input type="submit" class="form__button product-form__button" value="Отправить">
-									</form>
-									<div class="product-popup--close">&times;</div>
-								</div>
-							</div>
-							<!-- /.product-presentation -->
-						</div>
-						<!-- /.col-xl-4 -->
-					</div>
-					<!-- /.row -->
-				</div>
-				<!-- /.container -->
-			</section>
-			<!-- /.product -->
-
-			<section class="advantages">
-				<div class="container">
-					<div class="row no-gutters align-items-top">
-						<div class="col-xl-6">
-							<div class="delivery">
-								<h2 class="delivery__title">Доставка</h2>
-								<p class="delivery__text">ООО «АТК Патриот» предоставляет услуги по доставке различных нефтепродуктов собственными бензовозами оборудованные помпой для перекачки и точными счетчиками топлива. Поставки дизельного топлива и бензина осуществляем напрямую с заводов ОАО НГК «Славнефть-ЯНОС», ОАО «НК «Роснефть» г. Сызрань, Самарская область. Территориально база ООО «АТК Патриот» находится в г. Ярославль, ул. Южный порт.</p>
-							</div>
-							<!-- /.delivery -->
-						</div>
-						<!-- /.col-xl-6 -->
-						<div class="col-xl-6">
-							<div class="garanties">
-								<h2 class="garanties__title">Мы гарантируем</h2>
-								<ul class="garanties__list">
-									<li class="garanties__list-item">Своевременную доставку топлива, согласно утвержденному графику.</li>
-									<li class="garanties__list-item">Только качественный продукт, наличие паспортов ГСМ.</li>
-									<li class="garanties__list-item">Безопасную транспортировку профессиональными водителями</li>
-								</ul>
-							</div>
-							<!-- /.garanties -->
-						</div>
-						<!-- /.col-xl-6 -->
-					</div>
-					<!-- /.row -->
-				</div>
-				<!-- /.container -->
-			</section>
-			<!-- /.advantages -->
-		
-			<section class="order">				
-					<div class="container">
-						<div class="row no-gutters align-items-top">							
-							<div class="col-xl-5 col-md-6 col-12">
-								<form action="#" class="form order-form">
-						<div class="form__input--wraper">
-							<input class="form__input form__input--main" type="text" placeholder="Вид топлива" required>
-						</div>
-						<input class="form__input" type="text" placeholder="Куда доставить" required>
-						<input class="form__input" type="text" placeholder="Объем, л" required>
-						<input class="form__input" type="tel" placeholder="Телефон" required>
-						<input class="order-form__checkbox" type="checkbox" id="order-form__Confirm" name="food" checked="">
-						<label class="order-form__checkbox-lable" for="order-form__Confirm">Согласен на<a href="#">обработку персональных данных</a></label>
-						<input type="submit" class="form__button js__button" value="Рассчитать стоимость">
-					</form>
-							</div>
-							<!-- /.col-xl-5 -->
-							<div class="col-xl-4 offset-xl-3 col-md-6 col-12">
-								<div class="order-features">
-						<p class="order-features__price">цена от<br><span class="order-features__price--big">21</span><br>руб\км</p>
-						<p class="order-features__time">в течение<br><span class="order-features__time--big">10</span><br>дней</p>
-					</div>
-							</div>
-							<!-- /.col-xl-4 offset-xl-3 -->
-						</div>
-						<!-- /.row -->
-					</div>
-					<!-- /.container -->
-			
-			</section>
-			<!-- /.order -->
-
-			<footer class="footer">
-				<div class="footer-wraper">
-					<div class="container">
-					<div class="row no-gutters align-items-center justify-content-between">
-						<div class="col-6">
-							<h2 class="footer__title">АТК-Патриот</h2>
-							<span class="footer__subtitle">© 2016 ООО «АТК-Патриот»</span>
-						</div>
-						<!-- /.col-3 -->
-						<div class="col-6">
-							<div class="footer-contacts">
-								<span class="footer-contacts__tel">8 800 550-21-21</span>
-								<span class="footer-contacts__cta">Бесплатный звонок по России</span>
-							</div>
-						</div>
-						<!-- /.col-3 -->
-					</div>
-					<!-- /.row -->					
-				</div>
-				<!-- /.container -->
-				</div>	
-
-					
-			</footer>
-
-
-
-
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
