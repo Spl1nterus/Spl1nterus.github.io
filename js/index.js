@@ -6,9 +6,10 @@ $('.page-header__btn').on('click', function(e) {
 });
 
 
-if ( matchMedia('screen and (min-width: 1201px)').matches ) {
+if ( matchMedia('screen and (min-width: 1300px)').matches ) {
 var options = {
   prevNextButtons: false,
+
 };
   options.prevNextButtons = true;
   options.asNavFor = ".carousel-main";
