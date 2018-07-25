@@ -11,6 +11,7 @@
 	background-size: cover	
 	padding: 8px 9px 
 	width: 100%
+
 	z-index: 15
 
 .page-header--active
@@ -58,7 +59,7 @@
 	transform: rotate(45deg)
 	transform-origin: center
 
-.main-nav__list
+.header-nav__list
 	padding: 0
 	padding-top: 20px
 	padding-bottom: 30px
@@ -79,7 +80,7 @@
 .page-header__contacts
 	color: #fefefe
 	text-align: center
-	margin-top: 140px
+	margin-top: auto
 
 .page-header__tel
 	font-family: "Officina Serif C"
@@ -94,7 +95,7 @@
 	font-weight: 400
 	line-height: 13px
 	display: block
-	margin-bottom: 50px
+	margin-bottom: 35px
 .page-header__callback
 	color: #fefefe
 	font-family: "Officina Serif C"
@@ -102,12 +103,11 @@
 	font-weight: 700
 	line-height: 18.19px
 
-.main-nav__list--active
+.header-nav__list--active
 	display: flex
 
-.main-nav__item
-	cursor: pointer
-.main-nav__item a	
+
+.header-nav__item a	
 	color: #ffffff
 
 @media (min-width:$tablet-width)
@@ -155,10 +155,10 @@
 		&::after
 			display: none
 
-	.main-nav__list
+	.header-nav__list
 		padding-top: 0px
 		margin-top: 52px
-		padding-left: 30px
+		padding-left: 34px
 		align-items: flex-start
 		min-height: 265px
 
@@ -170,7 +170,7 @@
 	.page-header
 		width: 220px		
 		background-image: url('../img/headerMenuTabBig.jpg')
-		padding: 29px 36px 0 25px 
+		padding: 29px 36px 20px 25px 
 
 	.page-header__logo
 		width: 159px
@@ -192,10 +192,11 @@
 	.page-header__btn
 		display: none
 
-	.main-nav__list
+	.header-nav__list
 		display: flex		
 		margin-top: 180px
-		padding-left: 10px	
+		padding-left: 10px
+		padding-bottom: 0	
 			
 	.page-header__contacts.hidden-mobile
 		display: block
@@ -203,5 +204,4 @@
 @media (min-width:$pc-width)
 	.page-header
 		width: 262px		
-		padding-left: 48px
-		padding-right: 55px
+		padding: 29px 55px 80px 48px

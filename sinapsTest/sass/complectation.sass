@@ -28,8 +28,7 @@
 	max-width: 541px	
 	line-height: 104px
 	text-align: center
-	color: #ffffff
-	margin: 0 15px
+	color: #ffffff	
 	font-family: "Officina Serif C"
 	font-size: 30px
 	font-weight: 700
@@ -44,9 +43,29 @@
 	.complectation
 		margin-top: 0
 		margin-left: 83px
-		padding: 0px 10px	28px	
+		padding: 20px 10px	28px	
 		display: flex
-		justify-content: center		
+		justify-content: center	
+
+	.complectation__title
+		padding-left: 125px
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			width: 53px
+			height: 44px
+			left: 10%
+			right: 30%
+			background-image: url('../img/bazeCompIcon.png')
+			background-repeat: no-repeat
+			background-position: 50% 50%
+
+	.complectation__wraper:nth-child(2) .complectation__title:before
+		background-image: url('../img/optCompIcon.png')
+		
+ 
+	 
 
 	.complectation__wraper
 		max-width: 457px
@@ -71,7 +90,9 @@
 	.complectation		
 		margin-left: 664px
 		justify-content: flex-start
-		flex-wrap: wrap		
+		flex-wrap: wrap
+		padding-top: 0px
+		padding-bottom: 45px		
 
 	.complectation__wraper
 		min-width: 541px

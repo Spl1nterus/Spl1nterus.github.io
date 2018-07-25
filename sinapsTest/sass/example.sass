@@ -2,7 +2,9 @@
 	padding: 0 7px
 
 .example__title
-	margin: 0 0 23px 16px
+	padding-left: 16px
+	margin: 0
+	margin-bottom: 23px
 	color: #1c1c1c
 	font-family: "Officina Serif C"
 	font-size: 24px
@@ -48,6 +50,7 @@
 
 .example-feedback__img
 	position: relative
+	margin-bottom: 15px
 	&::after
 		position: absolute
 		content: "pdf"
@@ -64,10 +67,12 @@
 @media (min-width:$tablet-width)
 	.example
 		margin-left: 83px
-		padding: 10px 35px 55px 55px
+		padding-bottom: 55px
+		
 
 	.example__wraper	
 		display: flex
+		flex-wrap: wrap
 		margin: 0 auto
 		justify-content: center	
 		
@@ -75,12 +80,13 @@
 	.example__video
 		order: 2
 		margin-left: 51px
+		margin-bottom: 0
 
 	.example__title
 		font-size: 30px
 		text-align: center
 		margin-bottom: 35px
-		margin-left: 0
+		padding-left: 0
 
 @media (min-width:$notebook-width)
 	.example	
