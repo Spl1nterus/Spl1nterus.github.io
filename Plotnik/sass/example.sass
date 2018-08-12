@@ -1,0 +1,110 @@
+.example
+	padding: 0 7px
+
+.example__title
+	padding-left: 16px
+	margin: 0
+	margin-bottom: 23px
+	color: #1c1c1c
+	font-family: "Officina Serif C"
+	font-size: 24px
+	font-weight: 700
+
+.example__video
+	margin-bottom: 40px
+	position: relative
+	max-width: 539px
+	max-height: 363px
+	&::before
+		content: ''
+		position: absolute		
+		width: 100%
+		height: 100%
+		max-width: 539px
+		max-height: 363px
+		background: black
+		opacity: 0.3		
+	&::after
+		content: ''
+		position: absolute		
+		width: 33px
+		height: 28px
+		background-image: url('../img/video.png')
+		background-repeat: no-repeat
+		background-position:  50% 50%
+		left: 50%
+		top: 50%	
+		transform: translateY(-50%)	
+		transform: translateX(-50%)
+
+.example__img
+	max-width: 257px
+	max-height: 173px
+
+.example__adress
+	display: block
+	margin-top: 24px
+	font-size: 16px
+	font-weight: 300
+	margin-bottom: 20px
+
+.example-feedback__img
+	position: relative
+	margin-bottom: 15px
+	&::after
+		position: absolute
+		content: "pdf"
+		width: 29px
+		height: 19px
+		background-color: $accent-color
+		color: #ffffff
+		font-size: 10px
+		line-height: 19px
+		text-align: center
+		font-weight: 700
+		text-transform: uppercase
+
+
+@media (min-width:$tablet-width)
+	.example
+		margin-left: 83px
+		padding-bottom: 55px
+		
+	.example__wraper	
+		display: flex
+		flex-wrap: wrap
+		margin: 0 auto
+		justify-content: center	
+		
+	.example__video
+		order: 2
+		margin-left: 51px
+		margin-bottom: 0
+
+	.example__title
+		font-size: 30px
+		text-align: center
+		margin-bottom: 35px
+		padding-left: 0
+
+
+@media (min-width:$notebook-width)
+	.example	
+		margin-left: 220px	
+
+
+@media (min-width:$pc-width)		
+	.example	
+		margin-left: 664px
+		padding-bottom: 50px
+		padding-left: 28px
+
+	.example__images.hidden-mobile
+		display: block
+		margin-right: 28px		
+
+	.example__wraper
+		justify-content: flex-start
+
+	.example__video		
+		margin-left: 30px
