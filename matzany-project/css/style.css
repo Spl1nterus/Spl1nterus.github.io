@@ -3308,9 +3308,7 @@ a.btn:hover {
     justify-content: space-between;
   }
 
-  .model-info__styles {
-    order: 2;
-  }
+ 
 
   .model-info__pictures {
     max-width: 477px;
@@ -3365,7 +3363,7 @@ a.btn:hover {
   }
 
   .model-info__styles {
-    order: 0;
+    
     margin-right: 70px;
   }
 
