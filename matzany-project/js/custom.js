@@ -35,8 +35,8 @@ $(function(){
 				infinite: true,
 				slidesToShow: 6,
 				slidesToScroll: 6,
-				prevArrow: '<img class="model-gallery__btn" src="../img/model-gallery__btn1.png">',
-				nextArrow: '<img class="model-gallery__btn" src="../img/model-gallery__btn2.png">',
+				prevArrow: '<img class="model-gallery__btn" src="/img/model-gallery__btn1.png">',
+				nextArrow: '<img class="model-gallery__btn" src="/img/model-gallery__btn2.png">',
 				responsive: [
 					{
 						breakpoint: 1350,
