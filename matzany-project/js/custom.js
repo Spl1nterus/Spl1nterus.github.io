@@ -30,6 +30,72 @@ $(function(){
 		});
 
 	};
+			$('.model-gallery__img-wrapper').slick({
+				arrows: true,
+				infinite: true,
+				slidesToShow: 6,
+				slidesToScroll: 6,
+				prevArrow: '<img class="model-gallery__btn" src="../img/model-gallery__btn1.png">',
+				nextArrow: '<img class="model-gallery__btn" src="../img/model-gallery__btn2.png">',
+				responsive: [
+					{
+						breakpoint: 1350,
+						settings: {
+							slidesToShow: 5,
+							slidesToScroll: 5,
+						}
+					}, 
+					{
+						breakpoint: 1000,
+						settings: {
+							slidesToShow: 4,
+							slidesToScroll: 4,
+						}
+					},
+						{
+							breakpoint: 768,
+							settings: {
+								slidesToShow: 3,
+								slidesToScroll: 3,
+							}
+						},
+						{
+							breakpoint: 540,
+							settings: {
+								slidesToShow: 2,
+								slidesToScroll: 2,
+							}
+						},
+					
+				]
+			});
+
+	$('.styles__img-wrapper').slick({
+		arrows: true,
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		vertical: true,
+		prevArrow: '<img class="styles__btn" src="../img/styles_btn1.png">',
+		nextArrow: '<img class="styles__btn" src="../img/styles_btn2.png">',
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+				}
+			},
+
+		]
+	});
+
+	$('.styles__img').on('click', function (e) {
+		e.preventDefault();
+		$(this).toggleClass('styles__img--active');
+	});
+	
+
 
 	/* ---------------------------------------------- /*
 	 * Open Mobile Menu
