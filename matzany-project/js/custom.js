@@ -35,8 +35,8 @@ $(function(){
 				infinite: true,
 				slidesToShow: 6,
 				slidesToScroll: 6,
-				prevArrow: '<img class="model-gallery__btn" src="matzany-project/img/model-gallery__btn1.png">',
-				nextArrow: '<img class="model-gallery__btn" src="matzany-project/img/model-gallery__btn2.png">',
+				prevArrow: '<img class="model-gallery__btn" src="../img/model-gallery__btn1.png">',
+				nextArrow: '<img class="model-gallery__btn" src="../img/model-gallery__btn2.png">',
 				responsive: [
 					{
 						breakpoint: 1350,
@@ -76,8 +76,8 @@ $(function(){
 		slidesToShow: 4,
 		slidesToScroll: 4,
 		vertical: true,
-		prevArrow: '<img class="styles__btn" src="matzany-project/img/styles_btn1.png">',
-		nextArrow: '<img class="styles__btn" src="matzany-project/img/styles_btn2.png">',
+		prevArrow: '<img class="styles__btn" src="../img/styles_btn1.png">',
+		nextArrow: '<img class="styles__btn" src="../img/styles_btn2.png">',
 		responsive: [
 			{
 				breakpoint: 768,
@@ -92,7 +92,8 @@ $(function(){
 
 	$('.styles__img').on('click', function (e) {
 		e.preventDefault();
-		$(this).toggleClass('styles__img--active');
+		$('.styles__img').removeClass('styles__img--active');
+		$(this).addClass('styles__img--active');
 	});
 	
 
@@ -133,11 +134,22 @@ $(function(){
 
 	});
 
+
+$(".product-nav__item").on("click", function (event) {
+	event.preventDefault();
+	var id = $(this).attr('href'),
+		top = $(id).offset().top - 100;
+	$('body,html').animate({
+		scrollTop: top
+	}, 1500);
+});
+
 	/* ---------------------------------------------- /*
 	 * Animation
 	/* ---------------------------------------------- */
 	AOS.refresh(true)
 });
+
 
    
 
