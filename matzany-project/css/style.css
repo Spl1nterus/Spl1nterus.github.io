@@ -2362,7 +2362,8 @@ a.btn:hover {
   border-radius: 5px;
   border: none;
 }
-.page-main__form-btn:hover{
+
+.page-main__form-btn:hover {
   opacity: 0.8;
 }
 
@@ -2703,7 +2704,8 @@ a.btn:hover {
   letter-spacing: 0.52px;
   border-radius: 5px;
 }
-.file-upload__btn:hover{
+
+.file-upload__btn:hover {
   opacity: 0.8;
 }
 
@@ -2753,7 +2755,8 @@ a.btn:hover {
   letter-spacing: 0.52px;
   margin: auto;
 }
-.model-gallery__price a:hover{
+
+.model-gallery__price a:hover {
   opacity: 0.8;
 }
 
@@ -2784,6 +2787,7 @@ a.btn:hover {
   -o-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
+  max-height: 280px;
 }
 
 .model-gallery__btn-wrapper {
@@ -3290,7 +3294,8 @@ a.btn:hover {
   text-transform: uppercase;
   letter-spacing: 0.52px;
 }
-.product-reviews__btn:hover{
+
+.product-reviews__btn:hover {
   opacity: 0.8;
 }
 
@@ -3403,7 +3408,8 @@ a.btn:hover {
   .model-info__wrapper {
     justify-content: flex-start;
   }
-  .product-nav{
+
+  .product-nav {
     margin-bottom: 50px;
   }
 
@@ -3534,7 +3540,7 @@ a.btn:hover {
     margin-right: 0;
   }
 
-  .model-info__form-wrapper{
+  .model-info__form-wrapper {
     margin-left: 0;
   }
 
