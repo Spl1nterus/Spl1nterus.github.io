@@ -2,353 +2,392 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<title>DREAM COMPANY</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
-	<link rel='stylesheet prefetch' href='http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css'>
-	<link rel='stylesheet prefetch' href='http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css'>
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="//cdn.blitz-market.ru/sprite/latest/"></script>
+    <meta charset="UTF-8">
+    <title>
+       
+    </title>
+    <meta name="viewport" content="width=1200">
+    <link rel="icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css'>
+    <link rel='stylesheet prefetch' href='http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css'>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//cdn.blitz-market.ru/sprite/latest/"></script>
 </head>
+
 
 <body>
 
-	<header class="header">
-		<div class="container">
-			<div class="page-header">
-				<a href="" class="page-header__logo">
-					<img src="img/Header_logo.png" alt="">
-					<span>Dream <br>Company</span>
-				</a>
-				<nav class="header-nav">
-					<ul class="header-nav__list">
-						<li><a href="" class="header-nav__item">О системе</a></li>
-						<li><a href="" class="header-nav__item">Инвестору</a></li>
-						<li><a href="" class="header-nav__item">Заемщику</a></li>
-						<li><a href="" class="header-nav__item">Инструкции</a></li>
-						<li><a href="" class="header-nav__item">Бонусы</a></li>
-						<li><a href="" class="header-nav__item">Войти</a></li>
-						<li><a href="" class="header-nav__item">
-								<svg width="41" height="41" role="img">
-									<use xlink:href="#bm_icon_empty_social_vk">
-									</use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-					<!-- /.header-nav__list -->
-				</nav>
-				<!-- /.header-nav -->
-			</div>
-			<!-- /.page-header -->
-			<div class="header-text">
-				<h1 class="header-text__title">DREAM <br>COMPANY</h1>
-				<!-- /.header-text__title -->
-				<p class="header-text__subtitle">Инновационный продукт, предлагающий <br> стабильный доход в рамках
-					законодательства! <br> Зарабатывайте, выдавая займы уже сейчас!</p>
-				<!-- /.header-text__subtitle -->
-				<a href="" class="header-text__button">
-					Зарегистрироваться
-				</a>
-			</div>
-			<!-- /.header-text -->
-		</div>
-		<!-- /.container -->
-		<img class="header__img  parallax" src="img/astronaut.png" alt="astronaut">
+<header class="header">
+    <div class="container">
+        <div class="page-header">
+            <a href="" class="page-header__logo">
+                <img src="img/Header_logo.png" alt="">
+                <span>Dream <br>Company</span>
+            </a>
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li><a href="/about" class="header-nav__item">О системе</a></li>
+                    <li><a href="/investor" class="header-nav__item">Инвестору</a></li>
+                    <li><a href="/customer" class="header-nav__item">Заемщику</a></li>
+                    <li><a href="/start" class="header-nav__item">Инструкции</a></li>
+                    <li><a href="/partners" class="header-nav__item">Бонусы</a></li>
 
-	</header>
-	<!-- /.header -->
+                    
+                        <li><a data-toggle="modal" data-target="#login" class="header-nav__item buttonModal">Войти</a></li>
+                  
+                        <li><a href="/user/" class="header-nav__item">Кабинет</a></li>
+                   
+                        <li>
+                            <a href="" target="_blank" class="header-nav__item">
+                                <svg width="41" height="41" role="img">
+                                    <use xlink:href="#bm_icon_empty_social_vk">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                 
+                </ul>
+                <!-- /.header-nav__list -->
+            </nav>
+            <!-- /.header-nav -->
+        </div>
+        <!-- /.page-header -->
+        <div class="header-text">
+            <h1 class="header-text__title">DREAM <br>COMPANY</h1>
+            <!-- /.header-text__title -->
+            <p class="header-text__subtitle">Инновационный продукт, предлагающий <br> стабильный доход в рамках
+                законодательства! <br> Зарабатывайте, выдавая займы уже сейчас!</p>
+            <!-- /.header-text__subtitle -->
+           
+             
+          
+                <a  data-toggle="modal" data-target="#signup" class="header-text__button registration__btn">
+                    Зарегистрироваться
+                </a>
+          
+        </div>
+        <!-- /.header-text -->
+    </div>
+    <!-- /.container -->
+    <img class="header__img  parallax" data-parallaxed-speed="0.9" src="img/astronaut.png" alt="astronaut">
 
-	<section class="howItwork">
-		<div class="container">
-			<h1 class="howItwork__title ">Как это работает?</h1>
-			<ul class="howItwork__list">
-				<li class="howItwork__item">Компания производит качественный <br> отбор и фильтрацию заемщиков</li>
-				<li class="howItwork__item">Инвестор пополняет счет и настраивает <br> параметры выдачи займов</li>
-				<li class="howItwork__item">Система распределяет вложенные средства <br> на большое количество займов, делая Вашу
-					<br> прибыль максимально надежной и стабильной</li>
-				<li class="howItwork__item">Заемщик возвращает деньги с процентами <br> удобным для него способом</li>
-				<li class="howItwork__item">Полученный доход распределяется <br> пропорционально между инвесторами, <br>вошедшими в
-					займ</li>
-			</ul>
-			<!-- /.howItwork__list -->
-		</div>
-		<div class="Figures">
-			<div class="Ellipse1"></div>
-			<div class="Ellipse2  parallax"></div>
-			<div class="Ellipse3"></div>
-			<div class="Ellipse4  parallax" data-parallaxed-speed="0.8"></div>
-			<div class="Ellipse5 parallax"></div>
-			<div class="Ellipse6 parallax" data-parallaxed-speed="0.8"></div>
-			<div class="Ellipse7 parallax"></div>
-			<div class="Ellipse8 parallax"></div>
-			<div class="Fog"></div>
-		</div>
-	</section>
+</header>
+<!-- /.header -->
 
-	<section class="howToEarn">
-		<div class="container">
-			<h1 class="howToEarn__title">Как заработать?</h1>
-			<ul class="howToEarn__list">
-				<li class="howToEarn__item">Ознакомьтесь с условиями сотрудничества</li>
-				<li class="howToEarn__item">Пройдите моментальную регистрацию</li>
-				<li class="howToEarn__item">Пополните счет и выдайте займы на <br> выгоднях для вас условиях</li>
-				<li class="howToEarn__item">Расслабьтесь и получайте удовольствие, <br> наблюдая за постоянно растущей прибылью!</li>
-				<li class="howToEarn__item">Выводите заработанные средства <br>когда угодно и где угодно</li>
-			</ul>
-			<!-- /.howToEarn__list -->
-		</div>
-		<div class="Figures">
-			<div class="Ellipse1 parallax"></div>
-			<div class="triangle1 parallax"></div>
-			<div class="Ellipse2 parallax"></div>
-			<div class="Ellipse3 parallax"></div>
-			<div class="triangle2 parallax " data-parallaxed-speed="0.85"></div>
-			<div class="banknote"></div>
-			<div class="triangle3 parallax"></div>
-			<div class="Ellipse4 parallax" data-parallaxed-speed="0.9"></div>
-			<div class="Ellipse5 parallax"></div>
-		</div>
-	</section>
+<section class="howItwork">
+    <div class="container">
+        <h1 class="howItwork__title ">Как это работает?</h1>
+        <ul class="howItwork__list">
+            <li class="howItwork__item">Компания производит качественный <br> отбор и фильтрацию заемщиков</li>
+            <li class="howItwork__item">Инвестор пополняет счет и настраивает <br> параметры выдачи займов</li>
+            <li class="howItwork__item">Система распределяет вложенные средства <br> на большое количество займов, делая Вашу
+                <br> прибыль максимально надежной и стабильной</li>
+            <li class="howItwork__item">Заемщик возвращает деньги с процентами <br> удобным для него способом</li>
+            <li class="howItwork__item">Полученный доход распределяется <br> пропорционально между инвесторами, <br>вошедшими в
+                займ</li>
+        </ul>
+        <!-- /.howItwork__list -->
+    </div>
+    <div class="Figures">
+        <div class="Ellipse1"></div>
+        <div class="Ellipse2  parallax"></div>
+        <div class="Ellipse3"></div>
+        <div class="Ellipse4  parallax" data-parallaxed-speed="0.8"></div>
+        <div class="Ellipse5 parallax"></div>
+        <div class="Ellipse6 parallax" data-parallaxed-speed="0.8"></div>
+        <div class="Ellipse7 parallax"></div>
+        <div class="Ellipse8 parallax"></div>
+        <div class="Fog"></div>
+    </div>
+</section>
 
-	<section class="howToGet">
-		<div class="container">
-			<h1 class="howToGet__title">Как взять займ?</h1>
-			<ul class="howToGet__list">
-				<li class="howToGet__item">Оформите <br>заявку</li>
-				<li class="howToGet__item">Дождитесь <br>обработки</li>
-				<li class="howToGet__item">Получите <br>деньги</li>
-			</ul>
-			<!-- /.howToEarn__list -->
-			<a href="" class="howToGet__button">
-				Оформить займ
-			</a>
-		</div>
-		<div class="Figures">
-			<div class="moon parallax"></div>
-			<div class="triangle1 parallax"></div>
-			<div class="triangle2 parallax"></div>
-			<div class="Ellipse1 parallax"></div>
-			<div class="Ellipse2 parallax"></div>
-			<div class="Ellipse3 parallax"></div>
-		</div>
-	</section>
+<section class="howToEarn">
+    <div class="container">
+        <h1 class="howToEarn__title">Как заработать?</h1>
+        <ul class="howToEarn__list">
+            <li class="howToEarn__item">Ознакомьтесь с условиями сотрудничества</li>
+            <li class="howToEarn__item">Пройдите моментальную регистрацию</li>
+            <li class="howToEarn__item">Пополните счет и выдайте займы на <br> выгоднях для вас условиях</li>
+            <li class="howToEarn__item">Расслабьтесь и получайте удовольствие, <br> наблюдая за постоянно растущей прибылью!</li>
+            <li class="howToEarn__item">Выводите заработанные средства <br>когда угодно и где угодно</li>
+        </ul>
+        <!-- /.howToEarn__list -->
+    </div>
+    <div class="Figures">
+        <div class="Ellipse1 parallax"></div>
+        <div class="triangle1 parallax"></div>
+        <div class="Ellipse2 parallax"></div>
+        <div class="Ellipse3 parallax"></div>
+        <div class="triangle2 parallax " data-parallaxed-speed="0.85"></div>
+        <div class="banknote"></div>
+        <div class="triangle3 parallax"></div>
+        <div class="Ellipse4 parallax" data-parallaxed-speed="0.9"></div>
+        <div class="Ellipse5 parallax"></div>
+    </div>
+</section>
 
-	<section class="offer">
-		<div class="container">
-			<h1 class="offer__title" а>Наши предложения</h1>
-			<h1 class="offer__subtitle">Выберите групу займов</h1>
-			<div class="offer__btn-wrapper">
-				<a href="" class="offer__button">Базовая</a>
-				<a href="" class="offer__button">Расширенная</a>
-			</div>
-			<div class="offer__text">
-				<ul class="offer__list">
-					<li class="offer__item">Краткосрочные займы</li>
-					<li class="offer__item">Диверсификация рисков</li>
-					<li class="offer__item">Имущество под залог</li>
-					<li class="offer__item">Долгосрочные займы</li>
-					<li class="offer__item">Кредитование организаций и ИП</li>
-				</ul>
-				<p>
-					Финансирование займов служит прямой поддержкой в развитии нашего основного вида деятельности и построено на
-					взаимовыгодных условиях. Используя базовую группу, Вы сможете выдавать краткосрочные потребительские займы
-					частным лицам. <br> А не высокие пороги инвестиционных планов позволят получить необходимый опыт в области
-					кредитования на доступной для Вас сумме.
-				</p>
-				<div class="offer__text-img animate rotateIn"></div>
-			</div>
-		</div>
-		<div class="Figures">
-			<div class="triangle1 parallax"></div>
-			<div class="Ellipse1 parallax"></div>
-			<div class="Ellipse2 parallax"></div>
-			<div class="triangle2 parallax"></div>
-		</div>
-	</section>
+<section class="howToGet">
+    <div class="container">
+        <h1 class="howToGet__title">Как взять займ?</h1>
+        <ul class="howToGet__list">
+            <li class="howToGet__item">Оформите <br>заявку</li>
+            <li class="howToGet__item">Дождитесь <br>обработки</li>
+            <li class="howToGet__item">Получите <br>деньги</li>
+        </ul>
+        <!-- /.howToEarn__list -->
+        <a href="" class="howToGet__button buttonModal">
+            Оформить займ
+        </a>
+    </div>
+    <div class="Figures">
+        <div class="moon parallax"></div>
+        <div class="triangle1 parallax"></div>
+        <div class="triangle2 parallax"></div>
+        <div class="Ellipse1 parallax"></div>
+        <div class="Ellipse2 parallax"></div>
+        <div class="Ellipse3 parallax"></div>
+    </div>
+</section>
 
-	<section class="bonusSystem">
-		<div class="container">
-			<h1 class="bonusSystem__title">Бонусная система</h1>
-			<p class="bonusSystem__text">Dream Company - Импонирует активным участникам площадки.У нас предусмотрен широкий
-				комплекс наград для каждого,кто зарабатывая сам,рад поделиться этой возможностью с другими людьми,тем самым,
-				содействуя развитию нашего продукта.Привлекайте к финансированию займов третьих лиц, и получайте стабильный доход с
-				каждого выданного ими займа.Нами была разработана уникальная бонусная система, реализовав потенциал которой,Вы
-				сможете постоянно увеличивать свои дивиденды.Приглашайте друзей, знакомых и просто целеустремленных людей,готовых
-				зарабатывать.
-			</p>
-			<a href="" class="bonusSystem__button">
-				Подробнее
-			</a>
-		</div>
-		<div class="Figures">
-			<div class="Ellipse1 parallax"></div>
-			<div class="Ellipse2 parallax"></div>
-			<div class="triangle1 parallax"></div>
-			<div class="Ellipse3 parallax"></div>
-			<div class="Ellipse4 parallax"></div>
-			<div class="triangle2 parallax"></div>
-			<div class="Ellipse5 parallax"></div>
-		</div>
-	</section>
-
-	<section class="statistics">
-		<div class="container">
-			<h1 class="statistics__title">Наша статистика</h1>
-			<div class="statistics__wrapper">
-				<p class="statistics__text">Стремительно развиваясь, открывая перед собой новые горизонты и расширяя спектр услуг,
-					наша компания повышает степени защиты капитала, а также качество сервиса. У нас, люди без доли сомнений реализуют
-					свои активы, достигая в последствии поставленных целей и задач в области финансов. Работать с нами – удобно,
-					выгодно и безопасно. Десятки тысяч счастливых клиентов уже убедились в этом! Попробуйте сейчас - и Вы не сможете
-					остановиться. Ведь теперь – исполнить свою мечту стало так просто!
-				</p>
-
-				<ul class="statistics__list">
-					<li class="statistics__item">99007 <span>участников</span></li>
-					<li class="statistics__item">167989168 <span>выдано займов на сумму</span></li>
-					<li class="statistics__item">265 <span>дней в работе</span></li>
-				</ul>
-				<div class="statistics__img animate pulse"></div>
-			</div>
-		</div>
-		<div class="Figures">
-			<div class="Ellipse1 parallax"></div>
-			<div class="Ellipse2 parallax"></div>
-			<div class="triangle1 parallax"></div>
-		</div>
-	</section>
-
-	<section class="about">
-		<div class="container">
-			<h1 class="about__title">СМИ о нас</h1>
-			<div class="about__wrapper">
-				<div class="about__item">
-					<div class="about__img"><img src="img/aboutimg1.jpg" alt="about">
-					</div>
-					<p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi repudiandae obcaecati vitae
-						assumenda quae ea tempore illo. Maxime eaque rem inventore porro doloremque dolores illo eligendi a, debitis
-						iusto sed!
-					</p>
-					<a href="" class="about__button">
-						Читать
-					</a>
-				</div>
-				<div class="about__item">
-
-					<div class="about__img"><img src="img/aboutimg2.jpg" alt="about">
-					</div>
-					<p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi repudiandae obcaecati vitae
-						assumenda quae ea tempore illo. Maxime eaque rem inventore porro doloremque dolores illo eligendi a, debitis
-						iusto sed!
-					</p>
-					<a href="" class="about__button">
-						Читать
-					</a>
-				</div>
-				<div class="about__item">
-					<div class="about__img"><img src="img/aboutimg3.jpg" alt="about">
-					</div>
-					<p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi repudiandae obcaecati vitae
-						assumenda quae ea tempore illo. Maxime eaque rem inventore porro doloremque dolores illo eligendi a, debitis
-						iusto sed!
-					</p>
-					<a href="" class="about__button">
-						Читать
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="Figures">
-			<div class="Ellipse1 parallax"></div>
-			<div class="Ellipse2 parallax"></div>
-			<div class="Ellipse3 parallax"></div>
-			<div class="triangle1 parallax"></div>
-		</div>
-	</section>
-
-	<section class="reviews">
-		<div class="container">
-			<h1 class="reviews__title">Отзывы</h1>
-			<h2 class="reviews__subtitle">Отзывы наших клиентов</h2>
-			<div class="reviews__slider-wrapper">
-				<div class="reviews__slider-item">
-					<p class="reviews__slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi repudiandae
-						obcaecati vitae assumenda quae ea tempore illo. Maxime eaque rem inventore porro doloremque dolores illo eligendi
-						a, debitis iusto sed!
-					</p>
-					<span class="reviews__slider-name">Сергей К.</span>
-				</div>
-				<div class="reviews__slider-item">
-					<p class="reviews__slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi repudiandae
-						obcaecati vitae assumenda quae ea tempore illo. Maxime eaque rem inventore porro doloremque dolores illo eligendi
-						a, debitis iusto sed!
-					</p>
-					<span class="reviews__slider-name">Сергей К.</span>
-				</div>
-				<div class="reviews__slider-item">
-					<p class="reviews__slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi repudiandae
-						obcaecati vitae assumenda quae ea tempore illo. Maxime eaque rem inventore porro doloremque dolores illo eligendi
-						a, debitis iusto sed!
-					</p>
-					<span class="reviews__slider-name">Сергей К.</span>
-				</div>
-				<div class="reviews__slider-item">
-					<p class="reviews__slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi repudiandae
-						obcaecati vitae assumenda quae ea tempore illo. Maxime eaque rem inventore porro doloremque dolores illo eligendi
-						a, debitis iusto sed!
-					</p>
-					<span class="reviews__slider-name">Сергей К.</span>
-				</div>
-			</div>
-		</div>
-		<div class="Figures">
-			<div class="triangle1 parallax"></div>
-			<div class="Ellipse1 parallax"></div>
-			<div class="Ellipse2 parallax"></div>
-			<div class="triangle2 parallax"></div>
-			<div class="Ellipse3 parallax"></div>
-			<div class="Ellipse4 parallax"></div>
-		</div>
-	</section>
+<section class="offer">
+    <div class="container">
+        <h1 class="offer__title">Наши предложения</h1>
+        <h1 class="offer__subtitle">Выберите групу займов</h1>
+        <div class="offer__btn-wrapper">
+            <a href="" class="offer__button base-text__btn">Базовая</a>
+            <a href="" class="offer__button full-text__btn offer__button--not-active">Расширенная</a>
+        </div>
+        <div class="offer__text">
+            <ul class="offer__list">
+                <li class="offer__item">Краткосрочные займы</li>
+                <li class="offer__item">Диверсификация рисков</li>
+                <li class="offer__item offer__item--fade">Имущество под залог</li>
+                <li class="offer__item offer__item--fade">Долгосрочные займы</li>
+                <li class="offer__item offer__item--fade">Кредитование организаций и ИП</li>
+            </ul>
+            <p class="offer__base-text">
+                Финансирование займов служит прямой поддержкой в развитии нашего основного вида деятельности и построено на
+                взаимовыгодных условиях. Используя базовую группу, Вы сможете выдавать краткосрочные потребительские займы
+                частным лицам. <br> А не высокие пороги инвестиционных планов позволят получить необходимый опыт в области
+                кредитования на доступной для Вас сумме.
+            </p>
+            <p class="offer__full-text">
+                Финансирование займов служит прямой поддержкой в развитии нашего основного вида деятельности и построено на взаимовыгодных условиях. Более долгосрочные займы физическим и юридическим лицам, а также ИП – это структура расширенной категории. Она позволяет использовать возможности нашей площадки в полной мере, используя Ваши время и средства максимально эффективно.Краткосрочные займы Диверсификация рисковИмущество под залог Долгосрочные займы Кредитование организаций и ИП
+            </p>
 
 
+            <div class="offer__text-img "></div>
+        </div>
+    </div>
+    <div class="Figures">
+        <div class="triangle1 parallax"></div>
+        <div class="Ellipse1 parallax"></div>
+        <div class="Ellipse2 parallax"></div>
+        <div class="triangle2 parallax"></div>
+    </div>
+</section>
 
-	<footer class="main-footer">
-		<div class="container">
-			<div class="main-footer__wrapper">
-				<a href="" class="main-footer__logo">
-					<img src="img/Header_logo.png" alt="">
-					<span>Dream <br>Company</span>
-				</a>
-				<h1 class="main-footer__title">Стань успешным <br>вместе с Dream Company</h1>
-				<a href="" class="main-footer__button">
-					Действуй!
-				</a>
-			</div>
-		</div>
+<section class="bonusSystem">
+    <div class="container">
+        <h1 class="bonusSystem__title">Бонусная система</h1>
+        <p class="bonusSystem__text">Dream Company - Импонирует активным участникам площадки.У нас предусмотрен широкий
+            комплекс наград для каждого,кто зарабатывая сам,рад поделиться этой возможностью с другими людьми,тем самым,
+            содействуя развитию нашего продукта.Привлекайте к финансированию займов третьих лиц, и получайте стабильный доход с
+            каждого выданного ими займа.Нами была разработана уникальная бонусная система, реализовав потенциал которой,Вы
+            сможете постоянно увеличивать свои дивиденды.Приглашайте друзей, знакомых и просто целеустремленных людей,готовых
+            зарабатывать.
+        </p>
+        <a href="/partners" class="bonusSystem__button">
+            Подробнее
+        </a>
+    </div>
+    <div class="Figures">
+        <div class="Ellipse1 parallax"></div>
+        <div class="Ellipse2 parallax"></div>
+        <div class="triangle1 parallax"></div>
+        <div class="Ellipse3 parallax"></div>
+        <div class="Ellipse4 parallax"></div>
+        <div class="triangle2 parallax"></div>
+        <div class="Ellipse5 parallax"></div>
+    </div>
+</section>
+
+<section class="statistics">
+    <div class="container">
+        <h1 class="statistics__title">Наша статистика</h1>
+        <div class="statistics__wrapper">
+            <p class="statistics__text">Стремительно развиваясь, открывая перед собой новые горизонты и расширяя спектр услуг,
+                наша компания повышает степени защиты капитала, а также качество сервиса. У нас, люди без доли сомнений реализуют
+                свои активы, достигая в последствии поставленных целей и задач в области финансов. Работать с нами – удобно,
+                выгодно и безопасно. Десятки тысяч счастливых клиентов уже убедились в этом! Попробуйте сейчас - и Вы не сможете
+                остановиться. Ведь теперь – исполнить свою мечту стало так просто!
+            </p>
+
+            <ul class="statistics__list">
+                <li class="statistics__item"><span class="count_animated">125</span> <span class="underline">участников</span></li>
+                <li class="statistics__item"><span class="count_animated">3670000</span> <span class="underline">выдано займов на сумму</span></li>
+                <li class="statistics__item"><span class="count_animated">189</span> <span class="underline">дней в работе</span></li>
+            </ul>
+            <div class="statistics__img animate pulse"></div>
+        </div>
+    </div>
+    <div class="Figures">
+        <div class="Ellipse1 parallax"></div>
+        <div class="Ellipse2 parallax"></div>
+        <div class="triangle1 parallax"></div>
+    </div>
+</section>
+
+<section class="about">
+    <div class="container">
+        <h1 class="about__title">СМИ о нас</h1>
+         <div class="about__wrapper">
+            <div class="about__item">
+                <div class="about__img"><img src="img/aboutimg1.jpg" alt="about">
+                </div>
+                <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi repudiandae obcaecati vitae
+                    assumenda quae ea tempore illo. Maxime eaque rem inventore porro doloremque dolores illo eligendi a, debitis
+                    iusto sed!
+                </p>
+                <a href="" class="about__button">
+                    Читать
+                </a>
+            </div>
+            <div class="about__item">
+
+                <div class="about__img"><img src="img/aboutimg2.jpg" alt="about">
+                </div>
+                <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi repudiandae obcaecati vitae
+                    assumenda quae ea tempore illo. Maxime eaque rem inventore porro doloremque dolores illo eligendi a, debitis
+                    iusto sed!
+                </p>
+                <a href="" class="about__button">
+                    Читать
+                </a>
+            </div>
+            <div class="about__item">
+                <div class="about__img"><img src="img/aboutimg3.jpg" alt="about">
+                </div>
+                <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi repudiandae obcaecati vitae
+                    assumenda quae ea tempore illo. Maxime eaque rem inventore porro doloremque dolores illo eligendi a, debitis
+                    iusto sed!
+                </p>
+                <a href="" class="about__button">
+                    Читать
+                </a>
+            </div>
+        </div>  
+      <!--  <h1 class="about__temp-text">В процессе публикации</h1> -->
+    </div>
+    <div class="Figures">
+        <div class="Ellipse1 parallax"></div>
+        <div class="Ellipse2 parallax"></div>
+        <div class="Ellipse3 parallax"></div>
+        <div class="triangle1 parallax"></div>
+    </div>
+</section>
+
+<section class="reviews">
+    <div class="container">
+        <h1 class="reviews__title">Отзывы</h1>
+        <h2 class="reviews__subtitle">Отзывы наших клиентов</h2>
+        <div class="reviews__slider-wrapper">
+            <div class="reviews__slider-item">
+                <p class="reviews__slider-text">
+                    Приятно, что кредит тебе выдает не какой-то толстый миллионер, который уже не знает куда девать мерседесы, а такой же обычный человек, как и ты!
+                    Получается этакая взаимовыручка, и себя в беде не оставишь и другим людям подсобишь.
+                </p>
+                <span class="reviews__slider-name">Максим Иванов</span>
+            </div>
+            <div class="reviews__slider-item">
+                <p class="reviews__slider-text">
+                    Я объявляю благодарность коллективу, разговаривают и понимают, и всегда стараются помочь. Хорошие в работе.
+                    Оказалась в очень сложной ситуации, нужны были деньги, сразу обратилась к друзьям, от них ответа не дождалась, получается даже так, что здесь займ получила быстрее, чем помощь от своих «друзей».
+                    Я Вам очень благодарна, честная и порядочная организация!
+                </p>
+                <span class="reviews__slider-name">Катерина К.</span>
+            </div>
+            <div class="reviews__slider-item">
+                <p class="reviews__slider-text">
+                    Спасибо вам за предоставленные средства, обслуживающий персонал вежлив и учтив, все объяснили и разъяснили.
+                    Конечно, не с первого раза получила займ, но получила!
+                    Будем еще к вам обращаться.
+                </p>
+                <span class="reviews__slider-name">Наталья Кочеткова</span>
+            </div>
+            <div class="reviews__slider-item">
+                <p class="reviews__slider-text">
+                    Классный сервис, к сожалению, мне приходится пользоваться подобными услугами, Вы одни из лучших, с кем мне приходилось иметь дело.
+                    На рынке МФО Ваш проект пожалуй в ТОПе, простой и честный!
+                    Другим нужно с Вас пример брать. Желаю Вам процветания!
+                    Обязательно попробую себя в роли инвестора, как только появятся свободные деньги!
+                </p>
+                <span class="reviews__slider-name">Геннадий</span>
+            </div>
+            <div class="reviews__slider-item">
+                <p class="reviews__slider-text">
+                    Выражаю свою благодарность коллективу Dream-Company.
+                    Спасибо за деньги, за отличную работу, профессионализм и внимательное отношение к клиентам.
+                    Всем рекомендую компанию, сам еще не раз буду обращаться, так как денег до зарплаты не всегда хватает.
+                </p>
+                <span class="reviews__slider-name">Александр Тарасов</span>
+            </div>
+            <div class="reviews__slider-item">
+                <p class="reviews__slider-text">
+                    Очень хорошее обслуживание!
+                    Мне нравится, я беру займ 4-ый раз, и к моему удивлению 4 раз подряд мне одобряют займ.
+                    Поддержка на сайте вежливая, удачи вам всем и примите искреннюю благодарность.
+                </p>
+                <span class="reviews__slider-name">Егор Беляев</span>
+            </div>
+        </div>
+    </div>
+    <div class="Figures">
+        <div class="triangle1 parallax"></div>
+        <div class="Ellipse1 parallax"></div>
+        <div class="Ellipse2 parallax"></div>
+        <div class="triangle2 parallax"></div>
+        <div class="Ellipse3 parallax"></div>
+        <div class="Ellipse4 parallax"></div>
+    </div>
+</section>
 
 
-	</footer>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="main-footer__wrapper">
+            <a href="" class="main-footer__logo">
+                <img src="img/Header_logo.png" alt="">
+                <span>Dream <br>Company</span>
+            </a>
+            <h1 class="main-footer__title">Стань успешным <br>вместе с Dream Company</h1>
+                    
+                <a data-toggle="modal" data-target="#login" class="main-footer__button buttonModal">
+                    Действуй!
+                </a>
+          
+        </div>
+    </div>
+
+
+</footer>
 
 
 
 
 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js'></script>
+<script src="js/parallaxed.js"></script>
+<script src="js/index.js"></script>
 
 
 
-	<script>
-		document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
-			':35729/livereload.js?snipver=1"></' + 'script>')
-	</script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-	<script src='http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js'></script>
-	<script src="/js/parallaxed.js"></script>
-	<script src="js/index.js"></script>
 </body>
 
 </html>
