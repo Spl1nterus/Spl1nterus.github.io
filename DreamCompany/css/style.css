@@ -335,16 +335,16 @@ img {
 	right: -350px;
 }
 .howItwork__item::before {
-/* 	content: "01";
-position: absolute;
-opacity: 0.08;
-color: #5574f2;
-font-family: Montserrat;
-font-size: 175px;
-font-weight: 700;
-line-height: 78.55px;
-left: 0;
-top: 0%; */
+	content: "01";
+	position: absolute;
+	opacity: 0.08;
+	color: #5574f2;
+	font-family: Montserrat;
+	font-size: 175px;
+	font-weight: 700;
+	line-height: 78.55px;
+	left: 0;
+	top: 0%;	
 }
 
 
