@@ -1536,9 +1536,7 @@ content: "";
 	transition: max-height 0.4s;
 }
 
-.reviews__slider-item:hover .reviews__slider-text {
-	/* max-height: 1000px; */
-}
+
 
 .reviews__slider-name {
 	font-size: 25px;
