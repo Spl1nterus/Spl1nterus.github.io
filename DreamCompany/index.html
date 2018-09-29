@@ -650,38 +650,6 @@
     <script src="js/index.js"></script>
 
 
-    <script>
-        $(document).ready(function () {
-            var windowHeight = $(window).height();
-
-            $(document).on('scroll', function () {
-                $('.count_animated').each(function () {
-                    var $this = $(this),
-                        height = $this.offset().top + $this.height(),
-                        res_amount = $this.attr('data-count'),
-                        countTo = parseFloat(res_amount.replace(/\s+/g, ''));
-
-                    if ($(document).scrollTop() + windowHeight >= height) {
-                        $({
-                            countNum: $this.text()
-                        }).animate({
-                            countNum: countTo
-                        }, {
-                            duration: 2000,
-                            easing: 'linear',
-                            step: function () {
-                                $this.text(Math.floor(this.countNum));
-                            },
-                            complete: function () {
-                                $this.text(res_amount);
-                                //alert('finished');
-                            }
-                        });
-                    }
-                });
-            });
-        });
-    </script>
 
 
    
