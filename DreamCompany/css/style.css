@@ -1531,7 +1531,6 @@ content: "";
 	letter-spacing: 0.85px;
 	margin: 0;
 	margin-bottom: 10px;
-	/* max-height: 280px; */
 	overflow: hidden;
 	transition: max-height 0.4s;
 }
