@@ -369,14 +369,14 @@ img {
 }
 
 .howToEarn {
-	padding-top: 450px;
+	padding-top: 550px;
 	padding-bottom: 170px;
 	min-height: 2042px;
 	position: relative;
 	overflow: hidden;
 	background-image: url('../img/bg/3.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 	background-position: top center;
 }
 
@@ -967,7 +967,7 @@ img {
 	background-repeat: no-repeat;
 	background-image: url('../img/bg/6.jpg');
 	background-repeat: no-repeat;
-	background-size:auto;
+	background-size:cover;
 	position: relative;
 	background-position: top center;
 	min-height: 1900px;
@@ -1263,7 +1263,7 @@ content: "";
 	position: relative;
 	background-image: url('../img/bg/8.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 	background-position: top center;
 }
 
@@ -1452,7 +1452,7 @@ content: "";
 .reviews__slider-item {
 	max-width: 337px;
 	min-height: 404px;
-	/* max-height: 404px; */
+	max-height: 404px;
 	position: relative;
 	padding: 35px 20px 10px;
 	margin-right: 25px;
@@ -1462,51 +1462,16 @@ content: "";
 	transition: 0.4s;
 	overflow: hidden;
 }
-.reviews__slider-slide{
-	width: 1170px;
-}
-.reviews__slider-item1,
-.reviews__slider-item6{
-	max-width: 93%;
-	min-height: auto;
-	margin-bottom: 30px;
-}
-.reviews__slider-item6{
-	margin-bottom: 0;
-}
-.reviews__slider-item2,
-.reviews__slider-item3{
-	max-width: 45%;
-	min-height: 325px;
-	display: inline-block;
-}
 
-.reviews__slider-item3{
-	margin-left: 0;
-	margin-right: 0;
-}
-
-.reviews__slider-item3 .reviews__slider-text{
-	min-height: 180px;
-}
-.reviews__slider-item4,
-.reviews__slider-item5{
-	max-width: 45%;
-	min-height: 325px;
-	display: inline-block;
-	margin-bottom: 20px;
-}
 .reviews__slider-item:hover {
 	box-shadow: 0 0 12px #6633FF;
 	-moz-box-shadow: 0 0 12px #6633FF;
 	-o-box-shadow: 0 0 12px #6633FF;
 	-ms-box-shadow: 0 0 12px #6633FF;
 	-webkit-box-shadow: 0 0 12px #6633FF;
-	/* max-height: 605px; */
+	max-height: 605px;
 	transform: scale(1.05);
 }
-
-
 
 .reviews__slider-item::before {
 	content: "";
@@ -1533,8 +1498,12 @@ content: "";
 	margin-bottom: 10px;
 	overflow: hidden;
 	transition: max-height 0.4s;
+	max-height: 300px;
+	min-height: 300px;
 }
-
+.reviews__slider-item:hover .reviews__slider-text {
+	max-height: 605px;
+}
 
 
 .reviews__slider-name {
@@ -1558,12 +1527,12 @@ content: "";
 }
 
 .slick-arrow__left {
-	top: 250px;
+	top: 150px;
 	left: -15%;
 }
 
 .slick-arrow__right {
-	top: 250px;
+	top: 150px;
 	right: -15%;
 }
 
