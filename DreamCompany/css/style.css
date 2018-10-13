@@ -344,25 +344,25 @@ img {
   position: absolute;
   opacity: 0.83;
   right: 350px;
-  top: 32%;
+  top: 36%;
   animation-duration: 1.5s;
 }
 
 .howToEarn__arrow2 {
-  top: 47%;
+  top: 52%;
 }
 
 .howToEarn__arrow3 {
-  top: 64%;
+  top: 68%;
 }
 
 .howToEarn__arrow4 {
-  top: 39%;
+  top: 43%;
   left: 350px;
 }
 
 .howToEarn__arrow5 {
-  top: 56%;
+  top: 60%;
   left: 350px;
 }
 
@@ -1569,29 +1569,29 @@ img {
   }
 
   .howToEarn__arrow {
-    top: 33%;
+    top: 36%;
     width: 78px;
     height: 125px;
   }
 
   .howToEarn__arrow2 {
-    top: 45%;
+    top: 48%;
   }
 
   .howToEarn__arrow3 {
-    top: 56%;
+    top: 63%;
   }
 
   .howToEarn__arrow4 {
-    top: 37%;
+    top: 40%;
   }
 
   .howToEarn__arrow5 {
-    top: 50%;
+    top: 56%;
   }
 
   .howToEarn .banknote {
-    bottom: 28%;
+    bottom: 22%;
     transform: scale(0.7);
   }
 
