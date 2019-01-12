@@ -1,7 +1,7 @@
 body {
   background-color: #00BCD4;
   background-image: url('../img/bg.jpg');
-  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   font-family: "Gotham Pro", sans-serif;
@@ -120,10 +120,31 @@ body {
   padding: 15px;
   color: aliceblue;
   display: flex;
+  font-size: 22px;
 }
 
 #humidity,
 #wind {
   width: 50%;
   text-align: center;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 280px;
+  }
+  .weather-icon{
+    height: 100px;
+  }
+
+  #search-txt,
+  #search-txt::placeholder {
+    font-size: 16px;
+  }
+  #city-name{
+    font-size: 16px;
+  }
+  .weather-parametrs{
+    font-size: 15px;
+  }
 }
