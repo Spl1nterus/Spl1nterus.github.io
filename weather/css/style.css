@@ -1,6 +1,6 @@
 body {
   background-color: #00BCD4;
-  background-image: url('/img/bg.jpg');
+  background-image: url('../img/bg.jpg');
   background-size: cover;
   margin: 0;
   padding: 0;

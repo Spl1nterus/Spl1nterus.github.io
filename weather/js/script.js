@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function getData(data) {
     let jsonObject = JSON.parse(data);
     cityName.innerHTML = jsonObject.name;
-    svg.href.baseVal = "/img/sprite.svg#" + jsonObject.weather[0].icon;
+    svg.href.baseVal = "../img/sprite.svg#" + jsonObject.weather[0].icon;
     temperature.innerHTML = Math.floor(jsonObject.main.temp) + "&#176";
     humidity.innerHTML = jsonObject.main.humidity + "%";
     wind.innerHTML = Math.floor(jsonObject.wind.speed) + "m/s";
