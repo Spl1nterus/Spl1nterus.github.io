@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let temperature = document.getElementById("temp");
   let humidity = document.getElementById("humidity");
   let wind = document.getElementById("wind");
-  let searchLink = "";
+ 
 
 
   function getLocation() {
@@ -21,13 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function error() {
     let searchLink = "https://api.openweathermap.org/data/2.5/weather?lat=0&lon=0&units=metric&appid=c1f0d32ccc4dd3226e84b81bec923749";
-    httpRequestAsync(searchLink, getData);
+    httpRequest(searchLink, getData);
   }
 
 
   function setPosition(position) {
     let searchLink = "https://api.openweathermap.org/data/2.5/weather?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&units=metric&appid=c1f0d32ccc4dd3226e84b81bec923749";
-    httpRequestAsync(searchLink, getData);
+    httpRequest(searchLink, getData);
   }
 
 
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function findWeatherDetails() {
     if (city.value != "") {
       let searchLink = "https://api.openweathermap.org/data/2.5/weather?q=" + encodeURIComponent(city.value) + "&units=metric&appid=c1f0d32ccc4dd3226e84b81bec923749";
-      httpRequestAsync(searchLink, getData);
+      httpRequest(searchLink, getData);
     } else {
       city.placeholder = "Заполните поле города";
     }
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     wind.innerHTML = Math.floor(jsonObject.wind.speed) + "m/s";
   }
 
-  function httpRequestAsync(url, callback) {
+  function httpRequest(url, callback) {
     let httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = function () {
       if (httpRequest.readyState == 4 && httpRequest.status == 200) {
