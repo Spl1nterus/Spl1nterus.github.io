@@ -7,22 +7,26 @@ document.addEventListener("DOMContentLoaded", function () {
   let temperature = document.getElementById("temp");
   let humidity = document.getElementById("humidity");
   let wind = document.getElementById("wind");
-  let error = document.getElementById("error-msg");
-  let searchLink = "https://api.openweathermap.org/data/2.5/weather?lat=0&lon=0&units=metric&appid=c1f0d32ccc4dd3226e84b81bec923749";
+  let searchLink = "";
 
 
   function getLocation() {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(setPosition);
+      navigator.geolocation.getCurrentPosition(setPosition, error);
 
     } else {
       alert("Geolocation is not supported by this browser.");
     }
   }
 
+  function error() {
+    let searchLink = "https://api.openweathermap.org/data/2.5/weather?lat=0&lon=0&units=metric&appid=c1f0d32ccc4dd3226e84b81bec923749";
+    httpRequestAsync(searchLink, getData);
+  }
+
+
   function setPosition(position) {
-    searchLink = "https://api.openweathermap.org/data/2.5/weather?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&units=metric&appid=c1f0d32ccc4dd3226e84b81bec923749";
-    console.log(searchLink);
+    let searchLink = "https://api.openweathermap.org/data/2.5/weather?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + "&units=metric&appid=c1f0d32ccc4dd3226e84b81bec923749";
     httpRequestAsync(searchLink, getData);
   }
 
@@ -34,11 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function findWeatherDetails() {
     if (city.value != "") {
-      searchLink = "https://api.openweathermap.org/data/2.5/weather?q=" + city.value + "&units=metric&appid=c1f0d32ccc4dd3226e84b81bec923749";
+      let searchLink = "https://api.openweathermap.org/data/2.5/weather?q=" + encodeURIComponent(city.value) + "&units=metric&appid=c1f0d32ccc4dd3226e84b81bec923749";
       httpRequestAsync(searchLink, getData);
     } else {
       city.placeholder = "Заполните поле города";
-      city.classList.add('search-txt--error');
     }
   }
 
