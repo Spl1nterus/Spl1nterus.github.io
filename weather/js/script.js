@@ -30,13 +30,11 @@ document.addEventListener("DOMContentLoaded", function () {
     httpRequest(searchLink, getData);
   }
 
-
   getLocation();
-  city.addEventListener("change", findWeatherDetails);
 
+  city.addEventListener("change", findWeather);
 
-
-  function findWeatherDetails() {
+  function findWeather() {
     if (city.value != "") {
       let searchLink = "https://api.openweathermap.org/data/2.5/weather?q=" + encodeURIComponent(city.value) + "&units=metric&appid=c1f0d32ccc4dd3226e84b81bec923749";
       httpRequest(searchLink, getData);
