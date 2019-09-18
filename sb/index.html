@@ -1,547 +1,877 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Бесплатный мастер-класс по программированию для детей - Алгоритмика г. Вологда</title>
-	<link rel="icon" href="img/favicon.png" type="image/png">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="css/slick-theme.css">
-	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="//icon-box.live/sprite/latest/"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Smart Broker</title>
+
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+  <link rel='stylesheet prefetch' href='/css/slick.css'>
+  <link rel='stylesheet prefetch' href='/css/slick-theme.css'>
+  <link rel='stylesheet prefetch' href='/css/animate.css'>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="//icon-box.live/sprite/latest/"></script>
 </head>
 
 <body>
 
-	<div class="landing-heading">
-
-		<!-- Общая шапка -->
-		<header class="landing-heading__header header">
-			<div class="container">
-				<div class="header__wrapper">
-					<a href="" class="header__logo">
-						<svg width="169" height="37" role="img">
-							<use xlink:href="img/sprite.svg#logo"></use>
-						</svg>
-					</a>
-					<a href="" class="header__logo header__logo--scroll">
-						<svg width="169" height="37" role="img">
-							<use xlink:href="img/sprite.svg#logo2"></use>
-						</svg>
-					</a>
-					<a href="" class="header__logo header__logo--mobile">
-						<svg width="24" height="24" role="img">
-							<use xlink:href="img/sprite.svg#logo--mobile"></use>
-						</svg>
-					</a>
-
-					<span class="header__description">Международная школа <br> программирования</span>
-
-					<nav class="header__nav">
-						<ul class="header__nav-list">
-							<li class="header__nav-item">
-								<a href="#ages" class="header__nav-link">О мастер классе</a>
-							</li>
-							<li class="header__nav-item">
-								<a href="#gallery" class="header__nav-link">Галлерея</a>
-							</li>
-							<li class="header__nav-item">
-								<a href="#reviews" class="header__nav-link">Отзывы</a>
-							</li>
-							<li class="header__nav-item">
-								<a href="#about" class="header__nav-link">О школе</a>
-							</li>
-						</ul>
-					</nav>
-
-					<a href="tel:+78002000835" class="header__contacts"
-						onclick="yaCounter55302601.reachGoal('callClick'); return true;">
-						<svg width="20" height="20" role="img">
-							<use xlink:href="img/sprite.svg#phone"></use>
-						</svg>
-						8 800 200-08-35
-					</a>
-
-					<a class="header__btn main-btn main-btn--small main-btn--transparent" href="#cta__form">
-						Записаться
-					</a>
-
-					<a href="" class="header__burger"><span></span></a>
-
-				</div>
-			</div>
-		</header>
-		<!-- Общая шапка конец-->
-
-		<div class="landing-heading__presentation presentation">
-			<div class="container">
-				<div class="presentation__wrapper">
-					<div class="presentation__info">
-						<h1 class="presentation__title"><b>Бесплатный мастер-класс</b> по программированию для детей 5-14 лет </h1>
-						<p class="presentation__text">На мастер-классе дети в игровой форме познакомятся с профессией программиста и
-							напишут свои первые циклы.</p>
-						<a href="#cta__form" class="presentation__btn main-btn">Записаться на мастер класс</a>
-					</div>
-					<img src="img/presentation__img.png" alt="presentation__img" class="presentation__img">
-				</div>
-			</div>
-		</div>
+  <div class="body__wrapper">
 
 
-	</div>
+    <!-- Общая шапка -->
+    <header class="header">
+      <div class="container">
 
+        <div class="header__wrapper">
+          <a href="" class="header__logo">
+            <svg width="76" height="38" role="img">
+              <use xlink:href="/img/sprite.svg#logo"></use>
+            </svg>
+          </a>
 
-	<section class="master-class" id="master-class">
-		<div class="container">
-			<h2 class="master-class__title">Как проходит мастер-класс</h2>
-			<ul class="master-class__list">
-				<li class="master-class__item">
-					<img src="img/master-class__item-img1.png" alt="master-class__item-img1"
-						class="master-class__item-img master-class__item-img1">
-					<div class="master-class__item-wrapper">
-						<h3 class="master-class__item-title">Знакомство</h3>
-						<p class="master-class__item-text">Прежде чем приступить к занятию, ребята общаются, играют и знакомятся с
-							преподавателем и друг другом.</p>
-					</div>
-				</li>
-				<li class="master-class__item">
-					<div class="master-class__item-wrapper">
-						<h3 class="master-class__item-title">Теория и практика</h3>
-						<p class="master-class__item-text">Преподователь в доступной форме объяснит теоритическую часть мастер
-							класса
-							и
-							поможет с авторизацией в ЛК.</p>
-						<p class="master-class__item-text">Все обучение происходит в игровой форме на уникальной обучающей платформе
-							«Алгоритмика».</p>
-					</div>
-					<img src="img/master-class__item-img2.png" alt="master-class__item-img2"
-						class="master-class__item-img master-class__item-img2">
+          <a href="" class="header__btn"><span></span></a>
 
-				</li>
-				<li class="master-class__item">
-					<img src="img/master-class__item-img3.png" alt="master-class__item-img3"
-						class="master-class__item-img master-class__item-img3">
-					<div class="master-class__item-wrapper">
-						<h3 class="master-class__item-title">Награждение и прощание</h3>
-						<p class="master-class__item-text">После выполнения заданий дети получаю призы и прощаются с преподавателем.
-						</p>
-						<p class="master-class__item-text">Так же мы оставляем доступ в личный кабинет для самостоятельного изучения
-							на 7
-							дней, что бы у детей было время ближе познакомится с профессией программистом.</p>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</section>
+          <nav class="header__nav header-nav" id="header__nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a href="#index-presentation" class="header-nav__link" data-add="500">О платформе</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#index-info__cta" class="header-nav__link">Как начать?</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#index-partner" class="header-nav__link" data-add="150">Партнерам </a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#index-partner__rating" class="header-nav__link">Топ партнеров</a>
+              </li>
+              <li class="header-nav__item">
+                <a href="#faq" class="header-nav__link">ЧаВО!?</a>
+              </li>
+            </ul>
+          </nav>
 
-	<section class="stats">
-		<div class="container">
-			<h2 class="stats__title visibly-hidden">Наша статистика</h2>
-			<ul class="stats__list">
-				<li class="stats__item">
-					<h3 class="stats__item-title">60</h3>
-					<p class="stats__item-text">Минут длится мастер класс, <br> в школе «Алгоритмика»</p>
-				</li>
-				<li class="stats__item">
-					<h3 class="stats__item-title">320+</h3>
-					<p class="stats__item-text">Детей, посетили наши мастер классы и сделали первые шаги в программирование</p>
-				</li>
-				<li class="stats__item">
-					<h3 class="stats__item-title">100%</h3>
-					<p class="stats__item-text">Веселья и пользы на наших мастер классах</p>
-				</li>
-			</ul>
-		</div>
-	</section>
-
-
-	<section class="ages" id="ages">
-		<div class="container">
-			<h2 class="ages__title">Мастер классы для всех возрастов</h2>
-			<ul class="ages__list">
-				<li class="ages__item course-presentation">
-					<div class="course-presentation__img">
-						<img src="img/course-presentation__img1.png" alt="course-presentation__img1">
-						<div class="course-presentation__info">
-							<span class="course-presentation__age">5-7 лет</span>
-						</div>
-					</div>
-					<h3 class="course-presentation__title">Основы логики и программирования</h3>
-					<p class="course-presentation__text">Первое погружение в увлекательный мир логики, алгоритмов и
-						программирования
-					</p>
-				</li>
-				<li class="ages__item course-presentation">
-					<div class="course-presentation__img">
-						<img src="img/course-presentation__img2.png" alt="course-presentation__img2">
-						<div class="course-presentation__info">
-							<span class="course-presentation__new">Новинка</span>
-							<span class="course-presentation__age">5-7 лет</span>
-						</div>
-					</div>
-					<h3 class="course-presentation__title">Компьютерная грамотность и цифровое творчество</h3>
-					<p class="course-presentation__text">Учим использовать современные программы и приложения с позьой для учебы и
-						повседненойдизни
-					</p>
-				</li>
-				<li class="ages__item course-presentation">
-					<div class="course-presentation__img">
-						<img src="img/course-presentation__img3.png" alt="course-presentation__img3">
-						<div class="course-presentation__info">
-							<span class="course-presentation__age">8-12 лет</span>
-						</div>
-					</div>
-					<h3 class="course-presentation__title">Креативное <br> программирование</h3>
-					<p class="course-presentation__text">Погружение в мир программирования и создание креативных проектов
-					</p>
-				</li>
-				<li class="ages__item course-presentation">
-					<div class="course-presentation__img">
-						<img src="img/course-presentation__img4.png" alt="course-presentation__img4">
-						<div class="course-presentation__info">
-							<span class="course-presentation__age">11-13 лет</span>
-						</div>
-					</div>
-					<h3 class="course-presentation__title">Курс Python Start</h3>
-					<p class="course-presentation__text">Увлекательное программирование на одном из популярных языков в мире
-					</p>
-				</li>
-				<li class="ages__item course-presentation">
-					<div class="course-presentation__img">
-						<img src="img/course-presentation__img5.png" alt="course-presentation__img5">
-						<div class="course-presentation__info">
-							<span class="course-presentation__age">11-13 лет</span>
-						</div>
-					</div>
-					<h3 class="course-presentation__title">Курс Python PRO</h3>
-					<p class="course-presentation__text">Подготовка к профессиям будущего через освоение лучших практик
-						программирования на Python
-					</p>
-				</li>
-				<li class="ages__item wait">
-					<h3 class="wait__title">Мы ждем <br> именно вас!</h3>
-					<a href="#cta__form" class="wait__btn main-btn main-btn--medium">Записаться на мастер-класс</a>
-				</li>
-			</ul>
-		</div>
-	</section>
-
-	<section class="gallery" id="gallery">
-		<div class="container-big">
-			<h2 class="gallery__title">Фотографии с прошедших мастер-классов</h2>
-			<div class="gallery__wrapper">
-				<a data-fancybox="mygallery" href="img/gallery/gallery__img-full1.jpg"
-					class="gallery__horizontal gallery__block">
-					<img src="img/gallery__img1.png" alt="" class="gallery__img">
-				</a>
-				<a data-fancybox="mygallery" href="img/gallery/gallery__img-full2.jpg"
-					class="gallery__vertical gallery__block">
-					<img src="img/gallery__img2.png" alt="" class="gallery__img">
-				</a>
-				<a data-fancybox="mygallery" href="img/gallery/gallery__img-full3.jpg" class="gallery__block">
-					<img src="img/gallery__img3.png" alt="" class="gallery__img">
-				</a>
-				<a data-fancybox="mygallery" href="img/gallery/gallery__img-full4.jpg" class="gallery__block">
-					<img src="img/gallery__img4.png" alt="" class="gallery__img ">
-				</a>
-				<a data-fancybox="mygallery" href="img/gallery/gallery__img-full5.jpg" class="gallery__block">
-					<img src="img/gallery__img5.png" alt="" class="gallery__img">
-				</a>
-				<a data-fancybox="mygallery" href="img/gallery/gallery__img-full10.jpg" class="gallery__block">
-					<img src="img/gallery__img10.png" alt="" class="gallery__img">
-				</a>
-				<a data-fancybox="mygallery" href="img/gallery/gallery__img-full6.jpg" class="gallery__big gallery__block">
-					<img src="img/gallery__img6.png" alt="" class="gallery__img ">
-				</a>
-				<a data-fancybox="mygallery" href="img/gallery/gallery__img-full7.jpg"
-					class="gallery__vertical gallery__block">
-					<img src="img/gallery__img7.png" alt="" class="gallery__img ">
-				</a>
-				<a data-fancybox="mygallery" href="img/gallery/gallery__img-full8.jpg" class="gallery__block">
-					<img src="img/gallery__img8.png" alt="" class="gallery__img">
-				</a>
-				<a data-fancybox="mygallery" href="img/gallery/gallery__img-full9.jpg" class="gallery__block">
-					<img src="img/gallery__img9.png" alt="" class="gallery__img">
-				</a>
-			</div>
-		</div>
-	</section>
-
-	<section class="reviews" id="reviews">
-		<div class="container-big">
-			<h2 class="reviews__title">Отзывы родителей.</h2>
-			<ul class="reviews__slider">
-				<li class="reviews__slider-item">
-
-					<div class="reviews__slider-info">
-						<h4 class="reviews__slider-name">Ирина Загаврина</h4>
-						<span class="reviews__slider-sourse">Отзыв из группы Вконтакте</span>
-						<p class="reviews__slider-text">Отличные мастер-классы. Ходили с двумя сыновьями 5 и 8 лет. Информация
-							подаётся
-							в
-							игровой, а значит, доступной и адаптированной под возраст ребенка, форме. Что не может не радовать. Дети
-							были в
-							восторге. Такими и должны быть занятия.</p>
-					</div>
-					<img src="img/reviews__slider-avatar1.png" alt="reviews__slider-avatar1"
-						class="reviews__slider-avatar reviews__slider-avatar--medium">
-
-				</li>
-				<li class="reviews__slider-item">
-					<a href="" class="reviews__slider-link">
-						<svg class="reviews__slider-social" width="20" height="20" role="img">
-							<use xlink:href="#bm_icon_social_vk"></use>
-						</svg>
-						<p class="reviews__slider__quation">Уже сходили на наш мастер класс? <br>Пожалуйста <b>расскажите как все
-								прошло
-								:)</b></p>
-					</a>
-					<div class="reviews__slider-info">
-						<h4 class="reviews__slider-name">Таня Сен </h4>
-						<span class="reviews__slider-sourse">Отзыв из группы Вконтакте</span>
-						<p class="reviews__slider-text">Ходили на мастер-класс с дочкой, она осталась довольна. Преподаватели
-							прекрасно
-							контактировали с детьми и отлично себя показали.</p>
-					</div>
-					<img src="img/reviews__slider-avatar2.png" alt="reviews__slider-avatar2"
-						class="reviews__slider-avatar reviews__slider-avatar--big">
-				</li>
-				<li class="reviews__slider-item">
-					<div class="reviews__slider-info">
-						<h4 class="reviews__slider-name">Андрей Холмогоров</h4>
-						<span class="reviews__slider-sourse">Отзыв из группы Вконтакте</span>
-						<p class="reviews__slider-text">Добрый день! 10 августа был с сыном на мастер-классе в школе "Алгоритмика",
-							сыну 5
-							лет. Мастер-класс проводился для детей в</p>
-					</div>
-					<img src="img/reviews__slider-avatar3.png" alt="reviews__slider-avatar3"
-						class="reviews__slider-avatar reviews__slider-avatar--small">
-				</li>
-			</ul>
-		</div>
-	</section>
-
-
-	<section class="about" id="about">
-		<div class="container">
-			<div class="about__wrapper">
-
-				<div class="about__info">
-					<h2 class="about__title">О школе «Алгоритмика»</h2>
-					<p class="about__text">Школа «Алгоритмика» помогает сделать первые шаги детям и подросткам в мир IT. Все
-						обучение
-						происходит на собственной образовательной платформе в игровой форме.</p>
-					<p class="about__text">Изучение программирование развивает логическое мышление и математические способности,
-						которые пригодятся во взрослой жизни.</p>
-				</div>
-				<img src="img/about__img.png" alt="about__img" class="about__img">
-			</div>
-		</div>
-	</section>
-
-
-	<footer class="footer">
-		<div class="footer__cta cta">
-			<h2 class="cta__title">Запишитесь <br> на беспатный <br> мастер-класс</h2>
-            <form action="/" method="post" class="cta__form" id="cta__form"
-						onsubmit="yaCounter55302601.reachGoal('sendForm'); return true;">
-                <div class="input-block  cta__input-block">
-                    <input type="text" name="name" class="cta__input input" required placeholder="Ваше имя">
-                    <span class="input-block__note">Заполните поле</span>
-                    <svg class="input-block__icon" width="25" height="25" role="img">
-                        <use xlink:href="img/sprite.svg#exclamation"></use>
+          <nav class="header__lang-nav lang-nav">
+            <ul class="lang-nav__list">
+              <li class="lang-nav__item">
+                <a class="lang-nav__link" href="">
+                  <div class="lang-nav__icon-wrapper">
+                    <svg width=46 height=46 class="lang-nav__icon" role="img">
+                      <use xlink:href="#bm_icon_flags_en_united_kingdom"></use>
                     </svg>
-                </div>
-                <div class="input-block cta__input-block">
-                    <input type="tel" name="tel" class="cta__input input" required placeholder="Телефон">
-                    <span class="input-block__note">Заполните поле</span>
-                    <svg class="input-block__icon" width="25" height="25" role="img">
-                        <use xlink:href="img/sprite.svg#exclamation"></use>
+                  </div>
+                  Eng
+                </a>
+              </li>
+              <!-- 	<li class="lang-nav__item">
+								<a class="lang-nav__link" href="">
+									<div class="lang-nav__icon-wrapper">
+										<svg width=46 height=46 class="lang-nav__icon" role="img">
+											<use xlink:href="#bm_icon_flags_ru"></use>
+										</svg>
+									</div>
+									Рус
+								</a>
+							</li> -->
+            </ul>
+          </nav>
+
+          <nav class="header__cabinet-nav cabinet-nav">
+            <ul class="cabinet-nav__list">
+              <li class="cabinet-nav__item">
+
+                <a class="cabinet-nav__link" href="">
+                  <svg class="cabinet-nav__icon" width="16" height="16" role="img">
+                    <use xlink:href="/img/sprite.svg#login"></use>
+                  </svg>
+                  <span class="cabinet-nav__text">Кабинет партнера</span>
+
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+    </header>
+    <!-- Общая шапка конец-->
+
+
+
+    <section class="index-presentation" id="index-presentation">
+      <div class="container">
+
+        <div class="index-presentation__wrapper">
+          <div class="index-presentation__info">
+            <h1 class="index-presentation__title"><b>Smart Broker —</b>
+              платформа для автоматической торговли криптовалютами </h1>
+          </div>
+          <div class="index-presentation__apps app-links">
+            <ul class="app-links__list">
+              <li class="app-links__item">
+                <a href="" class="app-links__link">
+                  <svg class="app-links__icon" width="178" height="56" role="img">
+                    <use xlink:href="/img/sprite.svg#google-play--dark"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="app-links__item">
+                <a href="" class="app-links__link">
+                  <svg class="app-links__icon" width="178" height="56" role="img">
+                    <use xlink:href="/img/sprite.svg#app-store--dark"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <span class="app-links__note">Скачать приложение Smart Broker для инвестиций</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="index-presentation__graph">
+        <img src="/img/desktop-balance__graph.png" alt="">
+        <span class="index-presentation__note">Пульс прибыли от закрытых сделок бота — обновляется каждые 3
+          секунды</span>
+      </div>
+
+    </section>
+
+
+    <section class="index-info">
+      <div class="container">
+        <div class="index-info__wrapper">
+          <div class="index-info__img">
+            <img src="/img/index-info__img.png" alt="">
+          </div>
+          <div class="index-info__description">
+            <h2 class="index-info__title">Smart Broker — ваш корманый брокер</h2>
+            <p class="index-info__text">Smart Broker использует ботов на основе искусственного интеллекта для полной
+              автоматизации процесса торгов. </p>
+            <p class="index-info__text">Боты сами выстраивают стратегии, делают прогнозы и заключает сделки — вам
+              нужно только пополнить баланс и получать прибыль. </p>
+            <p class="index-info__text">Гарантируемый доход 60-150% в месяц, в зависимости от выбранного тарифного
+              плана.</p>
+          </div>
+
+          <p class="index-info__note">Теперь, для торговли на бирже не нужно следить за ситуацией на рынке и строить
+            стратегии.</p>
+        </div>
+
+        <ul class="index-info__features-list features-list">
+          <li class="features-list__item" data-number="1">Быстрый старт — скачайте приложение, зарегистрируйтесь
+            и активируйте умного
+            бота</li>
+          <li class="features-list__item" data-number="2">Пять тарифных планов с разным периодом инвестиций и размером
+            депозита</li>
+          <li class="features-list__item" data-number="3">Система рассчитывает гарантируемый доход от депозита
+            с точностью 93% </li>
+          <li class="features-list__item" data-number="4">Храним всю историю операций, что бы могли анализировать свои
+            доходы</li>
+          <li class="features-list__item" data-number="5">Бот автоматически выбирает валюту и биржу для торгов исходя из
+            ситуации на
+            рынке</li>
+          <li class="features-list__item" data-number="6">Бот автоматически управляет вашими инвестициями и начисляет
+            доход ежедневно
+          </li>
+        </ul>
+
+
+        <ul class="index-info__exchange-list exchange-list">
+          <li class="exchange-list__item">
+            <img src="/img/exchange-list__img1.png" alt="" class="exchange-list__img">
+          </li>
+          <li class="exchange-list__item">
+            <img src="/img/exchange-list__img2.png" alt="" class="exchange-list__img">
+          </li>
+          <li class="exchange-list__item">
+            <img src="/img/exchange-list__img3.png" alt="" class="exchange-list__img">
+          </li>
+          <li class="exchange-list__item">
+            <img src="/img/exchange-list__img4.png" alt="" class="exchange-list__img">
+          </li>
+          <li class="exchange-list__item">
+            <img src="/img/exchange-list__img5.png" alt="" class="exchange-list__img">
+          </li>
+        </ul>
+
+        <div class="index-info__instruments instruments">
+          <h2 class="instruments__title">Сравнение торговых инструментов</h2>
+          <div class="instruments__table-wrapper">
+            <table class="instruments__table instruments-table">
+              <thead>
+                <tr>
+                  <th class="instruments-table__heading">
+                    Инструмент
+                    <svg width="12" height="12" role="img">
+                      <use xlink:href="/img/sprite.svg#arrow"></use>
                     </svg>
-                </div>
-
-                <div class="input-block cta__input-block">
-                    <input type="email" name="email" class="cta__input input" required placeholder="E-mail">
-                    <span class="input-block__note">Заполните поле</span>
-                    <svg class="input-block__icon" width="25" height="25" role="img">
-                        <use xlink:href="img/sprite.svg#exclamation"></use>
+                  </th>
+                  <th>Smart Broker</th>
+                  <th>Брокер</th>
+                  <th>Бот трейдер</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Не требуются знания работы с биржей
+                  </td>
+                  <td>
+                    <svg class="instruments-table__icon instruments-table__icon--green" width="24" height="24"
+                      role="img">
+                      <use xlink:href="/img/sprite.svg#succes-round"></use>
                     </svg>
-                </div>
+                  </td>
+                  <td>
+                    <svg class="instruments-table__icon instruments-table__icon--green" width="24" height="24"
+                      role="img">
+                      <use xlink:href="/img/sprite.svg#succes-round"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="instruments-table__icon instruments-table__icon--red" width="24" height="24" role="img">
+                      <use xlink:href="/img/sprite.svg#x-circle"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Точное прогнозирование прибыли
+                  </td>
+                  <td>
+                    <svg class="instruments-table__icon instruments-table__icon--green" width="24" height="24"
+                      role="img">
+                      <use xlink:href="/img/sprite.svg#succes-round"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="instruments-table__icon instruments-table__icon--red" width="24" height="24" role="img">
+                      <use xlink:href="/img/sprite.svg#x-circle"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="instruments-table__icon instruments-table__icon--red" width="24" height="24" role="img">
+                      <use xlink:href="/img/sprite.svg#x-circle"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Отсутсвие рисков потери инвестиций
+                  </td>
+                  <td>
+                    <svg class="instruments-table__icon instruments-table__icon--green" width="24" height="24"
+                      role="img">
+                      <use xlink:href="/img/sprite.svg#succes-round"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="instruments-table__icon instruments-table__icon--red" width="24" height="24" role="img">
+                      <use xlink:href="/img/sprite.svg#x-circle"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="instruments-table__icon instruments-table__icon--red" width="24" height="24" role="img">
+                      <use xlink:href="/img/sprite.svg#x-circle"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Не требуется настройка бота
+                  </td>
+                  <td>
+                    <svg class="instruments-table__icon instruments-table__icon--green" width="24" height="24"
+                      role="img">
+                      <use xlink:href="/img/sprite.svg#succes-round"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="instruments-table__icon instruments-table__icon--green" width="24" height="24"
+                      role="img">
+                      <use xlink:href="/img/sprite.svg#succes-round"></use>
+                    </svg>
+                  <td>
+                    <svg class="instruments-table__icon instruments-table__icon--red" width="24" height="24" role="img">
+                      <use xlink:href="/img/sprite.svg#x-circle"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Не требуется личное участие в торгах
+                  </td>
+                  <td>
+                    <svg class="instruments-table__icon instruments-table__icon--green" width="24" height="24"
+                      role="img">
+                      <use xlink:href="/img/sprite.svg#succes-round"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="instruments-table__icon instruments-table__icon--green" width="24" height="24"
+                      role="img">
+                      <use xlink:href="/img/sprite.svg#succes-round"></use>
+                    </svg>
+                  <td>
+                    <svg class="instruments-table__icon instruments-table__icon--red" width="24" height="24" role="img">
+                      <use xlink:href="/img/sprite.svg#x-circle"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Гибкие тарифные планы
+                  </td>
+                  <td>
+                    <svg class="instruments-table__icon instruments-table__icon--green" width="24" height="24"
+                      role="img">
+                      <use xlink:href="/img/sprite.svg#succes-round"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="instruments-table__icon instruments-table__icon--red" width="24" height="24" role="img">
+                      <use xlink:href="/img/sprite.svg#x-circle"></use>
+                    </svg>
+                  <td>
+                    <svg class="instruments-table__icon instruments-table__icon--red" width="24" height="24" role="img">
+                      <use xlink:href="/img/sprite.svg#x-circle"></use>
+                    </svg>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
-                <input type="submit" class="cta__submit main-btn main-btn main-btn--medium" value="Записаться">
-            </form>
-		</div>
-		<div class="footer__contacts contacts">
-			<div class="contacts__map">
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2042.45111736528!2d39.89314531626233!3d59.208473981616656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ae9832e3c20d97%3A0x9ec506925a7af2a4!2z0YPQuy4g0JLQtdGC0L7RiNC60LjQvdCwLCAzNiwg0JLQvtC70L7Qs9C00LAsINCS0L7Qu9C-0LPQvtC00YHQutCw0Y8g0L7QsdC7LiwgMTYwMDEx!5e0!3m2!1sru!2sru!4v1567523604434!5m2!1sru!2sru"
-					width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-			</div>
-			<div class="contacts__wrapper">
-				<svg class="contacts__logo" width="189" height="44" role="img">
-					<use xlink:href="img/sprite.svg#logo"></use>
-				</svg>
+        <div class="index-info__cta cta" id="index-info__cta">
+          <h2 class="cta__title">Зарабатывать на биржах — просто</h2>
+          <div class="cta__wrapper">
+            <nav class="cta__nav cta-nav">
+              <ul class="cta-nav__list">
+                <li class="cta-nav__item cta-nav__item--active" data-slide="0">
+                  <h3 class="cta-nav__title">Зарегистрируйтесь</h3>
+                  <p class="cta-nav__text">Скачайте приложение для своего смартфона из <a href="">Google Play</a> или
+                    <a href="">APP Store</a>, зарегистрируйтесь и начните зарабатывать на крипто-торговле</p>
+                </li>
+                <li class="cta-nav__item" data-slide="1">
+                  <h3 class="cta-nav__title">Выберите тариф</h3>
+                  <p class="cta-nav__text">Мы разработали пять уникальных тарифных планов, что бы каждый инвестор Smart
+                    Broker мог
+                    подобрать максимально удобный для себя тариф</p>
+                </li>
+                <li class="cta-nav__item " data-slide="2">
+                  <h3 class="cta-nav__title">Активируйте бота</h3>
+                  <p class="cta-nav__text">Пополните баланс бота любым удобным для вас способ и начните получать
+                    ежедневный доход, а
+                    после периода торгов вам вернется ваш депозит за вычетом комиссии системы</p>
+                </li>
+              </ul>
+            </nav>
 
-				<ul class="contacts__social-list social-list">
-					<li class="social-list__item">
-						<a href="https://vk.com/algoritmika35" target="_blank" class="social-list__link">
-							<svg class="social-list__icon" width="24" height="24" role="img">
-								<use xlink:href="#bm_icon_social_vk"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social-list__item">
-						<a href="https://www.instagram.com/algoritmika35" target="_blank" class="social-list__link">
-							<svg class="social-list__icon" width="24" height="24" role="img">
-								<use xlink:href="#bm_icon_social_instagram"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social-list__item">
-						<a href="https://www.facebook.com/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8%D0%BA%D0%B0-%D0%92%D0%BE%D0%BB%D0%BE%D0%B3%D0%B4%D0%B0-684286252023311/"
-							target="_blank" class="social-list__link">
-							<svg class="social-list__icon" width="24" height="24" role="img">
-								<use xlink:href="#bm_icon_social_facebook"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="social-list__item">
-						<span class="social-list__cta">Присоединяйтесь <br> к нам в соц. сетях</span>
-					</li>
-				</ul>
-				<span class="contacts__description">Международная школа <br> программирования</span>
-				<a href="tel:+78002000835" class=" contacts__phone"
-					onclick="yaCounter55302601.reachGoal('callClick'); return true;">
-					<svg width="20" height="20" role="img">
-						<use xlink:href="img/sprite.svg#phone"></use>
-					</svg>
-					8 800 200-08-35
-				</a>
-				<span class="contacts__adress">
-					Вологда, Ветошкина, 36 офис 201
-				</span>
-			</div>
-		</div>
-	</footer>
+            <div class="cta__slider">
+              <div class="cta__img">
+                <img src="/img/cta__img1.png" alt="">
+              </div>
+              <div class="cta__img">
+                <img src="/img/cta__img2.png" alt="">
+              </div>
+              <div class="cta__img">
+                <img src="/img/cta__img3.png" alt="">
+              </div>
+            </div>
 
+          </div>
+        </div>
 
-
-	<div class="mobile-menu">
-
-		<div class="mobile-menu__wrapper">
-
-			<a href="" class="mobile-menu__logo">
-				<svg width="138" height="32" role="img">
-					<use xlink:href="img/sprite.svg#logo"></use>
-				</svg>
-			</a>
-			<span class="mobile-menu__description">Международная школа <br> программирования</span>
-
-
-			<nav class="mobile-menu__nav">
-
-				<ul class="mobile-menu__list">
-					<li class="mobile-menu__item ">
-						<a href="#master-class" class="mobile-menu__link mobile-menu__link--accent">
-							О мастер-классе
-							<svg width="138" height="32" role="img">
-								<use xlink:href="img/sprite.svg#arrow"></use>
-							</svg>
-						</a>
-					</li>
-				</ul>
-
-				<ul class="mobile-menu__list">
-					<li class="mobile-menu__item mobile-menu__item--gap">
-						<a href="#gallery" class="mobile-menu__link">
-							Галлерея
-							<svg width="138" height="32" role="img">
-								<use xlink:href="img/sprite.svg#arrow"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="mobile-menu__item">
-						<a href="#reviews" class="mobile-menu__link">
-							Отзывы
-							<svg width="138" height="32" role="img">
-								<use xlink:href="img/sprite.svg#arrow"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="mobile-menu__item">
-						<a href="#about" class="mobile-menu__link">
-							О школе
-							<svg width="138" height="32" role="img">
-								<use xlink:href="img/sprite.svg#arrow"></use>
-							</svg>
-						</a>
-					</li>
-				</ul>
-			</nav>
-
-			<div class="mobile-menu__contacts">
-
-				<a href="tel:+78002000835" class="mobile-menu__phone"
-					onclick="yaCounter55302601.reachGoal('callClick'); return true;">
-					<svg width="20" height="20" role="img">
-						<use xlink:href="img/sprite.svg#phone"></use>
-					</svg>
-					8 800 200-08-35
-				</a>
-
-				<ul class="mobile-menu__social-list">
-					<li class="mobile-menu__social-item">
-						<a href="https://vk.com/algoritmika35" class="mobile-menu__social-link">
-							<svg class="mobile-menu__social-icon" width="30" height="30" role="img">
-								<use xlink:href="#bm_icon_social_vk"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="mobile-menu__social-item">
-						<a href="https://www.instagram.com/algoritmika35" class="mobile-menu__social-link">
-							<svg class="mobile-menu__social-icon" width="30" height="30" role="img">
-								<use xlink:href="#bm_icon_social_instagram"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="mobile-menu__social-item">
-						<a href="https://www.facebook.com/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8%D0%BA%D0%B0-%D0%92%D0%BE%D0%BB%D0%BE%D0%B3%D0%B4%D0%B0-684286252023311/" class="mobile-menu__social-link">
-							<svg class="mobile-menu__social-icon" width="30" height="30" role="img">
-								<use xlink:href="#bm_icon_social_facebook"></use>
-							</svg>
-						</a>
-					</li>
-				</ul>
-
-			</div>
-
-		</div>
-
-		<button class="mobile-menu__close menu-close" id="mobile-menu__close">
-			<svg class="menu-close__icon" width="16" height="16" role="img">
-				<use xlink:href="img/sprite.svg#close"></use>
-			</svg>
-		</button>
-
-	</div>
-
-
-
-
-
-
-	<script src='js/jquery.min.js'></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js'></script>
-	<script src="js/slick.min.js"></script>
-	<script src="js/index.js"></script>
+      </div>
+    </section>
 
 
+
+    <section class="index-partner" id="index-partner">
+      <div class="container">
+
+        <h2 class="index-partner__title">Партнерская программа</h2>
+        <p class="index-partner__text">Отличная возможность увеличить свой доход без дополнительных инвестиций, за счет
+          приглашения друзей и знакомых в платформу Smart Broker</p>
+        <img src="/img/index-partner__img.png" alt="" class="index-partner__img">
+
+        <ul class="index-partner__list partner-list wow slideInRight" data-wow-duration="1.5s">
+          <li class="partner-list__item">
+            <h4 class="partner-list__title">Уровни</h4>
+            <p class="partner-list__text">Три уровня партнерской программы позволяют построить масштабную реферальную
+              сеть и увеличивать свой доход без самостоятельного привлечения новых партнеров</p>
+          </li>
+          <li class="partner-list__item">
+            <h4 class="partner-list__title">Доход</h4>
+            <p class="partner-list__text">С каждого депозита партнеров вам начисляется бонусный процент: с партнера 1
+              уровня — 10%, 2 уровня — 5%, 3 уровня — 1% от прибыли платформы Smart Broker.</p>
+          </li>
+          <li class="partner-list__item">
+            <h4 class="partner-list__title">Материалы</h4>
+            <p class="partner-list__text">Мы подготовили промо материалы, что бы вы могли разместить их в своем блоге
+              или на страницах в социальных сетях</p>
+          </li>
+          <li class="partner-list__item">
+            <h4 class="partner-list__title">Спец. условия</h4>
+            <p class="partner-list__text">Готовы обсудить уникальные условия сотрудничества с каждым партнером.</p>
+            <p class="partner-list__text">Свяжитесь с нами по почте <a href="">support@smart-broker.net</a></p>
+          </li>
+        </ul>
+
+        <div class="index-partner__rating partner-rating" id="index-partner__rating">
+          <h2 class="partner-rating__title">Рейтинг партнеров Smart Broker</h2>
+          <table class="partner-rating__table rating-table">
+            <thead>
+              <tr>
+                <th>Рейтинг</th>
+                <th>Имя</th>
+                <th>Реф. ур.1</th>
+                <th>Реф. ур.2</th>
+                <th>Реф. ур.3</th>
+                <th>Доход</th>
+                <th>Дата регистрации</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>№1</td>
+                <td>Ringowloshex</td>
+                <td>23чел.</td>
+                <td>58чел.</td>
+                <td>87чел.</td>
+                <td class="rating-table__income">+18 934.23$</td>
+                <td>28.12.2019</td>
+              </tr>
+              <tr>
+                <td>№2</td>
+                <td>Ninaya</td>
+                <td>8чел.</td>
+                <td>87чел.</td>
+                <td>120чел.</td>
+                <td class="rating-table__income">+11 293.15$</td>
+                <td>17.09.2019</td>
+              </tr>
+              <tr>
+                <td>№3</td>
+                <td>Coirim</td>
+                <td>16чел.</td>
+                <td>24чел.</td>
+                <td>55чел.</td>
+                <td class="rating-table__income">+11 124.03$</td>
+                <td>19.10.2019</td>
+              </tr>
+              <tr>
+                <td>№4</td>
+                <td>Vikora</td>
+                <td>54чел.</td>
+                <td>256чел.</td>
+                <td>432чел.</td>
+                <td class="rating-table__income">+10 921.97$</td>
+                <td>5.06.2019</td>
+              </tr>
+              <tr>
+                <td>№5</td>
+                <td>Saiwyn </td>
+                <td>3чел.</td>
+                <td>17чел.</td>
+                <td>20чел.</td>
+                <td class="rating-table__income">+10 843.54$</td>
+                <td>26.10.2019</td>
+              </tr>
+              <tr>
+                <td>№6</td>
+                <td>Dolkis</td>
+                <td>54чел.</td>
+                <td>320чел.</td>
+                <td>168чел.</td>
+                <td class="rating-table__income">+9 686.87$</td>
+                <td>18.04.2019</td>
+              </tr>
+              <tr>
+                <td>№7</td>
+                <td>Aurira</td>
+                <td>13чел.</td>
+                <td>86чел.</td>
+                <td>24чел.</td>
+                <td class="rating-table__income">+9 398.23$</td>
+                <td>16.07.2019</td>
+              </tr>
+              <tr>
+                <td>№8</td>
+                <td>Shajora</td>
+                <td>23чел.</td>
+                <td>58чел.</td>
+                <td>87чел.</td>
+                <td class="rating-table__income">+8 934.23$</td>
+                <td>28.12.2019</td>
+              </tr>
+              <tr>
+                <td>№9</td>
+                <td>Buzalak</td>
+                <td>16чел.</td>
+                <td>20чел.</td>
+                <td>54чел.</td>
+                <td class="rating-table__income">+8 432.79$</td>
+                <td>31.10.2019</td>
+              </tr>
+              <tr>
+                <td>№10</td>
+                <td>Dijinn</td>
+                <td>6чел.</td>
+                <td>8чел.</td>
+                <td>231чел.</td>
+                <td class="rating-table__income">+8 124.05$</td>
+                <td>1.07.2019</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="" class="partner-rating__btn main-btn main-btn--white">Стать партнером</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="faq__title">Ответы на популярные вопросы</h2>
+        <nav class="faq__tabs-nav tabs-nav">
+          <ul class="tabs-nav__list">
+            <li class="tabs-nav__item">
+              <a href="" class="tabs-nav__link tabs-nav__link--active" data-tab="tab1">Основные</a>
+            </li>
+            <li class="tabs-nav__item">
+              <a href="" class="tabs-nav__link" data-tab="tab2">Инвесторам</a>
+            </li>
+            <li class="tabs-nav__item">
+              <a href="" class="tabs-nav__link" data-tab="tab3">Партнерам</a>
+            </li>
+          </ul>
+        </nav>
+
+
+
+        <ul id="tab1" class="faq__list faq-list tab">
+          <li class="faq-list__item">
+            <svg class="faq-list__icon" width="24" height="24" role="img">
+              <use xlink:href="/img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+            <h3 class="faq-list__title">Где скачать приложение для инвестиций?</h3>
+            <div class="faq-list__answer">
+              <p class="faq-list__text">Анимация красивая, но излишняя. В общей сложности для просмотра деталей
+                транзакции требуется около 3,5 секунд. Простой fade-in квитанции был бы более изящным, и практичным, ибо
+                занимал бы меньше времени пользователя.</p>
+            </div>
+          </li>
+          <li class="faq-list__item">
+            <svg class="faq-list__icon" width="24" height="24" role="img">
+              <use xlink:href="/img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+            <h3 class="faq-list__title">Как можно полнить/вывести деньги со своего баланса?</h3>
+            <div class="faq-list__answer">
+              <p class="faq-list__text">Анимация красивая, но излишняя. В общей сложности для просмотра деталей
+                транзакции требуется около 3,5 секунд. Простой fade-in квитанции был бы более изящным, и практичным, ибо
+                занимал бы меньше времени пользователя.</p>
+            </div>
+          </li>
+          <li class="faq-list__item">
+            <svg class="faq-list__icon" width="24" height="24" role="img">
+              <use xlink:href="/img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+            <h3 class="faq-list__title">Какой минимальный процент дохода?</h3>
+            <div class="faq-list__answer">
+              <p class="faq-list__text">Анимация красивая, но излишняя. В общей сложности для просмотра деталей
+                транзакции требуется около 3,5 секунд. Простой fade-in квитанции был бы более изящным, и практичным, ибо
+                занимал бы меньше времени пользователя.</p>
+            </div>
+          </li>
+          <li class="faq-list__item">
+            <svg class="faq-list__icon" width="24" height="24" role="img">
+              <use xlink:href="/img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+            <h3 class="faq-list__title">Какая минимальная сумма инвестиций?</h3>
+            <div class="faq-list__answer">
+              <p class="faq-list__text">Анимация красивая, но излишняя. В общей сложности для просмотра деталей
+                транзакции требуется около 3,5 секунд. Простой fade-in квитанции был бы более изящным, и практичным, ибо
+                занимал бы меньше времени пользователя.</p>
+            </div>
+          </li>
+          <li class="faq-list__item">
+            <svg class="faq-list__icon" width="24" height="24" role="img">
+              <use xlink:href="/img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+            <h3 class="faq-list__title">Сколько ботов может быть активно одновременно?</h3>
+            <div class="faq-list__answer">
+              <p class="faq-list__text">Анимация красивая, но излишняя. В общей сложности для просмотра деталей
+                транзакции требуется около 3,5 секунд. Простой fade-in квитанции был бы более изящным, и практичным, ибо
+                занимал бы меньше времени пользователя.</p>
+            </div>
+          </li>
+        </ul>
+
+        <ul id="tab2" class="faq__list faq-list tab" style="display:none">
+          <li class="faq-list__item">
+            <svg class="faq-list__icon" width="24" height="24" role="img">
+              <use xlink:href="/img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+            <h3 class="faq-list__title">Где скачать приложение для инвестиций?</h3>
+            <div class="faq-list__answer">
+              <p class="faq-list__text">Анимация красивая, но излишняя. В общей сложности для просмотра деталей
+                транзакции требуется около 3,5 секунд. Простой fade-in квитанции был бы более изящным, и практичным,
+                ибо
+                занимал бы меньше времени пользователя.</p>
+            </div>
+          </li>
+          <li class="faq-list__item">
+            <svg class="faq-list__icon" width="24" height="24" role="img">
+              <use xlink:href="/img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+            <h3 class="faq-list__title">Какой минимальный процент дохода?</h3>
+            <div class="faq-list__answer">
+              <p class="faq-list__text">Анимация красивая, но излишняя. В общей сложности для просмотра деталей
+                транзакции требуется около 3,5 секунд. Простой fade-in квитанции был бы более изящным, и практичным,
+                ибо
+                занимал бы меньше времени пользователя.</p>
+            </div>
+          </li>
+          <li class="faq-list__item">
+            <svg class="faq-list__icon" width="24" height="24" role="img">
+              <use xlink:href="/img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+            <h3 class="faq-list__title">Какая минимальная сумма инвестиций?</h3>
+            <div class="faq-list__answer">
+              <p class="faq-list__text">Анимация красивая, но излишняя. В общей сложности для просмотра деталей
+                транзакции требуется около 3,5 секунд. Простой fade-in квитанции был бы более изящным, и практичным,
+                ибо
+                занимал бы меньше времени пользователя.</p>
+            </div>
+          </li>
+          <li class="faq-list__item">
+            <svg class="faq-list__icon" width="24" height="24" role="img">
+              <use xlink:href="/img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+            <h3 class="faq-list__title">Сколько ботов может быть активно одновременно?</h3>
+            <div class="faq-list__answer">
+              <p class="faq-list__text">Анимация красивая, но излишняя. В общей сложности для просмотра деталей
+                транзакции требуется около 3,5 секунд. Простой fade-in квитанции был бы более изящным, и практичным,
+                ибо
+                занимал бы меньше времени пользователя.</p>
+            </div>
+          </li>
+        </ul>
+        <ul id="tab3" class="faq__list faq-list tab" style="display:none">
+          <li class="faq-list__item">
+            <svg class="faq-list__icon" width="24" height="24" role="img">
+              <use xlink:href="/img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+            <h3 class="faq-list__title">Какой минимальный процент дохода?</h3>
+            <div class="faq-list__answer">
+              <p class="faq-list__text">Анимация красивая, но излишняя. В общей сложности для просмотра деталей
+                транзакции требуется около 3,5 секунд. Простой fade-in квитанции был бы более изящным, и практичным,
+                ибо
+                занимал бы меньше времени пользователя.</p>
+            </div>
+          </li>
+          <li class="faq-list__item">
+            <svg class="faq-list__icon" width="24" height="24" role="img">
+              <use xlink:href="/img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+            <h3 class="faq-list__title">Какая минимальная сумма инвестиций?</h3>
+            <div class="faq-list__answer">
+              <p class="faq-list__text">Анимация красивая, но излишняя. В общей сложности для просмотра деталей
+                транзакции требуется около 3,5 секунд. Простой fade-in квитанции был бы более изящным, и практичным,
+                ибо
+                занимал бы меньше времени пользователя.</p>
+            </div>
+          </li>
+          <li class="faq-list__item">
+            <svg class="faq-list__icon" width="24" height="24" role="img">
+              <use xlink:href="/img/sprite.svg#dropdown-arrow"></use>
+            </svg>
+            <h3 class="faq-list__title">Сколько ботов может быть активно одновременно?</h3>
+            <div class="faq-list__answer">
+              <p class="faq-list__text">Анимация красивая, но излишняя. В общей сложности для просмотра деталей
+                транзакции требуется около 3,5 секунд. Простой fade-in квитанции был бы более изящным, и практичным,
+                ибо
+                занимал бы меньше времени пользователя.</p>
+            </div>
+          </li>
+        </ul>
+        <p class="faq__note">Не нашли ответа на свой вопрос свяжитесь с нами по почте <a
+            href="">support@smart-broker.net</a>.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+
+          <a href="" class="footer__logo">
+            <svg width="236" height="36" role="img">
+              <use xlink:href="/img/sprite.svg#logo-text"></use>
+            </svg>
+          </a>
+
+          <ul class="footer__social social-list">
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="16" height="16" role="img">
+                  <use xlink:href="#bm_icon_empty_social_twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="16" height="16" role="img">
+                  <use xlink:href="#bm_icon_empty_social_facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <svg class="social-list__icon" width="16" height="16" role="img">
+                  <use xlink:href="#bm_icon_empty_social_telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="footer__app app-list">
+            <li class="app-list__item">
+              <a href="" class="app-list__link">
+                <svg class="app-list__icon" width="102" height="32" role="img">
+                  <use xlink:href="/img/sprite.svg#google-play--dark"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="app-list__item">
+              <a href="" class="app-list__link">
+                <svg class="app-list__icon" width="102" height="32" role="img">
+                  <use xlink:href="/img/sprite.svg#app-store--dark"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer__info">
+            <span class="footer__copyright">© 2011-2019 Все права защищены. </span>
+            <a href="" class="footer__link">Политика конфиденциальности</a>
+            <a href="" class="footer__link">Пользовательское соглашение</a>
+          </div>
+
+
+        </div>
+
+      </div>
+    </footer>
+
+
+    <div class="mobile-menu">
+      <div class="mobile-menu__wrapper">
+
+        <a href="" class="mobile-menu__logo">
+          <svg class="mobile-menu__icon" width="76" height="38" role="img">
+            <use xlink:href="/img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+
+        <nav class="mobile-menu__nav" id="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="#index-presentation" class="mobile-menu__link" data-add="600">
+                <span class="mobile-menu__text">О платформе</span>
+              </a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#index-partner" class="mobile-menu__link">
+                <span class="mobile-menu__text">Партнерам</span>
+              </a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#index-partner__rating" class="mobile-menu__link">
+                <span class="mobile-menu__text">Топ партнеров</span>
+              </a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#faq" class="mobile-menu__link">
+                <span class="mobile-menu__text">ЧаВО!?</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="" class="mobile-menu__btn">
+          <svg width="24" height="24" role="img">
+            <use xlink:href="/img/sprite.svg#login"></use>
+          </svg>
+          Вход
+        </a>
+      </div>
+
+      <button class="mobile-menu__close menu-close" id="mobile-menu__close">
+        <svg class="menu-close__icon" width="32" height="32" role="img">
+          <use xlink:href="/img/sprite.svg#x-circle"></use>
+        </svg>
+      </button>
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src='/js/jquery.min.js'></script>
+  <script src='/js/slick.min.js'></script>
+  <script src='/js/wow.min.js'></script>
+  <script src="/js/index.js"></script>
+
+  <script>
+    new WOW().init();
+  </script>
 
 </body>
 
