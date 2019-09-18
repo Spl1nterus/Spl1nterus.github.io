@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Smart Broker</title>
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../img/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="../img/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../img/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicons/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+
+
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700&display=swap&subset=cyrillic"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+	<link rel='stylesheet prefetch' href='../css/slick.css'>
+	<link rel='stylesheet prefetch' href='../css/slick-theme.css'>
+	<link rel="stylesheet" href="../css/cabinet.css">
+	<script src="//cdn.blitz-market.ru/sprite/latest/"></script>
+</head>
+
+<body>
+
+	<div class="body__wrapper">
+
+
+		<!-- Общая шапка -->
+		<header class="header">
+			<div class="container">
+
+				<div class="header__wrapper">
+					<a href="" class="header__logo">
+						<img src="../img/logo-small.png" alt="">
+					</a>
+
+						<a href="" class="header__btn"><span></span></a>
+
+					<nav class="header__nav header-nav">
+						<ul class="header-nav__list">
+							<li class="header-nav__item">
+								<a href="" class="header-nav__link header-nav__link--active">Рабочий стол</a>
+							</li>
+							<li class="header-nav__item">
+								<a href="" class="header-nav__link">История</a>
+							</li>
+							<li class="header-nav__item">
+								<a href="" class="header-nav__link">Промо баннеры</a>
+							</li>
+							<li class="header-nav__item">
+								<a href="" class="header-nav__link">Настройки</a>
+							</li>
+							<li class="header-nav__item">
+								<a href="" class="header-nav__link">Тех. поддержка</a>
+							</li>
+						</ul>
+					</nav>
+
+					<nav class="header__lang-nav lang-nav">
+						<ul class="lang-nav__list">
+							<li class="lang-nav__item">
+								<a class="lang-nav__link" href="">
+									<div class="lang-nav__icon-wrapper">
+										<svg width=46 height=46 class="lang-nav__icon" role="img">
+											<use xlink:href="#bm_icon_flags_en_united_kingdom"></use>
+										</svg>
+									</div>
+									Eng
+								</a>
+							</li>
+							<!-- 	<li class="lang-nav__item">
+								<a class="lang-nav__link" href="">
+									<div class="lang-nav__icon-wrapper">
+										<svg width=46 height=46 class="lang-nav__icon" role="img">
+											<use xlink:href="#bm_icon_flags_ru"></use>
+										</svg>
+									</div>
+									Рус
+								</a>
+							</li> -->
+						</ul>
+					</nav>
+
+					<nav class="header__cabinet-nav cabinet-nav">
+						<ul class="cabinet-nav__list">
+							<li class="cabinet-nav__item">
+								<a class="cabinet-nav__link" href="">
+									<span class="cabinet-nav__text">Выйти</span>
+									<svg class="media-list__icon" width="16" height="16" role="img">
+										<use xlink:href="../img/sprite.svg#logout"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+		</header>
+		<!-- Общая шапка конец-->
+
+
+
+		<section class="ref">
+			<div class="container">
+				<div class="ref__wrapper">
+					<h2 class="ref__title">Промо баннеры</h2>
+					<label class="ref__link ref-link">
+						Ваша реферальная ссылка:
+						<input id="foo" type="text" class="ref-link__input" value="Smart-broker.net/?rid=4522">
+						<svg data-clipboard-target="#foo" class="ref-link__icon" width="24" height="24" role="img">
+							<use xlink:href="../img/sprite.svg#copy"></use>
+						</svg>
+						<svg class="ref-link__succes visibility-hidden" width="24" height="24" role="img">
+							<use xlink:href="../img/sprite.svg#succes"></use>
+						</svg>
+					</label>
+
+					<div class="ref__example banner">
+						<div class="banner__img"></div>
+						<span class="banner__text">Пример баннера 728×90px</span>
+					</div>
+
+					<h2 class="ref__subtitle">Популярные размеры</h2>
+
+					<ul class="ref__list banners-list">
+						<li class="banners-list__item">
+							<h4 class="banners-list__title">125×125</h4>
+							<div class="banners-list__link" id="banner1" data-clipboard-target="#banner1">&lt;a
+								href="https://smart-broker.net/?ref=admin"target="_blank"&gt;&lt;img src="https://smart&#8209;broker.net/theme/nroke/assets/common/banners/ru/125x125.png"alt=""&gt;&lt;/a&gt;
+								<svg class="banners-list__icon" width="24" height="24" role="img">
+									<use xlink:href="../img/sprite.svg#copy"></use>
+								</svg>
+							</div>
+						</li>
+						<li class="banners-list__item">
+							<h4 class="banners-list__title">200×200</h4>
+							<div class="banners-list__link" id="banner2" data-clipboard-target="#banner2">
+								&lt;a
+								href="https://smart-broker.net/?ref=admin"target="_blank"&gt;&lt;img src="https://smart&#8209;broker.net/theme/nroke/assets/common/banners/ru/200x200.png"alt=""&gt;&lt;/a&gt;
+								<svg class="banners-list__icon" width="24" height="24" role="img">
+									<use xlink:href="../img/sprite.svg#copy"></use>
+								</svg>
+							</div>
+						</li>
+						<li class="banners-list__item">
+							<h4 class="banners-list__title">480×60</h4>
+							<div class="banners-list__link" id="banner3" data-clipboard-target="#banner3">
+								&lt;a
+								href="https://smart-broker.net/?ref=admin"target="_blank"&gt;&lt;img src="https://smart&#8209;broker.net/theme/nroke/assets/common/banners/ru/480x60.png"alt=""&gt;&lt;/a&gt;
+								<svg class="banners-list__icon" width="24" height="24" role="img">
+									<use xlink:href="../img/sprite.svg#copy"></use>
+								</svg>
+							</div>
+						</li>
+						<li class="banners-list__item">
+							<h4 class="banners-list__title">728×90</h4>
+							<div class="banners-list__link" id="banner4" data-clipboard-target="#banner4">
+								&lt;a
+								href="https://smart-broker.net/?ref=admin"target="_blank"&gt;&lt;img src="https://smart&#8209;broker.net/theme/nroke/assets/common/banners/ru/728x90.png"alt=""&gt;&lt;/a&gt;
+								<svg class="banners-list__icon" width="24" height="24" role="img">
+									<use xlink:href="../img/sprite.svg#copy"></use>
+								</svg>
+							</div>
+						</li>
+					</ul>
+
+					<h2 class="ref__subtitle">Квадратные баннеры</h2>
+
+					<ul class="ref__list banners-list">
+						<li class="banners-list__item">
+							<h4 class="banners-list__title">125×125</h4>
+							<div class="banners-list__link" id="banner5" data-clipboard-target="#banner5">&lt;a
+								href="https://smart-broker.net/?ref=admin"target="_blank"&gt;&lt;img src="https://smart&#8209;broker.net/theme/nroke/assets/common/banners/ru/125x125.png"alt=""&gt;&lt;/a&gt;
+								<svg class="banners-list__icon" width="24" height="24" role="img">
+									<use xlink:href="../img/sprite.svg#copy"></use>
+								</svg>
+							</div>
+						</li>
+						<li class="banners-list__item">
+							<h4 class="banners-list__title">200×200</h4>
+							<div class="banners-list__link" id="banner6" data-clipboard-target="#banner6">
+								&lt;a
+								href="https://smart-broker.net/?ref=admin"target="_blank"&gt;&lt;img src="https://smart&#8209;broker.net/theme/nroke/assets/common/banners/ru/200x200.png"alt=""&gt;&lt;/a&gt;
+								<svg class="banners-list__icon" width="24" height="24" role="img">
+									<use xlink:href="../img/sprite.svg#copy"></use>
+								</svg>
+							</div>
+						</li>
+						<li class="banners-list__item">
+							<h4 class="banners-list__title">320×320</h4>
+							<div class="banners-list__link" id="banner7" data-clipboard-target="#banner7">
+								&lt;a
+								href="https://smart-broker.net/?ref=admin"target="_blank"&gt;&lt;img src="https://smart&#8209;broker.net/theme/nroke/assets/common/banners/ru/320x320.png"alt=""&gt;&lt;/a&gt;
+								<svg class="banners-list__icon" width="24" height="24" role="img">
+									<use xlink:href="../img/sprite.svg#copy"></use>
+								</svg>
+							</div>
+						</li>
+					</ul>
+
+					<h2 class="ref__subtitle">Горизонтальные баннеры</h2>
+
+					<ul class="ref__list banners-list">
+						<li class="banners-list__item">
+							<h4 class="banners-list__title">480×60</h4>
+							<div class="banners-list__link" id="banner8" data-clipboard-target="#banner8">&lt;a
+								href="https://smart-broker.net/?ref=admin"target="_blank"&gt;&lt;img src="https://smart&#8209;broker.net/theme/nroke/assets/common/banners/ru/480x60.png"alt=""&gt;&lt;/a&gt;
+								<svg class="banners-list__icon" width="24" height="24" role="img">
+									<use xlink:href="../img/sprite.svg#copy"></use>
+								</svg>
+							</div>
+						</li>
+						<li class="banners-list__item">
+							<h4 class="banners-list__title">468×120</h4>
+							<div class="banners-list__link" id="banner9" data-clipboard-target="#banner9">
+								&lt;a
+								href="https://smart-broker.net/?ref=admin"target="_blank"&gt;&lt;img src="https://smart&#8209;broker.net/theme/nroke/assets/common/banners/ru/468×120.png"alt=""&gt;&lt;/a&gt;
+								<svg class="banners-list__icon" width="24" height="24" role="img">
+									<use xlink:href="../img/sprite.svg#copy"></use>
+								</svg>
+							</div>
+						</li>
+						<li class="banners-list__item">
+							<h4 class="banners-list__title">728×90</h4>
+							<div class="banners-list__link" id="banne10" data-clipboard-target="#banner10">
+								&lt;a
+								href="https://smart-broker.net/?ref=admin"target="_blank"&gt;&lt;img src="https://smart&#8209;broker.net/theme/nroke/assets/common/banners/ru/728×90.png"alt=""&gt;&lt;/a&gt;
+								<svg class="banners-list__icon" width="24" height="24" role="img">
+									<use xlink:href="../img/sprite.svg#copy"></use>
+								</svg>
+							</div>
+						</li>
+					</ul>
+
+					<h2 class="ref__subtitle">Вертикальные баннеры</h2>
+
+					<ul class="ref__list banners-list">
+						<li class="banners-list__item">
+							<h4 class="banners-list__title">240×400</h4>
+							<div class="banners-list__link" id="banner11" data-clipboard-target="#banner11">&lt;a
+								href="https://smart-broker.net/?ref=admin"target="_blank"&gt;&lt;img src="https://smart&#8209;broker.net/theme/nroke/assets/common/banners/ru/240×400.png"alt=""&gt;&lt;/a&gt;
+								<svg class="banners-list__icon" width="24" height="24" role="img">
+									<use xlink:href="../img/sprite.svg#copy"></use>
+								</svg>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+		</section>
+
+
+
+
+
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+
+					<a href="" class="footer__logo">
+						<img src="../img/logo-text.png" alt="">
+					</a>
+
+					<ul class="footer__social social-list">
+						<li class="social-list__item">
+							<a href="" class="social-list__link">
+								<svg class="social-list__icon" width="16" height="16" role="img">
+									<use xlink:href="#bm_icon_empty_social_twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-list__item">
+							<a href="" class="social-list__link">
+								<svg class="social-list__icon" width="16" height="16" role="img">
+									<use xlink:href="#bm_icon_empty_social_facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-list__item">
+							<a href="" class="social-list__link">
+								<svg class="social-list__icon" width="16" height="16" role="img">
+									<use xlink:href="#bm_icon_empty_social_telegram"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+
+					<ul class="footer__app app-list">
+						<li class="app-list__item">
+							<a href="" class="app-list__link">
+								<svg class="app-list__icon" width="102" height="32" role="img">
+									<use xlink:href="../img/sprite.svg#google-play"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="app-list__item">
+							<a href="" class="app-list__link">
+								<svg class="app-list__icon" width="102" height="32" role="img">
+									<use xlink:href="../img/sprite.svg#app-store"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+
+					<div class="footer__info">
+						<span class="footer__copyright">© 2011-2019 Все права защищены. </span>
+						<a href="" class="footer__link">Политика конфиденциальности</a>
+						<a href="" class="footer__link">Пользовательское соглашение</a>
+					</div>
+
+
+				</div>
+
+			</div>
+		</footer>
+
+
+		<div class="mobile-menu">
+			<div class="mobile-menu__wrapper">
+
+				<a href="" class="mobile-menu__logo">
+					<img src="../img/logo-small.png" alt="">
+				</a>
+
+				<nav class="mobile-menu__nav">
+					<ul class="mobile-menu__list">
+						<li class="mobile-menu__item">
+							<a href="" class="mobile-menu__link">
+								<svg class="mobile-menu__nav-icon mobile-menu__nav-icon--logo" width="24" height="24" role="img">
+									<use xlink:href="../img/sprite.svg#logo"></use>
+								</svg>
+								<span class="mobile-menu__text">Рабочий стол</span>
+							</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="" class="mobile-menu__link">
+								<svg class="mobile-menu__nav-icon" width="24" height="24" role="img">
+									<use xlink:href="../img/sprite.svg#file"></use>
+								</svg>
+								<span class="mobile-menu__text">История</span>
+							</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="" class="mobile-menu__link">
+								<svg class="mobile-menu__nav-icon" width="24" height="24" role="img">
+									<use xlink:href="../img/sprite.svg#download"></use>
+								</svg>
+								<span class="mobile-menu__text">Промо материалы</span>
+							</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="" class="mobile-menu__link">
+								<svg class="mobile-menu__nav-icon" width="24" height="24" role="img">
+									<use xlink:href="../img/sprite.svg#settings"></use>
+								</svg>
+								<span class="mobile-menu__text">Настройки</span>
+							</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="" class="mobile-menu__link">
+								<svg class="mobile-menu__nav-icon" width="24" height="24" role="img">
+									<use xlink:href="../img/sprite.svg#chat"></use>
+								</svg>
+								<span class="mobile-menu__text">Тех поддержка</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+				<a href="" class="mobile-menu__btn">
+					<svg width="32" height="32" role="img">
+						<use xlink:href="../img/sprite.svg#cashout"></use>
+					</svg>
+					Вывести с баланса
+				</a>
+
+			</div>
+
+			<button class="mobile-menu__close menu-close" id="mobile-menu__close">
+				<svg class="menu-close__icon" width="32" height="32" role="img">
+					<use xlink:href="../img/sprite.svg#x-circle"></use>
+				</svg>
+			</button>
+		</div>
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src='../js/jquery.min.js'></script>
+	<script src='../js/slick.min.js'></script>
+	<script src='../js/clipboard.min.js'></script>
+	<script src="../js/cabinet.js"></script>
+
+	<script>
+		new ClipboardJS('.ref-link__icon');
+		new ClipboardJS('.banners-list__link');
+	</script>
+
+</body>
+
+</html>
