@@ -1,92 +1,91 @@
 $(document).ready(function () {
 
+    /* Сролл шапки */
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= 300) {
+            $('.header').addClass('header--fixed');
+        } else {
+            $('.header').removeClass('header--fixed');
+        }
+    });
+    /* Сролл шапки */
 
-    $('.index-info__exchange-list').slick({
-        slidesToShow: 3,
+
+    /* Слайдеры */
+    $('.reviews__slider').slick({
+        infinite: false,
+        slidesToShow: 2,
         slidesToScroll: 1,
         dots: false,
         arrows: false,
-        infinite: true,
-        speed: 8000,
-        autoplay: true,
-        autoplaySpeed: 0,
-        cssEase: 'linear',
+        variableWidth: true,
+        responsive: [{
+            breakpoint: 1520,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        }]
 
     });
 
-    $('.cta__slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        arrows: true,
-        infinite: false,
-        vertical: true,
-        verticalSwiping: true,
-    });
+
+    /* Слайдеры */
+
     
-    $('.cta__slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-        $('.cta-nav__item--active').removeClass('cta-nav__item--active');
-        $('.cta-nav__item').eq(nextSlide).addClass('cta-nav__item--active');
+    /* Галлерея */
+    $(".gallery__block").fancybox()
+    /* Галлерея */
+
+
+    /* Плавный скрол якоря */
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+         $('.mobile-menu').removeClass('mobile-menu--active');
+         $('.header__burger').removeClass('header__burger--active');
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top - 60
+        }, 1500);
+
     });
 
+    /* Плавный скрол якоря */
 
 
-    $('.cta-nav__item').click(function () {
-        var slideno = $(this).attr('data-slide');
-        $('.cta__slider').slick('slickGoTo', slideno);
-        $('.cta-nav__item').removeClass("cta-nav__item--active");
-        $(this).addClass("cta-nav__item--active");
-    });
-
-
-    $('.header__btn').click(function (e) {
+    /* Закрытие модалок */
+    $('.overlay-close').click(function (e) {
         e.preventDefault();
-        $(this).toggleClass('header__btn--active');
+        $(".overlay").fadeOut('400');
+        $(this).parents('.popup').fadeOut('400');
+    });
+
+
+    $(document).mouseup(function (e) { // событие клика по веб-документу
+        var div = $(".modal"); // тут указываем ID элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            &&
+            div.has(e.target).length === 0) { // и не по его дочерним элементам
+            $(".overlay").fadeOut('400');
+            div.fadeOut('400'); // скрываем его
+        }
+    });
+    /* Закрытие модалок */
+
+
+
+    /* Мобильное меню */
+
+    $('.header__burger').click(function (e) {
+        e.preventDefault();
+        $(this).addClass('header__burger--active');
         $('.mobile-menu').addClass('mobile-menu--active');
     });
 
     $('.mobile-menu__close').click(function () {
         $('.mobile-menu').removeClass('mobile-menu--active');
-        $('.header__btn').removeClass('header__btn--active');
+        $('.header__burger').removeClass('header__burger--active');
     });
 
-
-    $(".tabs-nav__link").click(function (e) {
-        e.preventDefault();
-        var tabId = $(this).attr('data-tab');
-        $(".tabs-nav__link").removeClass('tabs-nav__link--active');
-        $(this).addClass('tabs-nav__link--active');
-        $(".tab").css("display", 'none');
-        $('#' + tabId).fadeIn(700);
-    });
-
-
-
-
-
-    var acc = document.getElementsByClassName('faq-list__item');
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].onclick = function () {
-
-            this.classList.toggle("faq-list__item--active");
-
-            var panel = this.children[2];
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        }
-    }
-
-
-
-
-
-
-
-
+    /* Мобильное меню */
 
 });
