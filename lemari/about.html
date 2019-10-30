@@ -17,101 +17,197 @@
 
 <body>
 
-	<div class="about">
 
-		<!-- Общая шапка -->
-		<header class="header">
-			<div class="container">
 
-				<div class="header__wrapper">
-					<div class="header__column">
-						<a href="" class="header__logo">
-							<img width="168" height="30" src="img/logo.png" alt="">
-						</a>
-						<span class="header__description">Производство
-							корпусной
-							мебели</span>
-					</div>
+	<!-- Общая шапка -->
+	<header class="header">
+		<div class="container">
 
-					<div class="header__column">
-						<ul class="header__contacts contacts-list">
+			<div class="header__wrapper">
+				<div class="header__column">
+					<a href="" class="header__logo">
+						<img width="168" height="30" src="img/logo.png" alt="">
+					</a>
+					<span class="header__description">Производство
+						корпусной
+						мебели</span>
+				</div>
 
-							<li class="contacts-list__item">
-								<a class="contacts-list__phone" href="tel:+79005567888">
+				<div class="header__column">
+					<ul class="header__contacts contacts-list">
+
+						<li class="contacts-list__item">
+							<a class="contacts-list__phone" href="tel:+79005567888">
+								<svg width="22" height="22" role="img">
+									<use xlink:href="img/sprite.svg#phone"></use>
+								</svg>
+								+7 (900)556-78-88
+							</a>
+						</li>
+						<li class="contacts-list__item">
+							<a class="contacts-list__phone" href="tel:+88172294322">
+								<svg width="22" height="22" role="img">
+									<use xlink:href="img/sprite.svg#phone"></use>
+								</svg>
+								8 (8172)29-43-22</a>
+						</li>
+					</ul>
+
+					<div class="header__buttons-wraper">
+						<ul class="header__social-list social-list">
+							<li class="social-list__item">
+								<a href="" class="social-list__link">
+
 									<svg width="22" height="22" role="img">
-										<use xlink:href="img/sprite.svg#phone"></use>
+										<use xlink:href="img/sprite.svg#vk"></use>
 									</svg>
-									+7 (900)556-78-88
 								</a>
 							</li>
-							<li class="contacts-list__item">
-								<a class="contacts-list__phone" href="tel:+88172294322">
+							<li class="social-list__item">
+								<a href="" class="social-list__link">
 									<svg width="22" height="22" role="img">
-										<use xlink:href="img/sprite.svg#phone"></use>
+										<use xlink:href="img/sprite.svg#instagram"></use>
 									</svg>
-									8 (8172)29-43-22</a>
+								</a>
 							</li>
 						</ul>
 
-						<div class="header__buttons-wraper">
-							<ul class="header__social-list social-list">
-								<li class="social-list__item">
-									<a href="" class="social-list__link">
+						<a href="" class="header__burger dropdown-btn" data-dropdown="header__nav"><span></span></a>
+					</div>
+				</div>
 
-										<svg width="22" height="22" role="img">
-											<use xlink:href="img/sprite.svg#vk"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="social-list__item">
-									<a href="" class="social-list__link">
-										<svg width="22" height="22" role="img">
-											<use xlink:href="img/sprite.svg#instagram"></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
+			</div>
 
-							<a href="" class="header__burger dropdown-btn" data-dropdown="header__nav"><span></span></a>
-						</div>
+			<nav class="header__nav" id="header__nav">
+				<ul class="header__nav-list">
+					<li class="header__nav-item">
+						<a href="" class="header__nav-link header__nav-link--active">Главная</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="" class="header__nav-link">О компании</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="" class="header__nav-link">Наши работы</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="" class="header__nav-link">Новости</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="" class="header__nav-link">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- Общая шапка конец-->
+
+	<div class="page-heading page-heading--about">
+		<div class="container">
+			<ul class="page-heading__breadcrumbs breadcrumbs">
+				<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Главная / </a></li>
+				<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">О компании</a></li>
+			</ul>
+			<h1 class="page-heading__title">О нашей компании</h1>
+		</div>
+	</div>
+
+	<section class="why">
+		<div class="container">
+			<h2 class="why__title">Почему мы?</h2>
+			<ul class="why__advantages-list advantages-list">
+				<li class="advantages-list__item">
+					<i class="advantages-list__icon">
+						<img width="62" height="62" src="img/advantages-list__icon1.png" alt="">
+					</i>
+					<span class="advantages-list__text">Собственное производство</span>
+				</li>
+				<li class="advantages-list__item">
+					<i class="advantages-list__icon">
+						<img width="62" height="62" src="img/advantages-list__icon2.png" alt="">
+					</i>
+					<span class="advantages-list__text">Бесплатный выезд на замер</span>
+				</li>
+				</li>
+				<li class="advantages-list__item">
+					<i class="advantages-list__icon">
+						<img width="62" height="62" src="img/advantages-list__icon3.png" alt="">
+					</i>
+					<span class="advantages-list__text">Более 100 больших
+						клиентов</span>
+				</li>
+			</ul>
+			<div class="why__wrapper">
+				<div class="why__about about">
+					<div class="about__wrapper">
+						<p class="about__text">Наша команда занимается производством корпусной мебели с 2008 года!
+							За это время нами реализовано более 300 различных проектов, как небольших частных, так и масштабных
+							корпоративных заказов.</p>
+						<p class="about__text">В 2019 году мы переехали в более просторный цех и оборудовали его новейшим
+							оборудованием от итальянских производителей.
+							Предлагаем вам мебель изготовленную по индивидуальным проектам, которая идеально впишется в любой
+							интерьер.
+						</p>
+						<p class="about__text">Работаем с современными материалами, которые имеют высококачественную обработку и
+							высокий уровень прочности и износостойкости, такими как МДФ, ДСП, ЛДСП, пластик и массив.</p>
+						<p class="about__text">Наши специалисты приедут к Вам и произведут все необходимые замеры и
+							проконсультируют по подбору материала конкретно под Ваши задачи.</p>
+
+						<a href="" class="about__link main-btn">Смотреть наши работы</a>
 					</div>
 
 				</div>
-
-				<nav class="header__nav" id="header__nav">
-					<ul class="header__nav-list">
-						<li class="header__nav-item">
-							<a href="" class="header__nav-link header__nav-link--active">Главная</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="" class="header__nav-link">О компании</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="" class="header__nav-link">Наши работы</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="" class="header__nav-link">Новости</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="" class="header__nav-link">Контакты</a>
-						</li>
-					</ul>
-				</nav>
+				<img src="img/why__img.png" alt="" class="why__img">
 			</div>
-		</header>
-		<!-- Общая шапка конец-->
 
-		<div class="about-page-heading page-heading">
-			<div class="container">
-					<ul class="page-heading__breadcrumbs breadcrumbs">
-						<li class="breadcrumbs__item"><a href="">Главная</a></li>
-						<li><a href="">Проекты</a></li>
-					</ul>
-					<h1 class="page-heading__title"></h1>
+
+
+		</div>
+		</div>
+	</section>
+
+
+
+	<div class="page-contacts">
+		<div class="container">
+			<h2 class="page-contacts__title">Как с нами связаться?</h2>
+			<div class="page-contacts__block contacts-block">
+				<div class="contacts-block__phones">
+					<svg width="22" height="22" role="img">
+						<use xlink:href="img/sprite.svg#phone"></use>
+					</svg>
+					<div class="contacts-block__numbers">
+						<a href="tel:+79005567888" class="contacts-block__phone">+7 (900)556-78-88</a>
+						<a href="tel:+88172294322" class="contacts-block__phone">8 (8172)29-43-22</a>
+					</div>
+				</div>
+				<a href="" class="contacts-block__link">
+					<svg width="26" height="26" role="img">
+						<use xlink:href="img/sprite.svg#instagram"></use>
+					</svg>
+					@lemari35
+				</a>
+				<a href="vk.com/lemari35" class="contacts-block__link">
+					<svg width="26" height="26" role="img">
+						<use xlink:href="img/sprite.svg#vk"></use>
+					</svg>
+					vk.com/lemari35
+				</a>
+				<a href="" class="contacts-block__link">
+					<svg width="26" height="26" role="img">
+						<use xlink:href="img/sprite.svg#location"></use>
+					</svg>
+					деревня Родионцево, 77
+				</a>
 			</div>
 		</div>
-
+		<iframe class="page-contacts__map"
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8176.961852374159!2d39.82607382823331!3d59.178556833301634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDEwJzQ0LjEiTiAzOcKwNTAnMTIuNSJF!5e0!3m2!1sru!2sru!4v1572359441814!5m2!1sru!2sru"
+			width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 	</div>
+
+
+
+
 
 
 	<footer class="footer">
