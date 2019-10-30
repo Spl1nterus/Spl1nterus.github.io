@@ -1515,6 +1515,11 @@ img {
   display: flex;
   margin-bottom: 40px;
 }
+.footer__logo img{
+  width: 168px;
+  height: 49px;
+}
+
 
 .footer__copyright {
   color: rgba(201, 201, 201, 0.3);
