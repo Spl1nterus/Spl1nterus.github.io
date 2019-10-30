@@ -1334,13 +1334,14 @@ img {
   }
 
   .team-info {
-    
+
     width: 330px;
-    
+
   }
-  .team-info__wrapper{
-      padding: 76px 28px 64px;
-      background-image: url('../img/team-info-bg-2.png');
+
+  .team-info__wrapper {
+    padding: 76px 28px 64px;
+    background-image: url('../img/team-info-bg-2.png');
   }
 
 
