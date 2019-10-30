@@ -907,8 +907,8 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url('../img/production__img-bg.png');
-  background-size: cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(196, 196, 196, 0)), to(rgba(255, 221, 87, 0.5)));
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(255, 221, 87, 0.5) 100%);
 }
 
 .production-list__name {
