@@ -18,6 +18,27 @@ $(document).ready(function () {
     }]
 
   });
+
+    $('.similar-cases').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: true,
+      prevArrow: '<svg  class="similar-cases__prev" role="img" width="9" height="16"><use xlink:href="img/sprite.svg#arrow"></use></svg>',
+      nextArrow: '<svg  class="similar-cases__next" role="img" width="9" height="16"><use xlink:href="img/sprite.svg#arrow"></use></svg>',
+      responsive: [{
+        breakpoint: 767,
+        settings: {
+          arrows: false,
+        }
+      }]
+
+    });
+
+
+
+
   /* Слайдеры */
 
 
