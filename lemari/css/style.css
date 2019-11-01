@@ -1741,6 +1741,18 @@ img {
   z-index: 3;
 }
 
+.about::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  left: 10%;
+  top: 10%;
+  -webkit-box-shadow: -6px 0 400px rgba(0, 0, 0, 0.13);
+  box-shadow: -6px 0 400px rgba(0, 0, 0, 0.13);
+  z-index: 2;
+}
+
 .about__text {
   -webkit-transform: rotate(-1.71deg);
   transform: rotate(-1.71deg);
