@@ -2605,6 +2605,17 @@ img {
   grid-row: span 4;
 }
 
+.footer-nav__item{
+   font-style: normal;
+   font-weight: bold;
+   font-size: 12px;
+   line-height: 15px;
+   color: #FFFFFF;
+   display: block;
+   -webkit-transition: 0.3s;
+   transition: 0.3s;
+}
+
 
 .footer-nav__link {
   font-style: normal;
