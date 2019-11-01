@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Заголовок</title>
+	<title>Lemari</title>
 	<link rel="icon" href="img/favicon.png" type="image/png">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
@@ -80,19 +80,19 @@
 				<nav class="header__nav" id="header__nav">
 					<ul class="header__nav-list">
 						<li class="header__nav-item">
-							<a href="" class="header__nav-link header__nav-link--active">Главная</a>
+							<a href="/" class="header__nav-link header__nav-link--active">Главная</a>
 						</li>
 						<li class="header__nav-item">
-							<a href="" class="header__nav-link">О компании</a>
+							<a href="/about.html" class="header__nav-link">О компании</a>
 						</li>
 						<li class="header__nav-item">
-							<a href="" class="header__nav-link">Наши работы</a>
+							<a href="/catalog.html" class="header__nav-link">Наши работы</a>
 						</li>
 						<li class="header__nav-item">
-							<a href="" class="header__nav-link">Новости</a>
+							<a href="/news.html" class="header__nav-link">Новости</a>
 						</li>
 						<li class="header__nav-item">
-							<a href="" class="header__nav-link">Контакты</a>
+							<a href="/contacts.html" class="header__nav-link">Контакты</a>
 						</li>
 					</ul>
 				</nav>
@@ -118,7 +118,36 @@
 				<div class="container">
 
 					<div class="catalog-item__wrapper">
-						<div class="catalog-item__gallery"></div>
+						<div class="catalog-item__gallery">
+							<div class="catalog-item__main-slider main-slider">
+								<div class="main-slider__item">
+									<img src="img/catalog-img1.png" alt="" class="main-slider__img">
+								</div>
+								<div class="main-slider__item">
+									<img src="img/catalog-img2.png" alt="" class="main-slider__img">
+								</div>
+								<div class="main-slider__item">
+									<img src="img/catalog-img3.png" alt="" class="main-slider__img">
+								</div>
+								<div class="main-slider__item">
+									<img src="img/catalog-img4.png" alt="" class="main-slider__img">
+								</div>
+							</div>
+							<div class="catalog-item__nav-slider nav-slider">
+								<div class="nav-slider__item">
+									<img src="img/catalog-img1.png" alt="" class="nav-slider__img">
+								</div>
+								<div class="nav-slider__item">
+									<img src="img/catalog-img2.png" alt="" class="nav-slider__img">
+								</div>
+								<div class="nav-slider__item">
+									<img src="img/catalog-img3.png" alt="" class="nav-slider__img">
+								</div>
+								<div class="nav-slider__item">
+									<img src="img/catalog-img4.png" alt="" class="nav-slider__img">
+								</div>
+							</div>
+						</div>
 						<div class="catalog-item__info">
 							<p class="catalog-item__parametr">Параметр 1 </p>
 							<p class="catalog-item__parametr">Параметр 3 </p>
@@ -129,7 +158,8 @@
 							<p class="catalog-item__parametr">Параметр 2.Разнообразный и богатый опыт постоянный количественный рост и
 								сфера нашей активности требуют определения и уточнения соответствующий условий активизации. </p>
 							<p class="catalog-item__parametr">Параметр4 </p>
-							<a href="" class="catalog-item__order main-btn">Заказать бесплатный замер</a>
+							<a href="" class="catalog-item__order main-btn popup-btn" data-popup="contact-popup">Заказать бесплатный
+								замер</a>
 						</div>
 					</div>
 
@@ -167,102 +197,130 @@
 			</div>
 		</div>
 
+
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__column">
+						<a href="" class="footer__logo">
+							<img width="168" height="49" src="img/logo--full.png" alt="">
+						</a>
+						<span class="footer__copyright">2019г. Все права защищены</span>
+					</div>
+					<div class="footer__column">
+						<nav class="footer__nav footer-nav">
+							<ul class="footer-nav__list">
+								<li class="footer-nav__item">
+									<a href="/" class="footer-nav__link">Главная</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="/news.html" class="footer-nav__link">Новости</a>
+								</li>
+								<li class="footer-nav__item footer-nav__item--big">
+									<a class="footer-nav__link">Наши работы:</a>
+									<ul class="footer-nav__sublist">
+										<li class="footer-nav__subitem">
+											<a href="/catalog-items.html" class="footer-nav__link">Кухни</a>
+										</li>
+										<li class="footer-nav__subitem">
+											<a href="/catalog-items.html" class="footer-nav__link">Стенки</a>
+										</li>
+										<li class="footer-nav__subitem">
+											<a href="/catalog-items.html" class="footer-nav__link">Спальни</a>
+										</li>
+										<li class="footer-nav__subitem">
+											<a href="/catalog-items.html" class="footer-nav__link">Прихожие</a>
+										</li>
+										<li class="footer-nav__subitem">
+											<a href="/catalog-items.html" class="footer-nav__link">Шкафы</a>
+										</li>
+										<li class="footer-nav__subitem">
+											<a href="/catalog-items.html" class="footer-nav__link">Офисная мебель</a>
+										</li>
+									</ul>
+								</li>
+								<li class="footer-nav__item">
+									<a href="/about.html" class="footer-nav__link">О компании</a>
+								</li>
+								<li class="footer-nav__item">
+									<a href="/contacts.html" class="footer-nav__link">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__column">
+
+						<div class="footer__contacts-wrapper">
+							<ul class="footer__social-list social-list social-list--white">
+								<li class="social-list__item">
+									<a href="" class="social-list__link">
+
+										<svg width="22" height="22" role="img">
+											<use xlink:href="img/sprite.svg#vk"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="social-list__item">
+									<a href="" class="social-list__link">
+										<svg width="22" height="22" role="img">
+											<use xlink:href="img/sprite.svg#instagram"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+							<div class="footer__phone-wrapper">
+								<svg class="footer__phone-icon" width="22" height="22" role="img">
+									<use xlink:href="img/sprite.svg#phone"></use>
+								</svg>
+								<div class="footer__phones">
+									<a class="footer__phone" href="tel:+79005567888">
+										+7 (900)556-78-88
+									</a>
+									<a class="footer__phone" href="tel:+88172294322">
+										8 (8172)29-43-22</a>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<a href="" class="footer__studio">
+							Разработка сайта “Выходи за рамки”
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
 	</div>
 
-	<footer class="footer">
-		<ul class="container">
-			<ul class="footer__wrapper">
-				<div class="footer__column">
-					<a href="" class="footer__logo">
-						<img width="168" height="49" src="img/logo--full.png" alt="">
-					</a>
-					<span class="footer__copyright">2019г. Все права защищены</span>
-				</div>
-				<ul class="footer__column">
-					<nav class="footer__nav footer-nav">
-						<ul class="footer-nav__list">
-							<li class="footer-nav__item">
-								<a href="" class="footer-nav__link">Главная</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="" class="footer-nav__link">Новости</a>
-							</li>
-							<li class="footer-nav__item footer-nav__item--big">
-								<a href="" class="footer-nav__link">Наши работы:</a>
-								<ul class="footer-nav__sublist">
-									<li class="footer-nav__subitem">
-										<a href="" class="footer-nav__link">Кухни</a>
-									</li>
-									<li class="footer-nav__subitem">
-										<a href="" class="footer-nav__link">Стенки</a>
-									</li>
-									<li class="footer-nav__subitem">
-										<a href="" class="footer-nav__link">Спальни</a>
-									</li>
-									<li class="footer-nav__subitem">
-										<a href="" class="footer-nav__link">Прихожие</a>
-									</li>
-									<li class="footer-nav__subitem">
-										<a href="" class="footer-nav__link">Шкафы</a>
-									</li>
-									<li class="footer-nav__subitem">
-										<a href="" class="footer-nav__link">Офисная мебель</a>
-									</li>
-								</ul>
-							</li>
-							<li class="footer-nav__item">
-								<a href="" class="footer-nav__link">О компании</a>
-							</li>
-							<li class="footer-nav__item">
-								<a href="" class="footer-nav__link">Контакты</a>
-							</li>
-						</ul>
-					</nav>
-				</ul>
-				<div class="footer__column">
 
-					<div class="footer__contacts-wrapper">
-						<ul class="footer__social-list social-list social-list--white">
-							<li class="social-list__item">
-								<a href="" class="social-list__link">
+	<!-- Попапы -->
+	<div class="overlay">
 
-									<svg width="22" height="22" role="img">
-										<use xlink:href="img/sprite.svg#vk"></use>
-									</svg>
-								</a>
-							</li>
-							<li class="social-list__item">
-								<a href="" class="social-list__link">
-									<svg width="22" height="22" role="img">
-										<use xlink:href="img/sprite.svg#instagram"></use>
-									</svg>
-								</a>
-							</li>
-						</ul>
-						<div class="footer__phone-wrapper">
-							<svg class="footer__phone-icon" width="22" height="22" role="img">
-								<use xlink:href="img/sprite.svg#phone"></use>
-							</svg>
-							<div class="footer__phones">
-								<a class="footer__phone" href="tel:+79005567888">
-									+7 (900)556-78-88
-								</a>
-								<a class="footer__phone" href="tel:+88172294322">
-									8 (8172)29-43-22</a>
-			</ul>
-			</div>
-			</div>
-			</div>
-			<a href="" class="footer__studio">
-				Разработка сайта “Выходи за рамки”
-			</a>
+		<div class="popup contact-popup" id="contact-popup">
+			<form action="" class="contact-popup__contacts-form contacts-form">
+				<h3 class="contacts-form__title">
+					Свяжись с нами
+				</h3>
+				<input type="text" class="contacts-form__input input" placeholder="Имя">
+				<input type="tel" class="contacts-form__input input" placeholder="Ваш телефон">
+				<textarea class="contacts-form__textarea textarea" placeholder="Текст вопроса"></textarea>
+				<input type="submit" class="contacts-form__submit main-btn" value="Отправить заявку">
+				<p class="contacts-form__polycy">Нажимая на кнопку, вы соглашаетесь с
+					условиями <a href="">политики конфиденциальности</a></p>
+			</form>
 
-			</div>
-		</ul>
-		</ul>
-	</footer>
+		</div>
 
-	</ul>
+
+		<div class="popup acceptance-popup" id="acceptance-popup">
+			<h2 class="acceptance-modal__title">Спасибо, ваша заявка успешно отправлена!</h2>
+		</div>
+
+
+	</div>
+	<!-- Попапы  конец-->
+
 
 
 
