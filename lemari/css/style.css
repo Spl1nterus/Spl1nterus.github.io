@@ -697,8 +697,8 @@ img {
   }
 
   .header__burger span::after {
-    -webkit-transform: translateY(4px);
-            transform: translateY(4px)
+            -webkit-transform: translateY(3px);
+                    transform: translateY(3px)
   }
 
   .header__burger.active span {
