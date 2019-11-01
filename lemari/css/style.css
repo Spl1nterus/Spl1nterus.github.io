@@ -209,7 +209,6 @@ img {
   position: absolute;
 }
 
-.select__input:focus+.select__arrow {}
 
 .input[type='number'] {
   -moz-appearance: textfield;
@@ -698,8 +697,8 @@ img {
   }
 
   .header__burger span::after {
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px)
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px)
   }
 
   .header__burger.active span {
