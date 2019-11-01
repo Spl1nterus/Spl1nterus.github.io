@@ -8,6 +8,8 @@ $(document).ready(function () {
     slidesToScroll: 1,
     dots: true,
     arrows: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
     prevArrow: '<div class="index-heading__prev"><svg  role="img" width="9" height="16"><use xlink:href="img/sprite.svg#arrow"></use></svg></div>',
     nextArrow: '<div class="index-heading__next"><svg  role="img" width="9" height="16"><use xlink:href="img/sprite.svg#arrow"></use></svg></div>',
     responsive: [{
